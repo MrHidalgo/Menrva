@@ -1,0 +1,50 @@
+@import "function";
+
+////
+/// @group  Variable
+////
+
+///
+/// @name   object
+///
+$object: (
+  colors : (
+    white                 : #fff,
+    black                 : #000,
+
+    primary               : #4285f4,
+
+    success               : #00c851,
+    info                  : #33b5e5,
+    warning               : #ff8800,
+    danger                : #cc0000
+  )
+);
+
+///
+/// MAIN PALLET
+/// ===============
+$c-white                  : return-value(colors, white);
+$c-black                  : return-value(colors, black);
+
+$c-primary                : return-value(colors, primary);
+
+$c-success                : return-value(colors, success);
+$c-info                   : return-value(colors, info);
+$c-warning                : return-value(colors, warning);
+$c-danger                 : return-value(colors, danger);
+
+///
+/// ADDITIONAL PALLET
+/// ===============
+$c-0e1111: #0e1111;
+$c-4a4a4a: #4a4a4a;
+$C-979797: #979797;
+$c-d8d8d8: #d8d8d8;
+$c-e8e8e8: #e8e8e8;
+$c-00bd70: #00bd70;
+$c-1fce7b: #1fce7b;
+$C-019552: #019552;
+$c-bf2339: #bf2339;
+$c-03396c: #03396c;
+$c-1795cc: #1795cc;
