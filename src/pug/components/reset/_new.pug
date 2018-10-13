@@ -12,7 +12,7 @@ section#new.new
             label.form__label(for="resetNew")!= "New password"
             .form__input-wrap
               input.form__input(type="text" id="resetNew" name="resetNew" placeholder="")
-            .form__notify
+            .form__notify.form__notify--show
               ul
                 li
                   .form__notify-icon
@@ -35,7 +35,7 @@ section#new.new
             label.form__label(for="resetConfirm")!= "Confirm password"
             .form__input-wrap
               input.form__input(type="text" id="resetConfirm" name="resetConfirm" placeholder="")
-            .form__notify
+            .form__notify.form__notify--hide
 
           .form__field.form__field--btn
             button.form__btn(type="submit")!= "Change password"

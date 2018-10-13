@@ -9,7 +9,7 @@ PageList:
   ready: 50
 - file: login.html
   titleName: Login
-  ready: 1
+  ready: 50
 - file: reset1.html
   titleName: Reset Password - Modal
   ready: 1

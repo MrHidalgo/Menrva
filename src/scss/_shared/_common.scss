@@ -59,6 +59,41 @@
     max-width: 210px;
     height: 54px;
   }
+
+  &--gp,
+  &--fb {
+    position: relative;
+    max-width: 100%;
+    padding: 0 40px;
+    box-shadow: none;
+
+    > div {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 100%;
+      padding-left: 20px;
+    }
+
+    > span {
+      width: 100%;
+      max-width: calc(100% - 80px);
+    }
+  }
+
+  &--gp {
+    margin-bottom: 20px;
+    background-color: $c-bf2339;
+  }
+
+  &--fb {
+    margin-bottom: 30px;
+    background-color: $c-03396c;
+  }
 }
 // btn :: end
 
@@ -118,6 +153,10 @@
         margin-top: 40px;
       }
     }
+
+    &--link {
+      margin-top: 20px;
+    }
   }
 
   &__input {
@@ -168,9 +207,17 @@
     }
   }
 
+  &__link {
+    display: block;
+    color: $c-0e1111;
+    text-align: center;
+  }
+
   &__notify {
-    padding-top: 10px;
-    padding-bottom: 15px;
+    &--show {
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
 
     &-icon {
       width: 30px;
@@ -196,5 +243,68 @@
   }
 }
 // form :: end
+
+// modal
+.c-modal {
+  z-index: 100;
+  overflow-y: auto;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($c-f9fbf9, 0.47);
+
+  &--login {
+    .c-modal__header {
+      min-height: 52px;
+    }
+    .c-modal__info {
+      min-height: 54px;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 60px;
+    border-radius: 6px;
+    background-color: $c-white;
+    box-shadow: 0 16px 45px 0 rgba(#022B18, 0.13);
+  }
+
+  &__header {
+    padding-bottom: 10px;
+
+    p {
+      width: 100%;
+      max-width: calc(100% - 30px);
+    }
+
+    a {
+      display: flex;
+      justify-content: flex-end;
+      width: 30px;
+
+      svg {
+        fill: $c-0e1111;
+      }
+    }
+  }
+
+  &__info {
+    padding-bottom: 30px;
+
+    a {
+      color: $c-0e1111;
+      font-weight: 600;
+    }
+  }
+}
+// modal :: end
 
 // COMMON :: END
