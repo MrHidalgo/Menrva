@@ -1,7 +1,20 @@
 // COMMON :: START
 
 // title
+.title {
+  color: $c-0e1111;
+  line-height: 1;
+  font-size: 34px;
+  font-weight: 600;
+}
 // title :: end
+
+// text
+.text {
+  color: $c-black;
+  line-height: 1.8;
+}
+// text :: end
 
 // btn
 .c-btn {
@@ -57,8 +70,8 @@
     }
 
     .icon-svg {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       fill: $c-white;
       @include transition(opacity);
     }

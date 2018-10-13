@@ -3,10 +3,6 @@
 .footer {
   background-color: $c-00bd70;
 
-  .c-grid {
-    max-width: 1290px;
-  }
-
   &__wrapper {
     min-height: 339px;
 
@@ -35,6 +31,10 @@
           svg {
             margin-left: 10px;
           }
+        }
+
+        .dropdown-item {
+          font-size: 12px;
         }
       }
     }

@@ -48,8 +48,9 @@ body {
 
   > .body {
     display: flex;
-    flex: 1 0 auto;
     flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
   }
 }
 
