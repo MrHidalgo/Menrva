@@ -1,5 +1,15 @@
 // FOOTER :: START
 
-.footer {}
+.footer {
+  background-color: $c-00bd70;
+
+  .c-grid {
+    max-width: 1290px;
+  }
+
+  &__wrapper {
+    min-height: 339px;
+  }
+}
 
 // FOOTER :: END
