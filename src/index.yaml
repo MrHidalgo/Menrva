@@ -6,7 +6,7 @@ PageList:
   ready: 1
 - file: mobile.html
   titleName: Mobile
-  ready: 1
+  ready: 50
 - file: login.html
   titleName: Login
   ready: 1

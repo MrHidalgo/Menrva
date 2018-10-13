@@ -6,6 +6,9 @@
   line-height: 1;
   font-size: 34px;
   font-weight: 600;
+  @include respond(max-small) {
+    font-size: 30px;
+  }
 }
 // title :: end
 
@@ -34,6 +37,13 @@
 
   &.c-btn--darkGreen {
     background-color: $c-019552;
+  }
+  &.c-btn--darkGray {
+    background-color: $c-4a4a4a;
+  }
+
+  &--bigH {
+    height: 54px;
   }
 }
 // btn :: end

@@ -17,6 +17,10 @@
       display: flex;
       justify-content: center;
     }
+
+    &-right {
+      padding: 0 15px;
+    }
   }
 
   &__block {
