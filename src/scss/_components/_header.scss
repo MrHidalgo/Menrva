@@ -9,8 +9,27 @@
   }
 
   &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-height: 72px;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
   }
+
+  &__link {
+    white-space: nowrap;
+    display: block;
+    padding-left: 39px;
+    padding-right: 39px;
+    color: $c-white;
+    font-weight: 500;
+  }
+
+  &__btn {}
 }
 
 // HEADER :: END

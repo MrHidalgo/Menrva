@@ -1,5 +1,12 @@
 // LOGOTYPE :: START
 
-.logotype {}
+.logo {
+  &__link {
+    color: $c-white;
+    letter-spacing: -0.48px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 
 // LOGOTYPE :: END
