@@ -9,6 +9,9 @@ html(lang="en")
 
   body(data-file!= dataPageName)
 
+    if(dataPageName === 'reset2')
+      include ../components/reset/_badge-info
+
     block header
       include ../components/_header
 

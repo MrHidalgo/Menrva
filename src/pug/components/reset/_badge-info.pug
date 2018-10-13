@@ -1,0 +1,17 @@
+// badge-info :: START
+
+section#badge-info.badge-info
+  .c-grid
+    .badge-info__wrapper
+
+      .badge-info__text
+        +iconSVG('info')
+        span!= "A link to reset your password has been sent to username@gmail.com"
+
+      a.badge-info__btn(
+        href="#"
+        title="" class=""
+      )
+        +iconSVG("error")
+
+// BADGE :: END

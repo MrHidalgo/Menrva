@@ -1,0 +1,35 @@
+// BADGE :: START
+
+.badge-info {
+  background-color: $c-019552;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+      fill: $c-white;
+    }
+  }
+}
+
+// BADGE :: END
