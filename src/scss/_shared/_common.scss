@@ -12,6 +12,19 @@
 }
 // title :: end
 
+// subtitle :: end
+.subtitle {
+  color: $c-0e1111;
+  line-height: 1;
+  letter-spacing: 0.36px;
+  font-size: 28px;
+  font-weight: 600;
+  @include respond(max-small) {
+    font-size: 24px;
+  }
+}
+// subtitle :: end
+
 // text
 .text {
   color: $c-black;

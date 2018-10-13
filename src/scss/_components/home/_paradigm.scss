@@ -1,0 +1,52 @@
+// PARADIGM :: START
+
+.paradigm {
+  display: flex;
+  align-items: center;
+  min-height: 731px;
+  background-color: rgba($c-f6f6f6, 0.4);
+
+  &__wrapper {
+    padding-bottom: 20px;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+
+    &-left {
+      padding-right: 30px;
+    }
+  }
+
+  &__video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 332px;
+    border-radius: 4px;
+    background-color: $c-f6f6f6;
+
+    a {
+      z-index: 10;
+      position: relative;
+
+      svg {
+        fill: $c-black;
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+// PARADIGM :: END
