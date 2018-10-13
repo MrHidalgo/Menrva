@@ -152,6 +152,10 @@
       .new__form & {
         margin-top: 40px;
       }
+      .c-modal--login &,
+      .c-modal--reset & {
+        margin-top: 30px;
+      }
     }
 
     &--link {
@@ -257,15 +261,6 @@
   height: 100%;
   background-color: rgba($c-f9fbf9, 0.47);
 
-  &--login {
-    .c-modal__header {
-      min-height: 52px;
-    }
-    .c-modal__info {
-      min-height: 54px;
-    }
-  }
-
   &__wrapper {
     width: 100%;
     max-width: 470px;
@@ -278,6 +273,7 @@
   }
 
   &__header {
+    min-height: 52px;
     padding-bottom: 10px;
 
     p {
@@ -297,11 +293,18 @@
   }
 
   &__info {
+    min-height: 54px;
     padding-bottom: 30px;
 
     a {
       color: $c-0e1111;
       font-weight: 600;
+    }
+  }
+
+  &__text {
+    .c-modal--reset & {
+      padding-bottom: 30px;
     }
   }
 }

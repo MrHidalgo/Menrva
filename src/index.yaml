@@ -12,7 +12,7 @@ PageList:
   ready: 50
 - file: reset1.html
   titleName: Reset Password - Modal
-  ready: 1
+  ready: 50
 - file: reset2.html
   titleName: Reset Password - Badge
   ready: 50

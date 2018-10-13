@@ -8,3 +8,28 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--reset
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Reset password"
+          a.c-modal__close(
+          href=""
+          title="" class=""
+          )
+            +iconSVG('error')
+
+        .c-modal__body
+          p.c-modal__info!= "or <a href='#'>log in to your account</a>"
+
+          p.c-modal__text.text!= "Enter the email associated with your account, and we’ll email you a link to reset your password."
+
+          form.form(action="" method="")
+            .form__field.form__field--input
+              label.form__label(for="resetSendEmail")!= "Email"
+              .form__input-wrap
+                input.form__input(type="text" id="resetSendEmail" name="resetSendEmail" placeholder="")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Send reset link"
