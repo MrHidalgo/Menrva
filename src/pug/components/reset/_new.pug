@@ -1,0 +1,44 @@
+// NEW :: START
+
+section#new.new
+  .c-grid
+    .new__wrapper
+      h1.new__title.title!= "Reset password"
+      p.new__text.text!= "The password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters."
+
+      .new__form
+        form.form(action="" method="")
+          .form__field.form__field--input
+            label.form__label(for="resetNew")!= "New password"
+            .form__input-wrap
+              input.form__input(type="text" id="resetNew" name="resetNew" placeholder="")
+            .form__notify
+              ul
+                li
+                  .form__notify-icon
+                    +iconSVG('error')
+                  span!= "Password strength: weak"
+                li
+                  .form__notify-icon
+                    +iconSVG('check')
+                  span!= "Cannot contain your name or email address"
+                li
+                  .form__notify-icon
+                    +iconSVG('error')
+                  span!= "At least 8 characters"
+                li
+                  .form__notify-icon
+                    +iconSVG('check')
+                  span!= "Contains a number or symbol"
+
+          .form__field.form__field--input
+            label.form__label(for="resetConfirm")!= "Confirm password"
+            .form__input-wrap
+              input.form__input(type="text" id="resetConfirm" name="resetConfirm" placeholder="")
+            .form__notify
+
+          .form__field.form__field--btn
+            button.form__btn(type="submit")!= "Change password"
+
+
+// NEW :: END
