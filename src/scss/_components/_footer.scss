@@ -9,6 +9,61 @@
 
   &__wrapper {
     min-height: 339px;
+
+    &-top {
+      height: calc(339px - 82px);
+      padding-top: 60px;
+    }
+
+    &-bottom {
+      min-height: 82px;
+      border-top: 1px solid rgba($c-white, 0.2);
+
+      .dropdown {
+        .btn {
+          outline: none;
+          background-color: transparent;
+          color: $c-white;
+          letter-spacing: -0.34px;
+          font-size: 14px;
+          font-weight: 600;
+
+          &:after {
+            display: none;
+          }
+
+          svg {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__col {
+    &-4 {
+      p {
+        padding-bottom: 10px;
+        color: rgba($c-white, 0.8);
+        letter-spacing: -0.34px;
+        font-size: 14px;
+      }
+
+      > a {
+        display: block;
+        padding-bottom: 40px;
+        color: $c-white;
+        letter-spacing: -0.43px;
+        font-size: 18px;
+        font-weight: 600;
+        @include transition(opacity);
+
+        &:hover {
+          opacity: 0.8;
+          @include transition(opacity);
+        }
+      }
+    }
   }
 }
 

@@ -1,5 +1,28 @@
 // NAV :: START
 
-.nav {}
+.nav {
+  &__title {
+    padding-bottom: 20px;
+    color: $c-white;
+    letter-spacing: -0.39px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__link {
+    .nav--footer & {
+      display: flex;
+      padding-bottom: 16px;
+      font-size: 14px;
+      color: rgba($c-white, 0.8);
+      @include transition(color);
+
+      &:hover {
+        color: $c-white;
+        @include transition(color);
+      }
+    }
+  }
+}
 
 // NAV :: END

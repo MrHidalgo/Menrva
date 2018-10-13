@@ -2,10 +2,15 @@
 
 .logo {
   &__link {
+    display: block;
     color: $c-white;
     letter-spacing: -0.48px;
     font-size: 20px;
     font-weight: 600;
+
+    p {
+      line-height: 1;
+    }
   }
 }
 
