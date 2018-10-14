@@ -28,3 +28,12 @@ PageList:
 - file: signup3.html
   titleName: Payment details
   ready: 35
+- file: setting1.html
+  titleName: Delete account
+  ready: 50
+- file: setting2.html
+  titleName: Delete account
+  ready: 50
+- file: setting3.html
+  titleName: Payment details promo
+  ready: 35

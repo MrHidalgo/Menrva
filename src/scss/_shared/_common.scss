@@ -271,8 +271,13 @@
       .c-modal--reset &,
       .c-modal--register &,
       .c-modal--payment &,
-      .c-modal--plan & {
+      .c-modal--plan &,
+      .c-modal--delAcc & {
         margin-top: 30px;
+      }
+
+      .c-modal--promo & {
+        margin-top: 40px;
       }
     }
 
@@ -375,6 +380,15 @@
     color: $c-white;
     font-weight: 500;
 
+    .c-modal--delName & {
+      &:first-of-type {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: $c-f4f4f4;
+        color: rgba($c-0e1111, 0.5);
+      }
+    }
+
     .new__form & {
       max-width: 255px;
       margin-left: auto;
@@ -435,7 +449,8 @@
   background-color: rgba($c-f9fbf9, 0.47);
 
   &--plan,
-  &--payment {
+  &--payment,
+  &--promo {
     .c-modal__text,
     .c-modal__title {
       max-width: 100%;
@@ -448,6 +463,12 @@
 
     .c-modal__title {
       padding-bottom: 45px;
+    }
+  }
+
+  &--promo {
+    .c-modal__title {
+      padding-top: 10px;
     }
   }
 
@@ -509,7 +530,9 @@
   }
 
   &__text {
-    .c-modal--reset & {
+    .c-modal--reset &,
+    .c-modal--delAcc &,
+    .c-modal--delName & {
       padding-bottom: 30px;
     }
   }
