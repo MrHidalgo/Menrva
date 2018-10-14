@@ -8,3 +8,44 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--plan
+      .c-modal__wrapper
+        .c-modal__header
+          p.c-modal__text.text!= "Pricing plan"
+          p.c-modal__title.subtitle!= "Menrva Premium"
+
+        .c-modal__body
+          p.c-modal__info!= "9.99$"
+          p.c-modal__subinfo!= "per year"
+
+          ul.c-modal__list
+            li
+              div
+                +iconSVG('check')
+              p!= "Lorem Ipsum is simply dummy text of the"
+
+            li
+              div
+                +iconSVG('check')
+              p!= "Lorem Ipsum is simply dummy"
+
+            li
+              div
+                +iconSVG('check')
+              p!= "Lorem Ipsum is simply dummy text of the"
+
+            li
+              div
+                +iconSVG('check')
+              p!= "Lorem Ipsum is simply dummy text of the"
+
+            li
+              div
+                +iconSVG('check')
+              p!= "Lorem Ipsum is simply dummy text of the"
+
+
+          form.form(action="" method="")
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Start 14-day free trial"

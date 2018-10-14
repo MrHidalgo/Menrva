@@ -148,6 +148,25 @@
 
     &--group {
       display: flex;
+
+      .c-modal--payment & {
+        .form__field--input {
+          margin-bottom: 0;
+        }
+      }
+
+      .form__field--input {
+        width: calc(100% - 10px);
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
     }
 
     &--select {
@@ -250,7 +269,9 @@
       }
       .c-modal--login &,
       .c-modal--reset &,
-      .c-modal--register & {
+      .c-modal--register &,
+      .c-modal--payment &,
+      .c-modal--plan & {
         margin-top: 30px;
       }
     }
@@ -413,6 +434,23 @@
   padding: 50px 0;
   background-color: rgba($c-f9fbf9, 0.47);
 
+  &--plan,
+  &--payment {
+    .c-modal__text,
+    .c-modal__title {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .c-modal__text {
+      padding-bottom: 25px;
+    }
+
+    .c-modal__title {
+      padding-bottom: 45px;
+    }
+  }
+
   &__wrapper {
     width: 100%;
     max-width: 470px;
@@ -448,15 +486,54 @@
     min-height: 54px;
     padding-bottom: 30px;
 
+    .c-modal--plan & {
+      min-height: auto;
+      padding-bottom: 0;
+      line-height: 1;
+      letter-spacing: 0.87px;
+      text-align: center;
+      font-size: 46px;
+      font-weight: 600;
+    }
+
     a {
       color: $c-0e1111;
       font-weight: 600;
     }
   }
 
+  &__subinfo {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 14px;
+  }
+
   &__text {
     .c-modal--reset & {
       padding-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+
+      > div {
+        width: 44px;
+        padding-right: 20px;
+        text-align: center;
+      }
+
+      p {
+        width: 100%;
+        max-width: calc(100% - 44px);
+      }
     }
   }
 }

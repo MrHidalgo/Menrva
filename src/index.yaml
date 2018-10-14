@@ -21,10 +21,10 @@ PageList:
   ready: 50
 - file: signup1.html
   titleName: Create an account
-  ready: 1
+  ready: 50
 - file: signup2.html
   titleName: Menrva oremium
-  ready: 1
+  ready: 50
 - file: signup3.html
   titleName: Payment details
-  ready: 1
+  ready: 35

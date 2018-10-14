@@ -8,3 +8,46 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--payment
+      .c-modal__wrapper
+        .c-modal__header
+          p.c-modal__text.text!= "Pricing plan"
+          p.c-modal__title.subtitle!= "Payment details"
+
+        .c-modal__body
+
+          form.form(action="" method="")
+            .form__field.form__field--input
+              label.form__label(for="paymentCardName")!= "Name on card"
+              .form__input-wrap
+                input.form__input(type="text" id="paymentCardName" name="paymentCardName" placeholder="")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--input
+              label.form__label(for="paymentCardNumber")!= "Credit card number"
+              .form__input-wrap
+                input.form__input(type="text" id="paymentCardNumber" name="paymentCardNumber" placeholder="")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--group
+              .form__field.form__field--input
+                label.form__label(for="paymentMonth")!= "Month"
+                .form__input-wrap
+                  input.form__input(type="text" id="paymentMonth" name="paymentMonth" placeholder="")
+                .form__notify.form__notify--hide
+
+              .form__field.form__field--input
+                label.form__label(for="paymentYear")!= "Year"
+                .form__input-wrap
+                  input.form__input(type="text" id="paymentYear" name="paymentYear" placeholder="")
+                .form__notify.form__notify--hide
+
+              .form__field.form__field--input
+                label.form__label(for="paymentCvv")!= "CVV"
+                .form__input-wrap
+                  input.form__input(type="text" id="paymentCvv" name="paymentCvv" placeholder="")
+                .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Sign up"
