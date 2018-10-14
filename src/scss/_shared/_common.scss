@@ -146,6 +146,10 @@
 
     &--input {}
 
+    &--radiogroup {
+      margin-bottom: 40px;
+    }
+
     &--group {
       display: flex;
 
@@ -167,6 +171,18 @@
           margin-right: 0;
         }
       }
+
+      .c-modal--payment &,
+      .c-modal--promo & {
+        .form__field--radio {
+          &:nth-child(1) {
+            width: calc(100% - 75px);
+          }
+          &:nth-child(2) {
+            width: 75px;
+          }
+        }
+      }
     }
 
     &--select {
@@ -185,6 +201,96 @@
           }
           &:nth-child(3) {
             max-width: 88px;
+          }
+        }
+      }
+    }
+
+    &--radio {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 24px;
+
+      > input {
+        display: none;
+        position: absolute;
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        &:checked {
+          + label {
+            &:before {
+              border-color: $c-0e1111;
+            }
+            &:after {
+              transform: translateY(-50%) scale(1);
+              @include transition(transform);
+            }
+          }
+        }
+      }
+
+      label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0;
+
+        &:before,
+        &:after {
+          cursor: pointer;
+          content: '';
+          position: absolute;
+          display: inline-block;
+          top: 50%;
+          border-radius: 100%;
+          border: 1px solid $c-0e1111;
+        }
+
+        &:before {
+          left: 0;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+        }
+
+        &:after {
+          left: 6px;
+          transform: translateY(-50%) scale(0);
+          width: 8px;
+          height: 8px;
+          @include transition(transform);
+        }
+
+        span {
+          cursor: pointer;
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 30px;
+        }
+
+        .form__radio--input {
+          outline: none;
+          width: 39px;
+          height: 24px;
+          margin-right: 10px;
+          padding: 0 5px;
+          border-radius: 2px;
+          border: none;
+          box-shadow: none;
+          background-color: $c-d8d8d8;
+
+          &:first-of-type {
+            margin-left: 30px;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
           }
         }
       }

@@ -27,7 +27,7 @@ PageList:
   ready: 50
 - file: signup3.html
   titleName: Payment details
-  ready: 35
+  ready: 50
 - file: setting1.html
   titleName: Delete account
   ready: 50
@@ -36,4 +36,4 @@ PageList:
   ready: 50
 - file: setting3.html
   titleName: Payment details promo
-  ready: 35
+  ready: 50
