@@ -552,7 +552,30 @@
   width: 100%;
   height: 100vh;
   padding: 50px 0;
-  background-color: rgba($c-f9fbf9, 0.47);
+  background-color: rgba($c-f9fbf9, 0.95);
+  text-align: center;
+
+  //&:before {
+  //  content: '';
+  //  position: absolute;
+  //  top: 0;
+  //  left: -20px;
+  //  width: calc(100% + 40px);
+  //  height: 100%;
+  //  background-image: url('../img/img-modal-bg-0@2x.jpg');
+  //  background-repeat: no-repeat;
+  //  background-position: center top;
+  //  background-size: cover;
+  //  filter: blur(10px);
+  //}
+
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-right: -4px;
+  }
 
   &--plan,
   &--payment,
@@ -579,6 +602,11 @@
   }
 
   &__wrapper {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
     width: 100%;
     max-width: 470px;
     margin-left: auto;
