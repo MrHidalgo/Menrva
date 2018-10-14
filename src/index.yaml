@@ -3,7 +3,7 @@ ProjectTitle: Menrva
 PageList:
 - file: index.html
   titleName: Home
-  ready: 50new
+  ready: 50
 - file: mobile.html
   titleName: Mobile
   ready: 50

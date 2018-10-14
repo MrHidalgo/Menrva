@@ -8,3 +8,91 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--register
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Sign up"
+          a.c-modal__close(
+          href=""
+          title="" class=""
+          )
+            +iconSVG('error')
+
+        .c-modal__body
+          p.c-modal__info!= "or <a href='#'>log in to your account</a>"
+
+          button.c-btn.c-btn--bigH.c-btn--gp(type="button")
+            div
+              +iconSVG('i-gp')
+            span!= "Log in with Google"
+
+          button.c-btn.c-btn--bigH.c-btn--fb(type="button")
+            div
+              +iconSVG('i-fb')
+            span!= "Log in with Facebook"
+
+          form.form(action="" method="")
+            label.form__label()!= "Birthday"
+            .form__field.form__field--group.form__field--select.form__field--select-date
+              .form__select-wrap
+                .form__select
+                  span.select__value
+                  select(name="")
+                    option(value="0" disabled selected hidden)!= "Month"
+                    option(value="1")!= "Action"
+                    option(value="2")!= "Some action"
+                    option(value="3")!= "What Is About?"
+                  span.select__icon-wrap
+                    +iconSVG('arrow')
+              .form__select-wrap
+                .form__select
+                  span.select__value
+                  select(name="")
+                    option(value="0" disabled selected hidden)!= "Day"
+                    option(value="1")!= "Action"
+                    option(value="2")!= "Some action"
+                    option(value="3")!= "What Is About?"
+                  span.select__icon-wrap
+                    +iconSVG('arrow')
+              .form__select-wrap
+                .form__select
+                  span.select__value
+                  select(name="")
+                    option(value="0" disabled selected hidden)!= "Year"
+                    option(value="1")!= "Action"
+                    option(value="2")!= "Some action"
+                    option(value="3")!= "What Is About?"
+                  span.select__icon-wrap
+                    +iconSVG('arrow')
+
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--input
+              label.form__label(for="signupEmail")!= "Email"
+              .form__input-wrap
+                input.form__input(type="text" id="signupEmail" name="signupEmail" placeholder="Type your email")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--input
+              label.form__label(for="signupUsername")!= "Username"
+              .form__input-wrap
+                input.form__input(type="text" id="signupUsername" name="signupUsername" placeholder="Type your username")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--input
+              label.form__label(for="signupPassword")!= "Password"
+              .form__input-wrap
+                input.form__input(type="text" id="signupPassword" name="signupPassword" placeholder="Type your password")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--checkbox
+              .form__checkbox-wrap
+                input.form__checkbox(type="checkbox" id="signupRadio" name="")
+                label(for="signupRadio")
+                  i
+                  span!= "I accept Menrva’s <a href=''>Terms of Service</a> and <a href=''>Privacy Policy</a>"
+                  +iconSVG('check')
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Continue"
