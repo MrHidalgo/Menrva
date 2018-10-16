@@ -424,7 +424,7 @@
     border: 1px solid $c-cbcecb;
     background-color: transparent;
     @include inputPlaceholder {
-      color: $c-0e1111;
+      color: #7f7f7f;
     }
 
     &-wrap {
@@ -504,6 +504,7 @@
     box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
     background-color: $c-019552;
     color: $c-white;
+    font-size: 14px;
     font-weight: 500;
 
     .c-modal--delName & {
@@ -638,9 +639,14 @@
       width: 30px;
 
       svg {
-        fill: $c-0e1111;
+        fill: #9b9b9b;
+        transform: scale(1.2);
       }
     }
+  }
+
+  &__close {
+    svg {}
   }
 
   &__info {
@@ -659,7 +665,7 @@
 
     a {
       color: $c-0e1111;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
 
