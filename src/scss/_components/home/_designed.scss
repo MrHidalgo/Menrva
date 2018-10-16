@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   min-height: 740px;
-  background-color: $c-fbfbfb;
 
   &__wrapper {
     &-right {
@@ -19,11 +18,15 @@
   }
 
   &__block {
+    overflow: hidden;
     position: relative;
     width: 100%;
+    max-width: 540px;
     height: 322px;
+    margin-left: auto;
     border-radius: 4px;
     background-color: $c-f6f6f6;
+    box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
   }
 
   &__title {

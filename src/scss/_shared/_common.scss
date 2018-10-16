@@ -2,8 +2,8 @@
 
 // title
 .title {
-  color: $c-0e1111;
-  line-height: 1;
+  color: $c-555555;
+  line-height: 1.6;
   font-size: 34px;
   font-weight: 600;
   @include respond(max-small) {
@@ -27,8 +27,9 @@
 
 // text
 .text {
-  color: $c-black;
+  color: rgba($c-black, 0.5);
   line-height: 1.8;
+  font-size: 14px;
 }
 // text :: end
 
@@ -46,6 +47,7 @@
   border-radius: 4px;
   box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
   color: $c-white;
+  font-size: 14px;
   font-weight: 500;
 
   &.c-btn--darkGreen {
@@ -96,6 +98,24 @@
   }
 }
 // btn :: end
+
+// section
+.section {
+  &__wrapper {
+    display: flex;
+
+    &-left {
+      width: 285px;
+      padding-right: 30px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 285px);
+    }
+  }
+}
+// section :: end
 
 // copyright
 .copyright {
@@ -554,20 +574,6 @@
   padding: 50px 0;
   background-color: rgba($c-f9fbf9, 0.95);
   text-align: center;
-
-  //&:before {
-  //  content: '';
-  //  position: absolute;
-  //  top: 0;
-  //  left: -20px;
-  //  width: calc(100% + 40px);
-  //  height: 100%;
-  //  background-image: url('../img/img-modal-bg-0@2x.jpg');
-  //  background-repeat: no-repeat;
-  //  background-position: center top;
-  //  background-size: cover;
-  //  filter: blur(10px);
-  //}
 
   &:after {
     content: '';

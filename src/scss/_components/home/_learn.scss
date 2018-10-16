@@ -3,8 +3,13 @@
 .learn {
   display: flex;
   align-items: center;
-  min-height: (740px - 72px);
+  min-height: 740px;
   background-color: $c-e8e8e8;
+  background-image: url('../img/img-bg-learn@2x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
 
   &__wrapper {
     padding-right: 95px;
@@ -24,7 +29,7 @@
 
   &__text {
     a {
-      color: $c-black;
+      color: $c-019552;
       font-weight: 600;
     }
   }

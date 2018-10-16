@@ -37,3 +37,21 @@ PageList:
 - file: setting3.html
   titleName: Payment details promo
   ready: 50
+- file: setting4.html
+  titleName: Setting Profile
+  ready: 1
+- file: setting5.html
+  titleName: Setting Account
+  ready: 1
+- file: setting6.html
+  titleName: Setting Notification
+  ready: 1
+- file: setting7.html
+  titleName: Setting Refer a friend
+  ready: 1
+- file: setting8.html
+  titleName: Setting Billing methods
+  ready: 1
+- file: setting9.html
+  titleName: Refer a friend
+  ready: 1

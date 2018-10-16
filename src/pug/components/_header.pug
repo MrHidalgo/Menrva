@@ -6,15 +6,17 @@ header#header.header
       .header__wrapper-left
         +logotypeText("header", "", "Menrva")
 
-      .header__wrapper-right.d-flex.align-items-center.justify-content-end
-        a.header__link(
-          href="#" 
-          title="" class=""
-        )!= "Log in"
+      if(!login)
+        .header__wrapper-right.d-flex.align-items-center.justify-content-end
+          a.header__link(
+            href="#"
+            title="" class=""
+          )!= "Log in"
 
-        a.header__btn.c-btn.c-btn--darkGreen(
-          href="#"
-          title="" class=""
-        )!= "Sign up"
+          a.header__btn.c-btn.c-btn--darkGreen(
+            href="#"
+            title="" class=""
+          )!= "Sign up"
+      else
 
 // HEADER :: END

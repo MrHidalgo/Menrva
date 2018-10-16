@@ -1,51 +1,9 @@
 // TOOL :: START
 
-mixin btnStar()
-  a(
-    href="#"
-    title="" class=""
-  )
-    +iconSVG('star')
-
-mixin btnSwitcher()
-  a(
-    href="#"
-    title="" class=""
-  )
-    +iconSVG('switcher')
-
-mixin btnSetting()
-  a(
-    href="#"
-    title="" class=""
-  )
-    +iconSVG('setting')
-
-mixin btnText()
-  a(
-    href="#"
-    title="" class=""
-  )
-    +iconSVG('text')
-
-mixin btnSwap()
-  a(
-    href="#"
-    title="" class=""
-  )
-    +iconSVG('swap')
-
-mixin btnPrevNext()
-  a(
-    href="#"
-    title="" class=""
-  )
-    +iconSVG('prev-next')
-
 section#tool.tool
   .c-grid
     .tool__wrapper
-      h1.tool__title.subtitle!= "An innovative study tool"
+      h1.tool__title.title!= "An innovative study tool"
 
       .tool__preview
         .tool__preview-scroll
@@ -54,12 +12,18 @@ section#tool.tool
           p!= "The following is an excerpt from “Gray’s Anatomy: Descriptive and Applied,” published in 1913:"
           p!= "The skull, formed by the union of the several cranial and facial bones already described, when considered as a whole is divisible into five regions — a superior region or vertex, an inferior region or base, two lateral regions, and an anterior region, the face… [Regarding the skull's surface], the external face (norma verticalis) is bounded, in front, by the glabella and superciliary ridges; behind, by the occipital protuberance and superior curved lines of the occipital bone; laterally, by an imaginary line extending from the outer end of the superior curved line, along the temporal ridge, to the external angular process of the frontal bone."
 
-      .tool__control
+
+  .tool__control
+    .c-grid
+      .tool__control-wrap
         .tool__control-left.d-flex.align-items-center
+          +btnKeyboard()
           +btnStar()
-          +btnSwitcher()
 
         .tool__control-middle.d-flex.align-items-center
+          .tool__control-shuffle
+            +btnShuffle()
+
           .tool__control-line
             a(
               href="#"
