@@ -10,9 +10,4 @@ extends shared/_layout
 block content
   div.body(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-
-          .section__wrapper-right
+    include ./components/setting/_space

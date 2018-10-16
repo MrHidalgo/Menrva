@@ -69,13 +69,13 @@ PageList:
   ready: 1
 - file: setting9.html
   titleName: Refer a friend
-  ready: 1
+  ready: 55
 - file: setting8.html
   titleName: Setting Billing methods
   ready: 1
 - file: setting10.html
   titleName: Setting Personal storage space
-  ready: 1
+  ready: 55
 - file: setting11.html
   titleName: Personal storage space
   ready: 55

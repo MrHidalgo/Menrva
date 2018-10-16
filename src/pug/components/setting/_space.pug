@@ -1,0 +1,56 @@
+// SPACE :: START
+
+section#space.space
+  .c-grid
+
+    a.space__close(
+      href="#"
+      title="" class=""
+    )
+      +iconSVG("error")
+
+    h1.space__title.title!= "Personal storage space"
+    p.space__text.text!= "Your Menrva Account starts with 10 GB of free personal storage space. <br>Upgrade your storage plan for a monthly or annual fee."
+
+    .space__wrapper
+
+      form.form(action="" method="")
+        .form__field.form__field--swipe
+          input(type="checkbox" id="storageSwipe" name="")
+          label(for="storageSwipe")
+            div
+              p!= "Billed monthly"
+            div
+            div
+              p!= "Billed yearly"
+              span!= "Save 20%"
+
+      .space__block-wrapper
+        .space__block.space__block-0
+          p.space__block-subtitle!= "Space"
+          p.space__block-title!= "10 GB"
+          .space__block-btn
+            p!= "Using 1.27 GB of 10 GB"
+          p.space__block-desc!= "Current plan"
+
+        .space__block.space__block-1
+          p.space__block-subtitle!= "Space"
+          p.space__block-title!= "100 GB"
+          .space__block-btn
+            a.c-btn.c-btn--bigH.c-btn--darkGreen(
+              href="#"
+              title="" class=""
+            )!= "+$2.00/monthly"
+          p.space__block-desc!= "Save 20% with an <br>annual plan"
+
+        .space__block.space__block-2
+          p.space__block-subtitle!= "Space"
+          p.space__block-title!= "200 GB"
+          .space__block-btn
+            a.c-btn.c-btn--bigH.c-btn--darkGreen(
+              href="#"
+              title="" class=""
+            )!= "+$3.00/monthly"
+          p.space__block-desc!= "Save 20% with an <br>annual plan"
+
+// SPACE :: END

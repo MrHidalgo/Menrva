@@ -291,7 +291,18 @@
               @include transition(left);
             }
           }
-          &:nth-child(3) {}
+          &:nth-child(3) {
+            position: relative;
+
+            span {
+              white-space: nowrap;
+              position: absolute;
+              top: -12px;
+              left: 95%;
+              color: #019552;
+              font-size: 12px;
+            }
+          }
 
           p {
             color: $c-black;
