@@ -10,10 +10,37 @@ extends shared/_layout
 block content
   div.body(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
+    section#c-modal.c-modal.c-modal--refer
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Refer a friend"
+          a.c-modal__close(
+            href="#" title="" class=""
+          )
+            +iconSVG('error')
 
-          .section__wrapper-right
+        .c-modal__body
+          form.form(action="" method="")
+            .form__field.form__field--input.form__field--btnInput
+              label.form__label(for="referSendEmail")!= "Share link via email"
+              .form__input-wrap
+                input.form__input(type="text" id="referSendEmail" name="referSendEmail" placeholder="Enter a title")
+                button.form__btn(type="submit")!= "Send email"
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--input.form__field--btnInput
+              .form__input-wrap
+                input.form__input(type="text" id="" name="referCopyLink" placeholder="" value="https://minrva.com/username/cources/cource1")
+                button.form__btn(type="button")!= "Copy link"
+              .form__notify.form__notify--hide
+
+          button.c-btn.c-btn--bigH.c-btn--fb(type="button")
+            div
+              +iconSVG('i-fb')
+            span!= "Share on Facebook"
+
+          button.c-btn.c-btn--bigH.c-btn--tw(type="button")
+            div
+              +iconSVG('i-tw')
+            span!= "Share on Twitter"
             

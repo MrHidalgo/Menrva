@@ -63,7 +63,8 @@
   }
 
   &--gp,
-  &--fb {
+  &--fb,
+  &--tw {
     position: relative;
     max-width: 100%;
     padding: 0 40px;
@@ -95,6 +96,21 @@
   &--fb {
     margin-bottom: 30px;
     background-color: $c-03396c;
+
+    .c-modal--refer & {
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+  }
+
+  &--tw {
+    margin-bottom: 30px;
+    background-color: $c-1795cc;
+
+    .c-modal--refer & {
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
   }
 }
 // btn :: end
@@ -168,6 +184,21 @@
 
     &--radiogroup {
       margin-bottom: 40px;
+    }
+
+    &--btnInput {
+      .form__input-wrap {
+        display: flex;
+      }
+
+      input {
+        width: calc(100% - (137px + 20px));
+      }
+
+      button {
+        max-width: 137px;
+        margin-left: auto;
+      }
     }
 
     &--group {
@@ -709,12 +740,22 @@
     border-radius: 6px;
     background-color: $c-white;
     box-shadow: 0 16px 45px 0 rgba(#022B18, 0.13);
+
+    .c-modal--refer & {
+      max-width: 609px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &__header {
     position: relative;
     min-height: 52px;
     padding-bottom: 10px;
+
+    .c-modal--refer & {
+      padding-bottom: 30px;
+    }
 
     p {
       width: 100%;
