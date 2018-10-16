@@ -3,31 +3,49 @@ ProjectTitle: Menrva
 PageList:
 - file: index.html
   titleName: Home
-  ready: 50
+  ready: 55
 - file: mobile.html
   titleName: Mobile
-  ready: 50
+  ready: 55
+
+- file:
+  titleName:
+  ready: 0
+
 - file: login.html
   titleName: Login
-  ready: 50
+  ready: 55
 - file: reset1.html
   titleName: Reset Password - Modal
-  ready: 50
+  ready: 55
 - file: reset2.html
   titleName: Reset Password - Badge
-  ready: 50
+  ready: 55
 - file: reset3.html
   titleName: Reset Password - New
-  ready: 50
+  ready: 55
+- file: reset4.html
+  titleName: Reset Password - New with notify
+  ready: 55
+
+- file:
+  titleName:
+  ready: 0
+
 - file: signup1.html
   titleName: Create an account
-  ready: 50
+  ready: 55
 - file: signup2.html
   titleName: Menrva oremium
-  ready: 50
+  ready: 55
 - file: signup3.html
   titleName: Payment details
-  ready: 50
+  ready: 55
+
+- file:
+  titleName:
+  ready: 0
+
 - file: setting1.html
   titleName: Delete account
   ready: 50

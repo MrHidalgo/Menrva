@@ -12,8 +12,12 @@ block content
     section#c-modal.c-modal.c-modal--payment
       .c-modal__wrapper
         .c-modal__header
-          p.c-modal__text.text!= "Pricing plan"
+          p.c-modal__subtitle!= "Pricing plan"
           p.c-modal__title.subtitle!= "Payment details"
+          a.c-modal__close(
+            href="#" title="" class=""
+          )
+            +iconSVG('error')
 
         .c-modal__body
 

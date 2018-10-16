@@ -13,23 +13,24 @@ section#new.new
             .form__input-wrap
               input.form__input(type="text" id="resetNew" name="resetNew" placeholder="")
             .form__notify.form__notify--show
-              ul
-                li
-                  .form__notify-icon
-                    +iconSVG('error')
-                  span!= "Password strength: weak"
-                li
-                  .form__notify-icon
-                    +iconSVG('check')
-                  span!= "Cannot contain your name or email address"
-                li
-                  .form__notify-icon
-                    +iconSVG('error')
-                  span!= "At least 8 characters"
-                li
-                  .form__notify-icon
-                    +iconSVG('check')
-                  span!= "Contains a number or symbol"
+              if(dataPageName === "reset4")
+                ul
+                  li
+                    .form__notify-icon.form__notify-icon-error
+                      +iconSVG('error')
+                    span!= "Password strength: weak"
+                  li
+                    .form__notify-icon.form__notify-icon-check
+                      +iconSVG('check')
+                    span!= "Cannot contain your name or email address"
+                  li
+                    .form__notify-icon.form__notify-icon-error
+                      +iconSVG('error')
+                    span!= "At least 8 characters"
+                  li
+                    .form__notify-icon.form__notify-icon-check
+                      +iconSVG('check')
+                    span!= "Contains a number or symbol"
 
           .form__field.form__field--input
             label.form__label(for="resetConfirm")!= "Confirm password"

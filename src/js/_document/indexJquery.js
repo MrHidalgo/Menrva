@@ -31,7 +31,7 @@ $(document).ready((ev) => {
     $(selector).each(function(){
       var valOption = $(this).children('option:selected');
 
-      if(valOption.val() > 0) {
+      if(valOption.val() !== '0') {
         $(this).prev('span').addClass("is-choose");
       }
 
