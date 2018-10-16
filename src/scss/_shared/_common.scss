@@ -205,6 +205,71 @@
       }
     }
 
+    &--swipe {
+      position: relative;
+      margin-bottom: 40px;
+
+      input {
+        display: none;
+        position: absolute;
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        &:checked {
+          + label {
+            div {
+              &:nth-child(2) {
+                &:before {
+                  left: 14px;
+                  @include transition(left);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > div {
+          &:nth-child(1) {}
+          &:nth-child(2) {
+            position: relative;
+            width: 32px;
+            height: 14px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 9px;
+            background-color: #e8e8e8;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: -2px;
+              left: 0;
+              width: 18px;
+              height: 18px;
+              border-radius: 100%;
+              background-color: #52805b;
+              @include transition(left);
+            }
+          }
+          &:nth-child(3) {}
+
+          p {
+            color: $c-black;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
     &--select {
       justify-content: space-between;
 
@@ -607,7 +672,8 @@
 
   &--plan,
   &--payment,
-  &--promo {
+  &--promo,
+  &--storage {
     .c-modal__text,
     .c-modal__title {
       max-width: 100%;
@@ -669,7 +735,8 @@
 
   &__close {
     .c-modal--payment &,
-    .c-modal--plan & {
+    .c-modal--plan &,
+    .c-modal--storage & {
       position: absolute;
       top: 0;
       right: 0;
@@ -680,7 +747,8 @@
     min-height: 54px;
     padding-bottom: 30px;
 
-    .c-modal--plan & {
+    .c-modal--plan &,
+    .c-modal--storage & {
       min-height: auto;
       padding-bottom: 10px;
       color: $c-019552;
@@ -688,6 +756,10 @@
       text-align: center;
       font-size: 46px;
       font-weight: 600;
+    }
+
+    .c-modal--storage & {
+      color: $c-0e1111;
     }
 
     a {
@@ -700,6 +772,10 @@
     padding-bottom: 50px;
     text-align: center;
     font-size: 14px;
+
+    .c-modal--storage & {
+      color: rgba($c-0e1111, 0.5);
+    }
   }
   
   &__subtitle {
@@ -709,7 +785,8 @@
     font-size: 14px;
 
     .c-modal--plan &,
-    .c-modal--payment & {
+    .c-modal--payment &,
+    .c-modal--storage & {
       max-width: 100%;
     }
   }

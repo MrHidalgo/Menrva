@@ -78,7 +78,7 @@ PageList:
   ready: 1
 - file: setting11.html
   titleName: Personal storage space
-  ready: 1
+  ready: 55
 
 - file:
   titleName:
