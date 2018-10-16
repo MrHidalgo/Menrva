@@ -4,14 +4,14 @@ section#new.new
   .c-grid
     .new__wrapper
       h1.new__title.title!= "Reset password"
-      p.new__text.text!= "The password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters."
+      p.new__text.text!= "The password must be at least eight characters long and contain at least one number, one special character, and both lower and uppercase letters."
 
       .new__form
         form.form(action="" method="")
           .form__field.form__field--input
             label.form__label(for="resetNew")!= "New password"
             .form__input-wrap
-              input.form__input(type="text" id="resetNew" name="resetNew" placeholder="")
+              input.form__input(type="password" id="resetNew" name="resetNew" placeholder="")
             .form__notify.form__notify--show
               if(dataPageName === "reset4")
                 ul
@@ -26,16 +26,16 @@ section#new.new
                   li
                     .form__notify-icon.form__notify-icon-error
                       +iconSVG('error')
-                    span!= "At least 8 characters"
+                    span!= "At least eight characters"
                   li
                     .form__notify-icon.form__notify-icon-check
                       +iconSVG('check')
-                    span!= "Contains a number or symbol"
+                    span!= "At least one number, one special character, and both lower and uppercase letters."
 
           .form__field.form__field--input
             label.form__label(for="resetConfirm")!= "Confirm password"
             .form__input-wrap
-              input.form__input(type="text" id="resetConfirm" name="resetConfirm" placeholder="")
+              input.form__input(type="password" id="resetConfirm" name="resetConfirm" placeholder="")
             .form__notify.form__notify--hide
 
           .form__field.form__field--btn

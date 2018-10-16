@@ -1,12 +1,15 @@
 // NEW :: START
 
 .new {
-  width: 100%;
-  max-width: 538px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 160px;
   padding-bottom: 160px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 538px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__title {
     padding-bottom: 28px;
