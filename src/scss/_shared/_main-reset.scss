@@ -51,6 +51,12 @@ body {
     flex-direction: column;
     justify-content: center;
     flex: 1 0 auto;
+
+    &--start {
+      justify-content: flex-start;
+      padding-top: 34px;
+      background-color: $c-f9fbf9;
+    }
   }
 }
 

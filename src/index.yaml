@@ -57,22 +57,22 @@ PageList:
   ready: 55
 - file: setting4.html
   titleName: Setting Profile
-  ready: 1
+  ready: 55
 - file: setting5.html
   titleName: Setting Account
-  ready: 1
+  ready: 55
 - file: setting6.html
   titleName: Setting Notification
-  ready: 1
+  ready: 55
 - file: setting7.html
   titleName: Setting Refer a friend
-  ready: 1
+  ready: 55
 - file: setting9.html
   titleName: Refer a friend
   ready: 55
 - file: setting8.html
   titleName: Setting Billing methods
-  ready: 1
+  ready: 55
 - file: setting10.html
   titleName: Setting Personal storage space
   ready: 55

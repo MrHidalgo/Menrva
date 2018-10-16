@@ -8,12 +8,129 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
 
     section#section.section
       .c-grid
         .section__wrapper
           .section__wrapper-left
+            include ./macros/_menuSetting
 
           .section__wrapper-right
-            
+
+            h1.section__title
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    +iconSVG('notification')
+                  span!= "Notification"
+
+            .section__block.section__block--notification
+              form.form(action="" method="")
+                p.section__block-title!= "When do you want notifications?"
+                p.section__block-subtitle!= "Study reminders"
+                .section__block-wrap.section__block-wrap--select
+                  .section__block-left
+                    .form__field.form__field--checkbox
+                      .form__checkbox-wrap
+                        input.form__checkbox(type="checkbox" id="notificationReminders" name="")
+                        label(for="notificationReminders")
+                          i
+                          span!= "Email reminders"
+                          +iconSVG('check')
+
+                  .section__block-right
+                    span!= "Time of day"
+                    .form__field.form__field--select
+                      .form__select-wrap
+                        .form__select
+                          span.select__value
+                          select(name="")
+                            option(value="0" disabled selected hidden)!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                            option(value="1")!= "8:00 AM"
+                          span.select__icon-wrap
+                            +iconSVG('arrow')
+
+
+                p.section__block-subtitle!= "When a note is added to your classes"
+                .section__block-wrap
+                  .section__block-left
+                    .form__field.form__field--checkbox
+                      .form__checkbox-wrap
+                        input.form__checkbox(type="checkbox" id="notificationClasses" name="")
+                        label(for="notificationClasses")
+                          i
+                          span!= "Class 1"
+                          +iconSVG('check')
+
+                  .section__block-right
+                    a(
+                      href="#"
+                      title="" class=""
+                    )!= "View class"
+
+                p.section__block-subtitle!= "Email updates"
+                .section__block-wrap
+                  .section__block-left
+                    .form__field.form__field--checkbox
+                      .form__checkbox-wrap
+                        input.form__checkbox(type="checkbox" checked="checked" id="notificationEmail0" name="")
+                        label(for="notificationEmail0")
+                          i
+                          span!= "Menrva updates and newsletters"
+                          +iconSVG('check')
+
+                  .section__block-right
+                    span!= "infrequently"
+
+                .section__block-wrap
+                  .section__block-left
+                    .form__field.form__field--checkbox
+                      .form__checkbox-wrap
+                        input.form__checkbox(type="checkbox" id="notificationEmail1" name="")
+                        label(for="notificationEmail1")
+                          i
+                          span!= "Menrva promotional emails"
+                          +iconSVG('check')
+
+                  .section__block-right
+                    span!= "infrequently"
+
+                p.section__block-subtitle!= "What is your time zone?"
+                p.section__block-text!= "Menrva uses your time zone to send notifications at the correct time of day."
+                p.section__block-text.section__block-text--p!= "Auto-detect my time zone."
+
+                .form__field.form__field--select
+                  .form__select-wrap
+                    .form__select
+                      span.select__value
+                      select(name="")
+                        option(value="0" disabled selected hidden)!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                        option(value="1")!= "(GMT+00:00) UTC"
+                      span.select__icon-wrap
+                        +iconSVG('arrow')
+
+                .section__block-footer
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Save"

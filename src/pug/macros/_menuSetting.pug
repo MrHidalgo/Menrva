@@ -1,0 +1,15 @@
+// NAV :: START
+
+section#menu.menu
+  .menu__wrapper
+    a.menu__link(
+      href="#"
+      title="" class=""
+    )
+      .menu__link-icon
+        +iconSVG('arrow')
+      span!= "Navigation"
+
+  +navIcon('header', dataObj.navHeaderSetting)
+
+// NAV :: END

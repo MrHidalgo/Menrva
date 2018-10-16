@@ -1,6 +1,8 @@
 // HEADER :: START
 
 .header {
+  z-index: 1;
+  position: relative;
   background-color: $c-00bd70;
   box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
 

@@ -8,12 +8,82 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
 
     section#section.section
       .c-grid
         .section__wrapper
           .section__wrapper-left
+            include ./macros/_menuSetting
 
           .section__wrapper-right
-            
+
+            h1.section__title
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    +iconSVG('billing')
+                  span!= "Billing methods"
+
+                .section__title-right
+                  a(
+                    href="#"
+                    title="" class=""
+                  )
+                    +iconSVG('plus')
+
+            .section__block.section__block--billing
+              div
+                p.section__block-title!= "MasterCard ending in 0000"
+                p.section__block-subtitle!= "Primary"
+
+              div
+                p.section__block-title!= "EUR"
+
+              div
+                .dropdown
+                  a.dropdown__btn(href="#" id="billingDropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    span
+                    span
+                    span
+                  .dropdown-menu.dropdown-menu-right(aria-labelledby="billingDropdown0")
+                    a.dropdown-item(href="#")
+                      div
+                        +iconSVG('edit')
+                      span!= "Edit"
+                    a.dropdown-item(href="#")
+                      div
+                        +iconSVG('star-full')
+                      span!= "Set as primary"
+                    a.dropdown-item(href="#")
+                      div
+                        +iconSVG('remove')
+                      span!= "Remove"
+
+            .section__block.section__block--billing
+              div
+                p.section__block-title!= "Visa ending in 0000"
+                p.section__block-subtitle!= "Additional"
+
+              div
+                p.section__block-title!= "EUR"
+
+              div
+                .dropdown
+                  a.dropdown__btn(href="#" id="billingDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    span
+                    span
+                    span
+                  .dropdown-menu.dropdown-menu-right(aria-labelledby="billingDropdown1")
+                    a.dropdown-item(href="#")
+                      div
+                        +iconSVG('edit')
+                      span!= "Edit"
+                    a.dropdown-item(href="#")
+                      div
+                        +iconSVG('star-full')
+                      span!= "Set as primary"
+                    a.dropdown-item(href="#")
+                      div
+                        +iconSVG('remove')
+                      span!= "Remove"

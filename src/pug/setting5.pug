@@ -8,12 +8,155 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
 
     section#section.section
       .c-grid
         .section__wrapper
           .section__wrapper-left
+            include ./macros/_menuSetting
 
           .section__wrapper-right
-            
+
+            h1.section__title
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    +iconSVG('account')
+                  span!= "Account"
+
+            .section__block.section__block--upgrade
+              p.section__block-title!= "Upgrade to get more out of Menrva"
+              p.section__block-text!= "Get extra features like..."
+
+              .section__block-footer
+                button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Upgrade"
+
+            .section__block.section__block--support
+              p.section__block-title!= "You have a Menrva account"
+              p.section__block-text!= "Thanks for your support. Your upgrade expires on March 20, 2020."
+
+              .section__block-footer
+                button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "View order receipt"
+
+            .section__block.section__block--storage
+              p.section__block-title
+                span!= "Personal storage space"
+                span!= "Using 1.27 GB of 10 GB"
+
+              .section__block-progress
+
+              .section__block-footer
+                button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Upgrade"
+
+            .section__block
+              .section__block-title.section__block-title--wp
+                p!= "Night theme"
+                div
+                  a.c-btn.c-btn--bigH.c-btn--darkGreen(
+                    href="#"
+                    title="" class=""
+                  )!= "On"
+                  a.c-btn.c-btn--bigH.c-btn--lightGray(
+                    href="#"
+                    title="" class=""
+                  )!= "Off"
+
+            .section__block.section__block--google
+              p.section__block-title!= "Are you on Google?"
+              p.section__block-text!= "Connect your  Menrva  account with Google to log in with just one click."
+
+              .section__block-footer
+                button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Link your account to Google"
+
+            .section__block.section__block--facebook
+              p.section__block-title!= "Successfully linked with Facebook"
+              p.section__block-text.section__block-text--p!= "Menrva is linked with your Facebook account. You can now log in using Facebook!"
+              p.section__block-subtitle!= "3 Facebook friends on Menrva"
+
+              .section__block-img
+                div
+                  img(
+                      srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                      alt="" title=""
+                     )
+                div
+                  img(
+                      srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                      alt="" title=""
+                     )
+                div
+                  img(
+                      srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                      alt="" title=""
+                     )
+
+            .section__block.section__block--facebook
+              p.section__block-title!= "Successfully linked with Facebook"
+              p.section__block-text.section__block-text--p!= "Menrva is linked with your Facebook account. You can now log in using Facebook!"
+              p.section__block-subtitle!= "1 Facebook friend on Menrva"
+
+              .section__block-img
+                div
+                  img(
+                  srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                  alt="" title=""
+                  )
+
+            .section__block.section__block--updateEmail
+              p.section__block-title!= "Update your email address"
+              p.section__block-text!= "Your current email is username@gmail.com."
+
+              form.form(action="" method="")
+                .form__field.form__field--group
+                  .form__field.form__field--input
+                    label.form__label(for="updateEmailNew")!= "New email"
+                    .form__input-wrap
+                      input.form__input(type="text" id="updateEmailNew" name="" placeholder="")
+                    .form__notify.form__notify--hide
+
+                  .form__field.form__field--input
+                    label.form__label(for="menrvaPass")!= "Menrva password"
+                    .form__input-wrap
+                      input.form__input(type="text" id="menrvaPass" name="" placeholder="")
+                    .form__notify.form__notify--hide
+
+                .section__block-footer
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Change email"
+
+            .section__block.section__block--changePass
+              p.section__block-title!= "Change password"
+
+              form.form(action="" method="")
+                .form__field.form__field--group
+                  .form__field.form__field--input
+                    label.form__label(for="changePassCurr")!= "Current password"
+                    .form__input-wrap
+                      input.form__input(type="text" id="changePassCurr" name="" placeholder="")
+                    .form__notify.form__notify--hide
+
+                  .form__field.form__field--input
+                    label.form__label(for="changePassNew")!= "New password"
+                    .form__input-wrap
+                      input.form__input(type="text" id="changePassNew" name="" placeholder="")
+                    .form__notify.form__notify--hide
+
+                  .form__field.form__field--input
+                    label.form__label(for="changePassConfirm")!= "Confirm new password"
+                    .form__input-wrap
+                      input.form__input(type="text" id="changePassConfirm" name="" placeholder="")
+                    .form__notify.form__notify--hide
+
+                .section__block-footer
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Change password"
+
+            .section__block.section__block--pDelete
+              div
+                p.section__block-title!= "Permanently delete"
+                p.section__block-text!= "Be careful - this will delete all your data and cannot be undone."
+              div
+                a.c-btn.c-btn--bigH.c-btn--lightGray(
+                  href="#"
+                  title="" class=""
+                )!= "Delete account"
+

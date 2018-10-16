@@ -8,12 +8,81 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
 
     section#section.section
       .c-grid
         .section__wrapper
           .section__wrapper-left
+            include ./macros/_menuSetting
 
           .section__wrapper-right
-            
+
+            h1.section__title
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    +iconSVG('refer')
+                  span!= "Refer a friend"
+
+            .section__block.section__block--promo
+              p.section__block-title!= "Your promo code"
+              p.section__block-text!= "Share this link with friends - when they pay for their first month, we will give you and them a significant discount."
+
+              form.form(action="" method="")
+                .form__field.form__field--group
+                  .form__field.form__field--input
+                    .form__input-wrap
+                      input.form__input(type="text" id="" name="" placeholder="" value="Q4xFqmln")
+                    .form__notify.form__notify--hide
+
+                  .form__field.form__field--btn-group
+                    .form__field.form__field--btn
+                      button.c-btn.c-btn--bigH.c-btn--lightGray(type="submit")!= "Copy"
+                    .form__field.form__field--btn
+                      button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Share"
+
+            .section__block.section__block--referrals
+              p.section__block-title!= "Your referrals"
+              p.section__block-text!= "Refer friends each month to receive a maximum discount of 100%."
+
+              div.section__block-wrap
+                div.section__block-left
+                  div.section__block-img
+                    img(
+                      srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                      alt="" title=""
+                     )
+                  p!= "Stephen Evans"
+                  
+                div.section__block-right
+                  p!= "25% discount"
+                  span!= "Successful referral"
+
+              div.section__block-wrap
+                div.section__block-left
+                  div.section__block-img
+                    img(
+                      srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                      alt="" title=""
+                     )
+                  p!= "Stephen Evans"
+
+                div.section__block-right
+                  p!= "25% discount"
+                  span!= "Successful referral"
+
+              div.section__block-wrap
+                div.section__block-left
+                  div.section__block-img
+                    img(
+                      srcset="./img/img-user.png, ./img/img-user@2x.png 2x"
+                      alt="" title=""
+                     )
+                  p!= "Stephen Evans"
+
+                div.section__block-right
+                  p!= "25% discount"
+                  span!= "Successful referral"
+
+              p.section__block-subtitle!= "75% discount applies to billing cycle: Sep 12, 2018 — Oct 11, 2018"

@@ -8,11 +8,130 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
 
     section#section.section
       .c-grid
         .section__wrapper
           .section__wrapper-left
+            include ./macros/_menuSetting
 
           .section__wrapper-right
+
+            h1.section__title
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    +iconSVG('profile')
+                  span!= "Profile"
+
+            .section__block.section__block--photo
+              p.section__block-title!= "Profile photo"
+              p.section__block-text.section__block-text--p!= "Maximum size of 1MB. JPG, GIF, or PNG."
+
+              .section__block-wrap
+                .section__block-img
+                  img(
+                    srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                    alt="" title=""
+                  )
+
+                a.c-btn.c-btn--bigH.c-btn--darkGreen(href="#")!= "Change photo"
+                a.c-btn.c-btn--bigH.c-btn--lightGray(href="#")!= "Remove photo"
+
+
+            .section__block.section__block--username
+              p.section__block-title!= "Change username"
+              p.section__block-text!= "You can change your username only once."
+              p.section__block-text.section__block-text--p!= "To confirm it's really you, please verify your Menrva password."
+
+              form.form(action="" method="")
+                .form__field.form__field--input
+                  label.form__label(for="username")!= "Password"
+                  .form__input-wrap
+                    input.form__input(type="text" id="username" name="" placeholder="")
+                  .form__notify.form__notify--hide
+
+                .section__block-footer
+                  p!= "If you forgot your password, you can <a href='#'>reset your password.</a>"
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Continue"
+
+            .section__block.section__block--userOnce
+              p.section__block-title!= "Change username"
+              p.section__block-text!= "You can change your username only once."
+
+              form.form(action="" method="")
+                .form__field.form__field--input
+                  label.form__label(for="userOnceNew")!= "New username"
+                  .form__input-wrap
+                    input.form__input(type="text" id="userOnceNew" name="" placeholder="")
+                  .form__notify.form__notify--hide
+
+                .section__block-footer
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Permanently change my username"
+
+            .section__block.section__block--type
+              p.section__block-title!= "Account type"
+              p.section__block-subtitle!= "Select your account type:"
+
+              form.form(action="" method="")
+                .form__field.form__field--checkbox
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="accountType0" name="")
+                    label(for="accountType0")
+                      i
+                      span!= "Student"
+                      +iconSVG('check')
+                .form__field.form__field--checkbox
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="accountType1" name="" checked)
+                    label(for="accountType1")
+                      i
+                      span!= "Teacher"
+                      +iconSVG('check')
+                .form__field.form__field--checkbox
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="accountType2" name="")
+                    label(for="accountType2")
+                      i
+                      span!= "Professional"
+                      +iconSVG('check')
+                .form__field.form__field--checkbox
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="accountType3" name="")
+                    label(for="accountType3")
+                      i
+                      span!= "Other"
+                      +iconSVG('check')
+
+                .section__block-footer
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Save"
+
+            .section__block.section__block--appear
+              p.section__block-title!= "How you appear on Menrva"
+
+              form.form(action="" method="")
+                .form__field.form__field--checkbox.form__field--indicator
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="appear0" name="")
+                    label(for="appear0")
+                      i
+                      span!= "Show indicator when you're online"
+                      +iconSVG('check')
+                .form__field.form__field--checkbox
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="appear1" name="" checked)
+                    label(for="appear1")
+                      i
+                      span!= "Show your real name on Menrva"
+                      +iconSVG('check')
+                .form__field.form__field--checkbox
+                  .form__checkbox-wrap
+                    input.form__checkbox(type="checkbox" id="appear2" name="")
+                    label(for="appear2")
+                      i
+                      span!= "Show my profile in Google search results"
+                      +iconSVG('check')
+
+                .section__block-footer
+                  button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Save"

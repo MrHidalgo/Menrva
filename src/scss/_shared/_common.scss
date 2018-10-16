@@ -56,6 +56,10 @@
   &.c-btn--darkGray {
     background-color: $c-4a4a4a;
   }
+  &.c-btn--lightGray {
+    color: rgba($c-0e1111, 0.5);
+    background-color: $c-f4f4f4;
+  }
 
   &--bigH {
     max-width: 210px;
@@ -114,24 +118,6 @@
   }
 }
 // btn :: end
-
-// section
-.section {
-  &__wrapper {
-    display: flex;
-
-    &-left {
-      width: 285px;
-      padding-right: 30px;
-    }
-
-    &-right {
-      width: 100%;
-      max-width: calc(100% - 285px);
-    }
-  }
-}
-// section :: end
 
 // copyright
 .copyright {
@@ -443,12 +429,21 @@
         &:checked {
           + label {
             i {
-              border-color: $c-0e1111;
+              border-color: $c-019552;
             }
+
+            span {
+              .setting & {
+                color:  $c-0e1111;
+                @include transition(color);
+              }
+            }
+
             svg {
+              fill: $c-019552;
               opacity: 1;
-              transform: translateY(-50%) scale(0.75);
-              @include transition(opacity, transform);
+              transform: translateY(-50%) scale(0.7);
+              @include transition(fill, opacity, transform);
             }
           }
         }
@@ -483,7 +478,7 @@
           left: 2px;
           top: calc(50% + 1px);
           transform: translateY(-50%) scale(0);
-          @include transition(opacity, transform);
+          @include transition(fill, opacity, transform);
         }
 
         span {
@@ -491,6 +486,11 @@
           display: inline-block;
           padding-left: 30px;
           vertical-align: top;
+
+          .setting & {
+            color: #7f7f7f;
+            @include transition(color);
+          }
 
           a {
             color: $c-0e1111;
@@ -597,6 +597,10 @@
       transform: translateY(-50%);
       width: 24px;
       height: 24px;
+
+      svg {
+        fill: #9b9b9b;
+      }
     }
   }
 

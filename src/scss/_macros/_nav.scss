@@ -10,6 +10,22 @@
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    min-height: 54px;
+    padding-left: 20px;
+    color: $c-0e1111;
+    font-size: 12px;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+    }
+
     .nav--footer & {
       display: flex;
       padding-bottom: 16px;
