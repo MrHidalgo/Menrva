@@ -9,27 +9,27 @@ PageList:
   ready: 55
 
 - file:
-  titleName:
+  titleName: =====LOGIN=====
   ready: 0
 
 - file: login.html
   titleName: Login
   ready: 55
 - file: reset1.html
-  titleName: Reset Password - Modal
+  titleName: Reset Password
   ready: 55
 - file: reset2.html
-  titleName: Reset Password - Badge
+  titleName: Reset Password
   ready: 55
 - file: reset3.html
-  titleName: Reset Password - New
+  titleName: Reset Password
   ready: 55
 - file: reset4.html
-  titleName: Reset Password - New with notify
+  titleName: Reset Password
   ready: 55
 
 - file:
-  titleName:
+  titleName: =====SIGN UP=====
   ready: 0
 
 - file: signup1.html
@@ -43,7 +43,7 @@ PageList:
   ready: 55
 
 - file:
-  titleName:
+  titleName: =====SETTING=====
   ready: 0
 
 - file: setting1.html
@@ -56,16 +56,16 @@ PageList:
   titleName: Payment details promo
   ready: 55
 - file: setting4.html
-  titleName: Setting Profile
+  titleName: Profile
   ready: 55
 - file: setting5.html
-  titleName: Setting Account
+  titleName: Account
   ready: 55
 - file: setting6.html
-  titleName: Setting Notification
+  titleName: Notification
   ready: 55
 - file: setting7.html
-  titleName: Setting Refer a friend
+  titleName: Refer a friend
   ready: 55
 - file: setting9.html
   titleName: Refer a friend
@@ -81,5 +81,83 @@ PageList:
   ready: 55
 
 - file:
-  titleName:
+  titleName: =====SEARCH=====
+  ready: 0
+
+- file: search1.html
+  titleName: Result
+  ready: 0
+- file: search2.html
+  titleName: Filter
+  ready: 0
+- file: search3.html
+  titleName: Empty
+  ready: 0
+
+- file:
+  titleName: =====RECENT=====
+  ready: 0
+
+- file: recent1.html
+  titleName: Activity
+  ready: 0
+- file: recent2.html
+  titleName: Search
+  ready: 0
+
+- file:
+  titleName: =====PROFILE=====
+  ready: 0
+
+- file: profile1.html
+  titleName: My profile
+  ready: 0
+- file: profile2.html
+  titleName: Other profile
+  ready: 0
+- file: profile3.html
+  titleName: Report this user
+  ready: 0
+- file: profile4.html
+  titleName: Report this note
+  ready: 0
+- file: profile5.html
+  titleName: Send feedback 1
+  ready: 0
+- file: profile6.html
+  titleName: Send feedback 2
+  ready: 0
+
+- file:
+  titleName: =====FORUM=====
+  ready: 0
+
+- file: forum1.html
+  titleName: Forum
+  ready: 0
+- file: forum2.html
+  titleName: Manage your feed
+  ready: 0
+- file: forum3.html
+  titleName: Topic name 1
+  ready: 0
+- file: forum4.html
+  titleName: Topic name 2
+  ready: 0
+- file: forum5.html
+  titleName: Manage your feed
+  ready: 0
+- file: forum6.html
+  titleName: Search
+  ready: 0
+
+- file:
+  titleName: =====SCHEDULE=====
+  ready: 0
+
+- file: schedule1.html
+  titleName: Schedule 1
+  ready: 0
+- file: schedule12.html
+  titleName: Schedule 1
   ready: 0
