@@ -36,6 +36,72 @@ header#header.header
                     href="#"
                     title="" class=""
                   )!= "Lorem Ipsum"
+                li.search__drop-item
+                  a(
+                    href="#"
+                    title="" class=""
+                  )!= "Lorem Ipsum is simply dummy"
+                li.search__drop-item
+                  a(
+                    href="#"
+                    title="" class=""
+                  )!= "Lorem Ipsum"
+                li.search__drop-item
+                  a(
+                    href="#"
+                    title="" class=""
+                  )!= "Lorem Ipsum is simply dummy"
+                li.search__drop-item
+                  a(
+                    href="#"
+                    title="" class=""
+                  )!= "Lorem Ipsum"
+
+          .profile
+            .profile__left
+              a.profile__link(
+                href="#"
+                title="" class=""
+              )
+                +iconSVG('switcher-add')
+                span!= "Create note"
+
+            .profile__right
+              .dropdown
+                a.dropdown__btn(href="#" id="profileDropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                  img(
+                    srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                    alt="" title=""
+                  )
+                .dropdown-menu.dropdown-menu-right(aria-labelledby="profileDropdown0")
+                  .dropdown-item
+                    .dropdown-item--left
+                      .dropdown-item-circle
+                        img(
+                        srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                        alt="" title=""
+                        )
+                    .dropdown-item--right
+                      p!= "User Name"
+                      span!= "Student"
+
+                  a.dropdown-item(href="#")
+                    div
+                      +iconSVG('profile')
+                    span!= "Profile"
+                  a.dropdown-item(href="#")
+                    div
+                      +iconSVG('logout')
+                    span!= "Log out"
+                  a.dropdown-item(href="#")
+                    div
+                      +iconSVG('setting')
+                    span!= "Setting"
+                  a.dropdown-item(href="#")
+                    div
+                      +iconSVG('send-feedback')
+                    span!= "Send feedback"
+
 
 
 // HEADER :: END

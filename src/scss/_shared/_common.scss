@@ -902,11 +902,13 @@
 
   &__drop {
     display: none;
+    overflow-y: auto;
     position: absolute;
     top: calc(100% + 12px);
     left: 0;
     width: 100%;
     max-width: calc(100% - 54px);
+    max-height: calc((54px * 5) + 20px);
     padding: 10px 0;
     border-radius: 4px;
     background-color: $c-white;
@@ -958,5 +960,181 @@
   }
 }
 // search :: end
+
+// profile
+.profile {
+  display: flex;
+  align-items: center;
+
+  &__left {
+    margin-right: 40px;
+  }
+
+  &__right {
+    .dropdown {
+      &__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: 2px solid $c-white;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &-menu {
+        min-width: 255px;
+        transform: translate3d(-205px, 74px, 0px) !important;
+        padding: 10px 0;
+        margin: 0;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 14px 0 rgba($c-black, 0.13);
+
+        &:before {
+          content: "";
+          z-index: -1;
+          position: absolute;
+          top: -7px;
+          right: 20px;
+          width: 15px;
+          height: 20px;
+          transform: rotate(45deg);
+          background-color: $c-white;
+          box-shadow: 0 2px 14px 0 rgba($c-black, 0.13);
+        }
+
+        &:after {
+          content: '';
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          background-color: $c-white;
+        }
+      }
+
+      &-item {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 54px;
+        padding: 0 21px;
+        border-top: 1px solid #e8e8e8;
+        @include transition(background-color);
+
+        &:first-child {
+          display: flex;
+          align-items: center;
+          padding: 0 17px;
+          border-top: none;
+
+          &:hover {
+            background-color: transparent;
+          }
+
+          .dropdown-item-circle {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 38px;
+            height: 38px;
+            border-radius: 100%;
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .dropdown-item--left {
+            width: 48px;
+            padding-right: 10px;
+            margin: 0;
+          }
+
+          .dropdown-item--right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: calc(100% - 48px);
+            margin: 0;
+
+            p,
+            span {
+              line-height: 1.2;
+            }
+
+            p {
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            span {
+              display: block;
+              font-size: 10px;
+            }
+          }
+        }
+
+        &:hover {
+          @include transition(background-color);
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          margin-right: 14px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $c-white;
+
+    svg {
+      margin-right: 15px;
+      fill: $c-white;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
+// profile :: end
 
 // COMMON :: END
