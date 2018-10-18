@@ -3,7 +3,7 @@
 header#header.header
   .c-grid
     .header__wrapper
-      .header__wrapper-left
+      .header__wrapper-left(class!= (login) ? 'header__wrapper-start':'')
         +logotypeText("header", "", "Menrva")
 
       if(!login)
@@ -18,5 +18,24 @@ header#header.header
             title="" class=""
           )!= "Sign up"
       else
+        .header__wrapper-end
+          .search
+            .search__wrapper
+              input.search__input(type="text" name="searchValue" placeholder="Search" search-js)
+              button.search__btn(type="submit")
+                +iconSVG('search')
+            .search__drop(search-drop-js)
+              ul.search__drop-list
+                li.search__drop-item
+                  a(
+                    href="#" 
+                    title="" class=""
+                  )!= "Lorem Ipsum is simply dummy"
+                li.search__drop-item
+                  a(
+                    href="#"
+                    title="" class=""
+                  )!= "Lorem Ipsum"
+
 
 // HEADER :: END

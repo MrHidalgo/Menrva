@@ -55,6 +55,23 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
+  const initSearch = () => {
+    $('[search-js]').on('input', (ev) => {
+      const elem = $(ev.currentTarget),
+        parent = elem.closest('.search');
+
+      if(elem.val().length > 0) {
+        parent.find('[search-drop-js]').slideDown(300);
+      } else {
+        parent.find('[search-drop-js]').slideUp(300);
+      }
+    });
+  };
+
+
 
   /**
    * @description Init all method
@@ -67,6 +84,7 @@ $(document).ready((ev) => {
     // lib
     // callback
     initSelect();
+    initSearch();
   };
   initJquery();
 });

@@ -16,6 +16,18 @@
     &-right {
       width: 50%;
     }
+
+    &-start {
+      width: 188px;
+    }
+
+    &-end {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: calc(100% - 188px);
+    }
   }
 
   &__link {

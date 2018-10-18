@@ -182,6 +182,11 @@
           align-items: center;
           min-height: 54px;
           padding: 0 21px;
+          @include transition(background-color);
+
+          &:hover {
+            @include transition(background-color);
+          }
 
           > div {
             display: flex;

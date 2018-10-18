@@ -887,4 +887,76 @@
 }
 // modal :: end
 
+// search
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 381px;
+  height: 40px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__drop {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 100%;
+    max-width: calc(100% - 54px);
+    padding: 10px 0;
+    border-radius: 4px;
+    background-color: $c-white;
+    box-shadow: 0 2px 14px 0 rgba($c-black, 0.13);
+
+    a {
+      display: flex;
+      align-items: center;
+      min-height: 54px;
+      padding: 0 20px;
+      color: $c-0e1111;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: #f8f9fa;
+        @include transition(background-color);
+      }
+    }
+  }
+
+  &__input {
+    outline: none;
+    width: 100%;
+    max-width: calc(100% - 54px);
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    @include inputPlaceholder {
+      color: $c-0e1111;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__btn {
+    outline: none;
+    width: 54px;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #019552;
+
+    svg {
+      fill: $c-white;
+    }
+  }
+}
+// search :: end
+
 // COMMON :: END

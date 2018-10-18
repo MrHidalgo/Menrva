@@ -33,8 +33,22 @@
           }
         }
 
+        &-menu {
+          border: none;
+          box-shadow: 0 2px 14px 0 rgba($c-black, 0.13);
+        }
+
         .dropdown-item {
+          display: flex;
+          align-items: center;
+          min-height: 54px;
+          padding: 0 20px;
           font-size: 12px;
+          @include transition(background-color);
+
+          &:hover {
+            @include transition(background-color);
+          }
         }
       }
     }
