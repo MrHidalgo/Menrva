@@ -182,8 +182,26 @@
     margin-bottom: 20px;
 
     &.is-invalid {
-      .form__input {
+      .form__input,
+      .form__select {
         border-color: #d0021b;
+      }
+
+      &.form__field--checkbox {
+        u {
+          border-color: #d0021b;
+        }
+      }
+
+      input[type='radio'] {
+        + label {
+          &:before {
+            border-color: #d0021b;
+          }
+          &:after {
+            background-color: #d0021b;
+          }
+        }
       }
     }
 
