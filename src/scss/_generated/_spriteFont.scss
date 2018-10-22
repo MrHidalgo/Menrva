@@ -45,74 +45,95 @@
 	@if $filename == error {
 		$char: "\E006";
 	}
-	@if $filename == i-fb {
+	@if $filename == forum {
 		$char: "\E007";
 	}
-	@if $filename == i-gp {
+	@if $filename == i-fb {
 		$char: "\E008";
 	}
-	@if $filename == i-tw {
+	@if $filename == i-gp {
 		$char: "\E009";
 	}
-	@if $filename == info {
+	@if $filename == i-tw {
 		$char: "\E00A";
 	}
-	@if $filename == keyboard {
+	@if $filename == info {
 		$char: "\E00B";
 	}
-	@if $filename == logout {
+	@if $filename == keyboard {
 		$char: "\E00C";
 	}
-	@if $filename == notification {
+	@if $filename == like {
 		$char: "\E00D";
 	}
-	@if $filename == play {
+	@if $filename == logout {
 		$char: "\E00E";
 	}
-	@if $filename == plus {
+	@if $filename == notes {
 		$char: "\E00F";
 	}
-	@if $filename == prev-next {
+	@if $filename == notification {
 		$char: "\E010";
 	}
-	@if $filename == profile {
+	@if $filename == play {
 		$char: "\E011";
 	}
-	@if $filename == refer {
+	@if $filename == plus {
 		$char: "\E012";
 	}
-	@if $filename == remove {
+	@if $filename == prev-next {
 		$char: "\E013";
 	}
-	@if $filename == search {
+	@if $filename == profile {
 		$char: "\E014";
 	}
-	@if $filename == send-feedback {
+	@if $filename == recent {
 		$char: "\E015";
 	}
-	@if $filename == setting {
+	@if $filename == refer {
 		$char: "\E016";
 	}
-	@if $filename == shuffle {
+	@if $filename == remove {
 		$char: "\E017";
 	}
-	@if $filename == star-full {
+	@if $filename == save {
 		$char: "\E018";
 	}
-	@if $filename == star {
+	@if $filename == schedule {
 		$char: "\E019";
 	}
-	@if $filename == swap {
+	@if $filename == search {
 		$char: "\E01A";
 	}
-	@if $filename == switcher-add {
+	@if $filename == select {
 		$char: "\E01B";
 	}
-	@if $filename == switcher {
+	@if $filename == send-feedback {
 		$char: "\E01C";
 	}
-	@if $filename == text {
+	@if $filename == setting {
 		$char: "\E01D";
+	}
+	@if $filename == shuffle {
+		$char: "\E01E";
+	}
+	@if $filename == star-full {
+		$char: "\E01F";
+	}
+	@if $filename == star {
+		$char: "\E020";
+	}
+	@if $filename == swap {
+		$char: "\E021";
+	}
+	@if $filename == switcher-add {
+		$char: "\E022";
+	}
+	@if $filename == switcher {
+		$char: "\E023";
+	}
+	@if $filename == text {
+		$char: "\E024";
 	}
 
 	@return $char;
@@ -153,6 +174,10 @@
 	@include icon(error);
 
 }
+.icon-forum {
+	@include icon(forum);
+
+}
 .icon-i-fb {
 	@include icon(i-fb);
 
@@ -173,8 +198,16 @@
 	@include icon(keyboard);
 
 }
+.icon-like {
+	@include icon(like);
+
+}
 .icon-logout {
 	@include icon(logout);
+
+}
+.icon-notes {
+	@include icon(notes);
 
 }
 .icon-notification {
@@ -197,6 +230,10 @@
 	@include icon(profile);
 
 }
+.icon-recent {
+	@include icon(recent);
+
+}
 .icon-refer {
 	@include icon(refer);
 
@@ -205,8 +242,20 @@
 	@include icon(remove);
 
 }
+.icon-save {
+	@include icon(save);
+
+}
+.icon-schedule {
+	@include icon(schedule);
+
+}
 .icon-search {
 	@include icon(search);
+
+}
+.icon-select {
+	@include icon(select);
 
 }
 .icon-send-feedback {

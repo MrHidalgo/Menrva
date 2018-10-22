@@ -161,3 +161,38 @@ PageList:
 - file: schedule12.html
   titleName: Schedule 1
   ready: 0
+
+- file:
+  titleName: =====NOTES=====
+  ready: 0
+
+- file: notes1.html
+  titleName: Main
+  ready: 55
+- file: notes2.html
+  titleName: Export
+  ready: 0
+- file: notes3.html
+  titleName: Remove
+  ready: 0
+- file: notes4.html
+  titleName: Settings
+  ready: 0
+- file: notes5.html
+  titleName: Great work
+  ready: 0
+- file: notes6.html
+  titleName: Review level
+  ready: 0
+- file: notes7.html
+  titleName: Save to course
+  ready: 0
+- file: notes8.html
+  titleName: Create a new course
+  ready: 0
+- file: notes9.html
+  titleName: End session?
+  ready: 0
+- file: notes10.html
+  titleName: Discard work?
+  ready: 0
