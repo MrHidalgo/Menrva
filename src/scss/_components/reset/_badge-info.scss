@@ -15,8 +15,10 @@
     display: flex;
     align-items: center;
 
-    svg {
+    i {
       margin-right: 10px;
+      color: $c-white;
+      font-size: 20px;
     }
   }
 
@@ -26,8 +28,9 @@
     top: 50%;
     transform: translateY(-50%);
 
-    svg {
-      fill: $c-white;
+    i {
+      color: $c-white;
+      font-size: 13px;
     }
   }
 }

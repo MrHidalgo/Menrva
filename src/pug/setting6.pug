@@ -22,7 +22,7 @@ block content
               .section__title-wrap
                 .section__title-left
                   .section__title-icon
-                    +iconSVG('notification')
+                    i.icon-font.icon-notification
                   span!= "Notification"
 
             .section__block.section__block--notification
@@ -35,9 +35,9 @@ block content
                       .form__checkbox-wrap
                         input.form__checkbox(type="checkbox" id="notificationReminders" name="")
                         label(for="notificationReminders")
-                          i
+                          u
                           span!= "Email reminders"
-                          +iconSVG('check')
+                          i.icon-font.icon-check
 
                   .section__block-right
                     span!= "Time of day"
@@ -60,7 +60,7 @@ block content
                             option(value="1")!= "8:00 AM"
                             option(value="1")!= "8:00 AM"
                           span.select__icon-wrap
-                            +iconSVG('arrow')
+                            i.icon-font.icon-arrow
 
 
                 p.section__block-subtitle!= "When a note is added to your classes"
@@ -70,9 +70,9 @@ block content
                       .form__checkbox-wrap
                         input.form__checkbox(type="checkbox" id="notificationClasses" name="")
                         label(for="notificationClasses")
-                          i
+                          u
                           span!= "Class 1"
-                          +iconSVG('check')
+                          i.icon-font.icon-check
 
                   .section__block-right
                     a(
@@ -87,9 +87,9 @@ block content
                       .form__checkbox-wrap
                         input.form__checkbox(type="checkbox" checked="checked" id="notificationEmail0" name="")
                         label(for="notificationEmail0")
-                          i
+                          u
                           span!= "Menrva updates and newsletters"
-                          +iconSVG('check')
+                          i.icon-font.icon-check
 
                   .section__block-right
                     span!= "infrequently"
@@ -100,9 +100,9 @@ block content
                       .form__checkbox-wrap
                         input.form__checkbox(type="checkbox" id="notificationEmail1" name="")
                         label(for="notificationEmail1")
-                          i
+                          u
                           span!= "Menrva promotional emails"
-                          +iconSVG('check')
+                          i.icon-font.icon-check
 
                   .section__block-right
                     span!= "infrequently"
@@ -130,7 +130,7 @@ block content
                         option(value="1")!= "(GMT+00:00) UTC"
                         option(value="1")!= "(GMT+00:00) UTC"
                       span.select__icon-wrap
-                        +iconSVG('arrow')
+                        i.icon-font.icon-arrow
 
                 .section__block-footer
                   button.c-btn.c-btn--bigH.c-btn--darkGreen(type="submit")!= "Save"

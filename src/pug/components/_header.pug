@@ -23,7 +23,7 @@ header#header.header
             .search__wrapper
               input.search__input(type="text" name="searchValue" placeholder="Search" search-js)
               button.search__btn(type="submit")
-                +iconSVG('search')
+                i.icon-font.icon-search
             .search__drop(search-drop-js)
               ul.search__drop-list
                 li.search__drop-item
@@ -63,7 +63,7 @@ header#header.header
                 href="#"
                 title="" class=""
               )
-                +iconSVG('switcher-add')
+                i.icon-font.icon-switcher-add
                 span!= "Create note"
 
             .profile__right
@@ -87,19 +87,19 @@ header#header.header
 
                   a.dropdown-item(href="#")
                     div
-                      +iconSVG('profile')
+                      i.icon-font.icon-profile
                     span!= "Profile"
                   a.dropdown-item(href="#")
                     div
-                      +iconSVG('logout')
+                      i.icon-font.icon-logout
                     span!= "Log out"
                   a.dropdown-item(href="#")
                     div
-                      +iconSVG('setting')
+                      i.icon-font.icon-setting
                     span!= "Setting"
                   a.dropdown-item(href="#")
                     div
-                      +iconSVG('send-feedback')
+                      i.icon-font.icon-send-feedback
                     span!= "Send feedback"
 
 

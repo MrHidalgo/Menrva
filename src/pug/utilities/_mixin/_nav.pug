@@ -25,12 +25,12 @@ mixin navIcon(classMod, arrData)
   nav.nav(class!= "nav--" + classMod)
     ul.nav__list
       each val, idx in arrData
-        li.nav__item(class!= "nav__item-" + idx)
+        li.nav__item(class!= "nav__item-" + idx + " nav__item-" + arrData[idx].icon)
           a.nav__link(
             href!= arrData[idx].href
             title=""
             class="nav__link-" + idx
           )
             .nav__link-icon
-              +iconSVG(arrData[idx].icon)
+              i.icon-font(class!= "icon-" + arrData[idx].icon)
             span.nav__link-text!= arrData[idx].name

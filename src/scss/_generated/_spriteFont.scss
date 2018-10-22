@@ -1,0 +1,247 @@
+@font-face {
+	font-family: "iconFont";
+	src: url('../fonts/iconFont.eot');
+	src: url('../fonts/iconFont.eot?#iefix') format('eot'),
+		url('../fonts/iconFont.woff2') format('woff2'),
+		url('../fonts/iconFont.woff') format('woff'),
+		url('../fonts/iconFont.ttf') format('truetype'),
+		url('../fonts/iconFont.svg#iconFont') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "iconFont", sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == account {
+		$char: "\E001";
+	}
+	@if $filename == arrow {
+		$char: "\E002";
+	}
+	@if $filename == billing {
+		$char: "\E003";
+	}
+	@if $filename == check {
+		$char: "\E004";
+	}
+	@if $filename == edit {
+		$char: "\E005";
+	}
+	@if $filename == error {
+		$char: "\E006";
+	}
+	@if $filename == i-fb {
+		$char: "\E007";
+	}
+	@if $filename == i-gp {
+		$char: "\E008";
+	}
+	@if $filename == i-tw {
+		$char: "\E009";
+	}
+	@if $filename == info {
+		$char: "\E00A";
+	}
+	@if $filename == keyboard {
+		$char: "\E00B";
+	}
+	@if $filename == logout {
+		$char: "\E00C";
+	}
+	@if $filename == notification {
+		$char: "\E00D";
+	}
+	@if $filename == play {
+		$char: "\E00E";
+	}
+	@if $filename == plus {
+		$char: "\E00F";
+	}
+	@if $filename == prev-next {
+		$char: "\E010";
+	}
+	@if $filename == profile {
+		$char: "\E011";
+	}
+	@if $filename == refer {
+		$char: "\E012";
+	}
+	@if $filename == remove {
+		$char: "\E013";
+	}
+	@if $filename == search {
+		$char: "\E014";
+	}
+	@if $filename == send-feedback {
+		$char: "\E015";
+	}
+	@if $filename == setting {
+		$char: "\E016";
+	}
+	@if $filename == shuffle {
+		$char: "\E017";
+	}
+	@if $filename == star-full {
+		$char: "\E018";
+	}
+	@if $filename == star {
+		$char: "\E019";
+	}
+	@if $filename == swap {
+		$char: "\E01A";
+	}
+	@if $filename == switcher-add {
+		$char: "\E01B";
+	}
+	@if $filename == switcher {
+		$char: "\E01C";
+	}
+	@if $filename == text {
+		$char: "\E01D";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-account {
+	@include icon(account);
+
+}
+.icon-arrow {
+	@include icon(arrow);
+
+}
+.icon-billing {
+	@include icon(billing);
+
+}
+.icon-check {
+	@include icon(check);
+
+}
+.icon-edit {
+	@include icon(edit);
+
+}
+.icon-error {
+	@include icon(error);
+
+}
+.icon-i-fb {
+	@include icon(i-fb);
+
+}
+.icon-i-gp {
+	@include icon(i-gp);
+
+}
+.icon-i-tw {
+	@include icon(i-tw);
+
+}
+.icon-info {
+	@include icon(info);
+
+}
+.icon-keyboard {
+	@include icon(keyboard);
+
+}
+.icon-logout {
+	@include icon(logout);
+
+}
+.icon-notification {
+	@include icon(notification);
+
+}
+.icon-play {
+	@include icon(play);
+
+}
+.icon-plus {
+	@include icon(plus);
+
+}
+.icon-prev-next {
+	@include icon(prev-next);
+
+}
+.icon-profile {
+	@include icon(profile);
+
+}
+.icon-refer {
+	@include icon(refer);
+
+}
+.icon-remove {
+	@include icon(remove);
+
+}
+.icon-search {
+	@include icon(search);
+
+}
+.icon-send-feedback {
+	@include icon(send-feedback);
+
+}
+.icon-setting {
+	@include icon(setting);
+
+}
+.icon-shuffle {
+	@include icon(shuffle);
+
+}
+.icon-star-full {
+	@include icon(star-full);
+
+}
+.icon-star {
+	@include icon(star);
+
+}
+.icon-swap {
+	@include icon(swap);
+
+}
+.icon-switcher-add {
+	@include icon(switcher-add);
+
+}
+.icon-switcher {
+	@include icon(switcher);
+
+}
+.icon-text {
+	@include icon(text);
+
+}

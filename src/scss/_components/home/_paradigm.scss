@@ -59,19 +59,20 @@
         box-shadow: none;
         @include transition(box-shadow);
 
-        svg {
-          transform: scale(1.05);
-          fill: $c-019552;
-          @include transition(transform, fill);
+        i {
+          transform: scale(0.9);
+          color: lighten($c-019552, 5%);
+          @include transition(color, transform);
         }
       }
 
-      svg {
+      i {
         position: relative;
         left: 1px;
-        fill: $c-00bd70;
-        transform: scale(1.2);
-        @include transition(transform, fill);
+        display: flex;
+        font-size: 24px;
+        color: $c-019552;
+        @include transition(color, transform);
       }
     }
   }

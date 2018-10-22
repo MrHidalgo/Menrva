@@ -9,6 +9,34 @@
     font-weight: 600;
   }
 
+  &-item {
+    &-profile {
+      i {
+        font-size: 18px;
+      }
+    }
+    &-account {
+      i {
+        font-size: 18px;
+      }
+    }
+    &-notification {
+      i {
+        font-size: 20px;
+      }
+    }
+    &-refer {
+      i {
+        font-size: 21px;
+      }
+    }
+    &-billing {
+      i {
+        font-size: 15px;
+      }
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -24,11 +52,16 @@
       width: 24px;
       height: 24px;
       margin-right: 15px;
+
+      i {
+        font-size: 20px;
+      }
     }
 
     .nav--footer & {
       display: flex;
       padding-bottom: 16px;
+      padding-left: 0;
       font-size: 14px;
       color: rgba($c-white, 0.8);
       @include transition(color);

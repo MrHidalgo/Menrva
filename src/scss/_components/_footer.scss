@@ -17,6 +17,8 @@
 
       .dropdown {
         .btn {
+          display: flex;
+          align-items: center;
           outline: none;
           background-color: transparent;
           color: $c-white;
@@ -28,8 +30,10 @@
             display: none;
           }
 
-          svg {
-            margin-left: 10px;
+          i {
+            margin-left: 16px;
+            color: $c-white;
+            font-size: 7px;
           }
         }
 

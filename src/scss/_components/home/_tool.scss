@@ -47,17 +47,9 @@
       min-height: 72px;
     }
 
-    svg {
-      fill: $c-0e1111;
-      transform: scale(1.2);
-    }
-
     a {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
+      color: $c-0e1111;
     }
 
     &-left {
@@ -131,6 +123,7 @@
         height: 18px;
         border-radius: 100%;
         background-color: $c-019552;
+        box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
       }
     }
 
@@ -145,6 +138,30 @@
           transform: rotate3d(0,1,0,180deg);
         }
       }
+    }
+  }
+
+  .icon {
+    &-star {
+      font-size: 22px;
+    }
+    &-setting {
+      font-size: 25px;
+    }
+    &-text {
+      font-size: 12px;
+    }
+    &-swap {
+      font-size: 25px;
+    }
+    &-prev-next {
+      font-size: 25px;
+    }
+    &-keyboard {
+      font-size: 18px;
+    }
+    &-shuffle {
+      font-size: 21px;
     }
   }
 }

@@ -84,6 +84,10 @@
       width: 40px;
       height: 100%;
       padding-left: 20px;
+
+      i {
+        color: $c-white;
+      }
     }
 
     > span {
@@ -95,11 +99,19 @@
   &--gp {
     margin-bottom: 20px;
     background-color: $c-bf2339;
+
+    i {
+      font-size: 14px;
+    }
   }
 
   &--fb {
     margin-bottom: 30px;
     background-color: $c-03396c;
+
+    i {
+      font-size: 16px;
+    }
 
     .c-modal--refer & {
       margin-bottom: 0;
@@ -110,6 +122,10 @@
   &--tw {
     margin-bottom: 30px;
     background-color: $c-1795cc;
+
+    i {
+      font-size: 15px;
+    }
 
     .c-modal--refer & {
       margin-bottom: 0;
@@ -140,7 +156,7 @@
     margin-right: 11px;
 
     &:hover {
-      .icon-svg {
+      i {
         opacity: 0.8;
         @include transition(opacity);
       }
@@ -150,10 +166,9 @@
       margin-right: 0;
     }
 
-    .icon-svg {
-      width: 22px;
-      height: 22px;
-      fill: $c-white;
+    i {
+      color: $c-white;
+      font-size: 24px;
       @include transition(opacity);
     }
   }
@@ -166,7 +181,11 @@
     position: relative;
     margin-bottom: 20px;
 
-    &--input {}
+    &.is-invalid {
+      .form__input {
+        border-color: #d0021b;
+      }
+    }
 
     &--radiogroup {
       margin-bottom: 40px;
@@ -428,7 +447,7 @@
         left: 0;
         &:checked {
           + label {
-            i {
+            u {
               border-color: $c-019552;
             }
 
@@ -439,11 +458,11 @@
               }
             }
 
-            svg {
-              fill: $c-019552;
+            i {
               opacity: 1;
-              transform: translateY(-50%) scale(0.7);
-              @include transition(fill, opacity, transform);
+              color: $c-019552;
+              transform: translate(-50%, -50%) scale(0.7);
+              @include transition(color, opacity, transform);
             }
           }
         }
@@ -455,7 +474,7 @@
         display: block;
         width: 100%;
 
-        i {
+        u {
           cursor: pointer;
           position: absolute;
           display: inline-block;
@@ -471,14 +490,15 @@
           transition: all 0.3s ease-in-out;
         }
 
-        svg {
+        i {
           opacity: 0;
           position: absolute;
           display: inline-block;
-          left: 2px;
+          left: 10px;
           top: calc(50% + 1px);
-          transform: translateY(-50%) scale(0);
-          @include transition(fill, opacity, transform);
+          transform: translate(-50%, -50%) scale(0);
+          font-size: 12px;
+          @include transition(color, opacity, transform);
         }
 
         span {
@@ -598,8 +618,9 @@
       width: 24px;
       height: 24px;
 
-      svg {
-        fill: #9b9b9b;
+      i {
+        color: #9b9b9b;
+        font-size: 7px;
       }
     }
   }
@@ -664,13 +685,15 @@
       padding-right: 10px;
 
       &-error {
-        svg {
-          fill: #d0021b;
+        i {
+          color: #d0021b;
+          font-size: 11px;
         }
       }
       &-check {
-        svg {
-          fill: $c-019552;
+        i {
+          color: $c-019552;
+          font-size: 10px;
         }
       }
     }
@@ -779,12 +802,14 @@
 
     a {
       display: flex;
+      align-items: center;
       justify-content: flex-end;
+      height: 30px;
       width: 30px;
 
-      svg {
-        fill: #9b9b9b;
-        transform: scale(1.2);
+      i {
+        color: #9b9b9b;
+        font-size: 16px;
       }
     }
   }
@@ -872,8 +897,9 @@
         padding-right: 20px;
         text-align: center;
 
-        svg {
-          fill: $c-019552;
+        i {
+          color: $c-019552;
+          font-size: 12px;
         }
       }
 
@@ -947,6 +973,10 @@
 
   &__btn {
     outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 54px;
     height: 100%;
     border: none;
@@ -954,8 +984,9 @@
     border-bottom-right-radius: 4px;
     background-color: #019552;
 
-    svg {
-      fill: $c-white;
+    i {
+      color: $c-white;
+      font-size: 15px;
     }
   }
 }
@@ -1110,6 +1141,10 @@
           width: 24px;
           height: 24px;
           margin-right: 14px;
+
+          i {
+            font-size: 20px;
+          }
         }
 
         span {
@@ -1124,9 +1159,10 @@
     align-items: center;
     color: $c-white;
 
-    svg {
+    i {
       margin-right: 15px;
-      fill: $c-white;
+      color: $c-white;
+      font-size: 19px;
     }
 
     span {

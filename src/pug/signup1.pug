@@ -14,22 +14,22 @@ block content
         .c-modal__header.d-flex.align-items-center
           p.c-modal__title.subtitle!= "Sign up"
           a.c-modal__close(
-          href=""
-          title="" class=""
+            href=""
+            title="" class=""
           )
-            +iconSVG('error')
+            i.icon-font.icon-error
 
         .c-modal__body
           p.c-modal__info!= "or <a href='#'>log in to your account</a>"
 
           button.c-btn.c-btn--bigH.c-btn--gp(type="button")
             div
-              +iconSVG('i-gp')
+              i.icon-font.icon-i-gp
             span!= "Log in with Google"
 
           button.c-btn.c-btn--bigH.c-btn--fb(type="button")
             div
-              +iconSVG('i-fb')
+              i.icon-font.icon-i-fb
             span!= "Log in with Facebook"
 
           form.form(action="" method="")
@@ -53,7 +53,7 @@ block content
                     option(value="november")!= "November"
                     option(value="december")!= "December"
                   span.select__icon-wrap
-                    +iconSVG('arrow')
+                    i.icon-font.icon-arrow
               .form__select-wrap
                 .form__select
                   span.select__value
@@ -62,7 +62,7 @@ block content
                      each val, idx in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
                       option(value!= val)!= val
                   span.select__icon-wrap
-                    +iconSVG('arrow')
+                    i.icon-font.icon-arrow
               .form__select-wrap
                 .form__select
                   span.select__value
@@ -89,7 +89,7 @@ block content
                     option(value="2017")!= "2017"
                     option(value="2018")!= "2018"
                   span.select__icon-wrap
-                    +iconSVG('arrow')
+                    i.icon-font.icon-arrow
 
               .form__notify.form__notify--hide
 
@@ -115,9 +115,9 @@ block content
               .form__checkbox-wrap
                 input.form__checkbox(type="checkbox" id="signupRadio" name="")
                 label(for="signupRadio")
-                  i
+                  u
                   span!= "I accept Menrva’s <a href=''>Terms of Service</a> and <a href=''>Privacy Policy</a>"
-                  +iconSVG('check')
+                  i.icon-font.icon-check
 
             .form__field.form__field--btn
               button.form__btn.form__btn--full(type="submit")!= "Continue"
