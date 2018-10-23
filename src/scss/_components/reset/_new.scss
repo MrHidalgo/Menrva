@@ -17,6 +17,11 @@
 
   &__text {
     padding-bottom: 30px;
+
+    a {
+      color: $c-black;
+      font-weight: 600;
+    }
   }
 }
 
