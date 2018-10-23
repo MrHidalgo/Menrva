@@ -134,22 +134,22 @@ PageList:
 
 - file: forum1.html
   titleName: Forum
-  ready: 0
+  ready: 1
 - file: forum2.html
   titleName: Manage your feed
-  ready: 0
+  ready: 55
 - file: forum3.html
   titleName: Topic name 1
-  ready: 0
+  ready: 1
 - file: forum4.html
   titleName: Topic name 2
-  ready: 0
+  ready: 1
 - file: forum5.html
-  titleName: Manage your feed
-  ready: 0
+  titleName: Create a topic
+  ready: 55
 - file: forum6.html
   titleName: Search
-  ready: 0
+  ready: 1
 
 - file:
   titleName: =====SCHEDULE=====
