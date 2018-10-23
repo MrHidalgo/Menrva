@@ -1,7 +1,7 @@
 ---
 title: Menrva - Recent search
 
-contentClassName: recent
+contentClassName: late
 dataPageName: recent2
 login: true
 ---
@@ -14,13 +14,28 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuMain
 
           .section__wrapper-right
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+            .section__title.section__title--recent
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-recent
+                  span!= "Recent"
+
+                .section__title-right
+                  .notes__search.notes__search--focus
+                    input.notes__search-input(type="text" name="" placeholder="Search recent")
+                    button.notes__search-btn(type="submit")
+                      i.icon-font.icon-search
+                    a.notes__search-clear(
+                    href="#"
+                    title="" class=""
+                    )
+                      i.icon-font.icon-error
+
+            .recent__empty
+              p!= 'No matching "Home" found'
+              p!= "Please make sure your words are spelled correctly or use fewer or different keywords"

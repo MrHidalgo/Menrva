@@ -1,0 +1,33 @@
+// RECENT :: START
+
+.recent {
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+
+    p {
+      &:nth-child(1) {
+        color: #555352;
+        letter-spacing: 0.32px;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      &:nth-child(2) {
+        color: #333;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 18px;
+    color: #7F7F7F;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+// RECENT :: END

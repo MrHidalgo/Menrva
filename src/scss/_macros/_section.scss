@@ -16,7 +16,8 @@
   }
 
   &__title {
-    &--notes {
+    &--notes,
+    &--recent {
       border-bottom: 1px solid #cbcecb;
 
       .section__title-right {
@@ -25,6 +26,10 @@
         justify-content: flex-end;
         width: 100%;
       }
+    }
+
+    &--recent {
+      margin-bottom: 30px;
     }
 
     &-wrap {
@@ -41,7 +46,7 @@
     }
 
     &-right {
-      a {
+      > a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -83,6 +88,9 @@
       }
       .icon-notes {
         font-size: 23px;
+      }
+      .icon-recent {
+        font-size: 25px;
       }
     }
 

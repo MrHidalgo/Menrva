@@ -1,7 +1,7 @@
 ---
 title: Menrva - Recent activity
 
-contentClassName: recent
+contentClassName: late
 dataPageName: recent1
 login: true
 ---
@@ -14,13 +14,49 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuMain
 
           .section__wrapper-right
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+            .section__title.section__title--recent
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-recent
+                  span!= "Recent"
+
+                .section__title-right
+                  .notes__search
+                    input.notes__search-input(type="text" name="" placeholder="Search recent")
+                    button.notes__search-btn(type="submit")
+                      i.icon-font.icon-search
+                    a.notes__search-clear(
+                      href="#"
+                      title="" class=""
+                    )
+                      i.icon-font.icon-error
+
+            .notes__box-wrapper
+              each val, idx in [0,1]
+                p.recent__subtitle!= (idx === 0) ? "A couple of hours ago": "This week"
+                .notes__box(class!= "notes__box-" + idx)
+                  .notes__box-left
+                  .notes__box-middle
+                    p.notes__box-title!= "Lorem Ipsum is simply dummy"
+                    .notes__box-info
+                      a(href="#" title="" class="")
+                        i.icon-font.icon-select
+                        span!= "12K"
+                      a(href="#" title="" class="")
+                        i.icon-font.icon-like
+                        span!= "567"
+                      a(href="#" title="" class="")
+                        i.icon-font.icon-save
+                        span!= "67"
+                      a(href="#" title="" class="")
+                        i.icon-font.icon-profile
+                        span!= "Owner Name"
+                      a(href="#" title="" class="")
+                        i.icon-font.icon-recent
+                        span!= "1 year ago"
+                  .notes__box-right
