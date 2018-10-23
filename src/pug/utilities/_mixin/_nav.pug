@@ -1,4 +1,4 @@
-//- MODAL
+//- NAV
 //- ========================
 
     @param {String} classMod
@@ -29,7 +29,7 @@ mixin navIcon(classMod, arrData)
           a.nav__link(
             href!= arrData[idx].href
             title=""
-            class="nav__link-" + idx
+            class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
           )
             .nav__link-icon
               i.icon-font(class!= "icon-" + arrData[idx].icon)

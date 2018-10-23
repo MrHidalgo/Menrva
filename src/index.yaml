@@ -111,22 +111,22 @@ PageList:
 
 - file: profile1.html
   titleName: My profile
-  ready: 0
+  ready: 55
 - file: profile2.html
   titleName: Other profile
-  ready: 0
+  ready: 55
 - file: profile3.html
   titleName: Report this user
-  ready: 0
+  ready: 1
 - file: profile4.html
   titleName: Report this note
-  ready: 0
+  ready: 1
 - file: profile5.html
   titleName: Send feedback 1
-  ready: 0
+  ready: 1
 - file: profile6.html
   titleName: Send feedback 2
-  ready: 0
+  ready: 1
 
 - file:
   titleName: =====FORUM=====

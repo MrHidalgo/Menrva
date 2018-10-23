@@ -1,7 +1,7 @@
 ---
 title: Menrva - My profile
 
-contentClassName: profile
+contentClassName: view
 dataPageName: profile1
 login: true
 ---
@@ -14,13 +14,65 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuMain
 
           .section__wrapper-right
+            .view
+              .view__head
+                .view__head-left
+                  .view__profile
+                    .view__profile-left
+                      .view__profile-img
+                        img(
+                        srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                        alt="" title=""
+                        )
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+                    .view__profile-right
+                      p!= "Sarah Jones, <span>student</span>"
+                      p!= "22 followers"
+
+                .view__head-right
+
+              .view__body
+                .view__body-top
+                  .view__tabs-wrapper
+                    a.view__tabs(href="#" title="" class="")!= "My courses"
+                    a.view__tabs.is-active(href="#" title="" class="")!= "My notes"
+
+                .view__body-bottom
+                  .notes__box-wrapper
+                    each val, idx in [0,1]
+                      .notes__box(class!= "notes__box-" + idx)
+                        .notes__box-left
+                        .notes__box-middle
+                          p.notes__box-title!= "Lorem Ipsum is simply dummy"
+                          .notes__box-info
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-select
+                              span!= "12K"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-like
+                              span!= "567"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-save
+                              span!= "67"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-profile
+                              span!= "Owner Name"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-recent
+                              span!= "1 year ago"
+
+                        .notes__box-right
+                          .notes__box-drop.c-dropdown
+                            .dropdown
+                              a.dropdown__btn(href="#" id="notesBox0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                span
+                                span
+                                span
+                              .dropdown-menu.dropdown-menu-right(aria-labelledby="notesBox0")
+                                a.dropdown-item(href="#")
+                                  div
+                                    i.icon-font.icon-save
+                                  span!= "Save note"
