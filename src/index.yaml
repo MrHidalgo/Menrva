@@ -126,7 +126,7 @@ PageList:
   ready: 55
 - file: profile6.html
   titleName: Send feedback 2
-  ready: 1
+  ready: 55
 
 - file:
   titleName: =====FORUM=====

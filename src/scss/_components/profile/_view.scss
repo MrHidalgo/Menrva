@@ -116,6 +116,31 @@
       border-bottom: 1px solid #cbcecb;
     }
   }
+
+  &__empty {
+    width: 100%;
+    max-width: 538px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    p {
+      text-align: center;
+
+      &:first-of-type {
+        padding-bottom: 35px;
+        color: #555;
+        font-size: 34px;
+        font-weight: 800;
+      }
+      &:last-of-type {
+        color: #7F7F7F;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 // VIEW :: END
