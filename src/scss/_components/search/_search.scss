@@ -1,6 +1,27 @@
 // SEARCH :: START
 
 .search {
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+
+    p {
+      &:nth-child(1) {
+        color: #555352;
+        letter-spacing: 0.32px;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      &:nth-child(2) {
+        color: #333;
+        font-size: 12px;
+      }
+    }
+  }
+
   &__filter {
     padding-bottom: 30px;
     margin-bottom: 30px;

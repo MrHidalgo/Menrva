@@ -14,13 +14,11 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuMain
 
           .section__wrapper-right
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+            .search__empty
+              p!= 'No matching "Home" found'
+              p!= "Please make sure your words are spelled correctly or use fewer or different keywords"
+
