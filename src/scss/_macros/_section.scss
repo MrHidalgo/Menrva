@@ -99,6 +99,18 @@
       border-bottom: 1px solid #cbcecb;
       margin-bottom: 40px;
     }
+    &--search {
+      padding-top: 27px;
+      border-bottom: 1px solid #cbcecb;
+      margin-bottom: 40px;
+
+      .section__subtitle-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+      }
+    }
 
     &-wrap {
       display: flex;
@@ -111,6 +123,21 @@
     &-left {
       display: flex;
       align-items: center;
+    }
+
+    &-right {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+        color: $c-0e1111;
+
+        .icon-filter {
+          margin-right: 15px;
+          font-size: 20px;
+        }
+      }
     }
 
     &-icon {
@@ -127,6 +154,7 @@
     }
 
     span {
+      white-space: nowrap;
       color: #555352;
       font-size: 14px;
       font-weight: 600;

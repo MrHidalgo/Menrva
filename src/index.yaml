@@ -86,7 +86,7 @@ PageList:
 
 - file: search1.html
   titleName: Result
-  ready: 0
+  ready: 55
 - file: search2.html
   titleName: Filter
   ready: 0

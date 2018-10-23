@@ -45,95 +45,98 @@
 	@if $filename == error {
 		$char: "\E006";
 	}
-	@if $filename == forum {
+	@if $filename == filter {
 		$char: "\E007";
 	}
-	@if $filename == i-fb {
+	@if $filename == forum {
 		$char: "\E008";
 	}
-	@if $filename == i-gp {
+	@if $filename == i-fb {
 		$char: "\E009";
 	}
-	@if $filename == i-tw {
+	@if $filename == i-gp {
 		$char: "\E00A";
 	}
-	@if $filename == info {
+	@if $filename == i-tw {
 		$char: "\E00B";
 	}
-	@if $filename == keyboard {
+	@if $filename == info {
 		$char: "\E00C";
 	}
-	@if $filename == like {
+	@if $filename == keyboard {
 		$char: "\E00D";
 	}
-	@if $filename == logout {
+	@if $filename == like {
 		$char: "\E00E";
 	}
-	@if $filename == notes {
+	@if $filename == logout {
 		$char: "\E00F";
 	}
-	@if $filename == notification {
+	@if $filename == notes {
 		$char: "\E010";
 	}
-	@if $filename == play {
+	@if $filename == notification {
 		$char: "\E011";
 	}
-	@if $filename == plus {
+	@if $filename == play {
 		$char: "\E012";
 	}
-	@if $filename == prev-next {
+	@if $filename == plus {
 		$char: "\E013";
 	}
-	@if $filename == profile {
+	@if $filename == prev-next {
 		$char: "\E014";
 	}
-	@if $filename == recent {
+	@if $filename == profile {
 		$char: "\E015";
 	}
-	@if $filename == refer {
+	@if $filename == recent {
 		$char: "\E016";
 	}
-	@if $filename == remove {
+	@if $filename == refer {
 		$char: "\E017";
 	}
-	@if $filename == save {
+	@if $filename == remove {
 		$char: "\E018";
 	}
-	@if $filename == schedule {
+	@if $filename == save {
 		$char: "\E019";
 	}
-	@if $filename == search {
+	@if $filename == schedule {
 		$char: "\E01A";
 	}
-	@if $filename == select {
+	@if $filename == search {
 		$char: "\E01B";
 	}
-	@if $filename == send-feedback {
+	@if $filename == select {
 		$char: "\E01C";
 	}
-	@if $filename == setting {
+	@if $filename == send-feedback {
 		$char: "\E01D";
 	}
-	@if $filename == shuffle {
+	@if $filename == setting {
 		$char: "\E01E";
 	}
-	@if $filename == star-full {
+	@if $filename == shuffle {
 		$char: "\E01F";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E020";
 	}
-	@if $filename == swap {
+	@if $filename == star {
 		$char: "\E021";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E022";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E023";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E024";
+	}
+	@if $filename == text {
+		$char: "\E025";
 	}
 
 	@return $char;
@@ -172,6 +175,10 @@
 }
 .icon-error {
 	@include icon(error);
+
+}
+.icon-filter {
+	@include icon(filter);
 
 }
 .icon-forum {
