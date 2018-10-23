@@ -17,7 +17,8 @@
 
   &__title {
     &--notes,
-    &--recent {
+    &--recent,
+    &--forum {
       border-bottom: 1px solid #cbcecb;
 
       .section__title-right {
@@ -26,6 +27,10 @@
         justify-content: flex-end;
         width: 100%;
       }
+    }
+
+    &--forum {
+      border-bottom: none;
     }
 
     &--recent {
@@ -91,6 +96,9 @@
       }
       .icon-recent {
         font-size: 25px;
+      }
+      .icon-forum {
+        font-size: 24px;
       }
     }
 
