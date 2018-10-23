@@ -140,7 +140,7 @@ PageList:
   ready: 55
 - file: forum3.html
   titleName: Topic name 1
-  ready: 1
+  ready: 55
 - file: forum4.html
   titleName: Topic name 2
   ready: 1

@@ -14,13 +14,99 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuMain
 
           .section__wrapper-right
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+            .section__title.section__title--forum
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-forum
+                  span!= "Forum"
+                  .section__title-icon.section__title-icon--arrow
+                    i.icon-font.icon-arrow
+                  span!= "Topic Name"
+
+
+                .section__title-right
+                  .notes__search
+                    input.notes__search-input(type="text" name="" placeholder="Search forum")
+                    button.notes__search-btn(type="submit")
+                      i.icon-font.icon-search
+                    a.notes__search-clear(
+                    href="#"
+                    title="" class=""
+                    )
+                      i.icon-font.icon-error
+
+            .forum
+              .forum__body
+
+                .forum__body-top
+                  .forum__tabs-wrapper
+                    a.forum__tabs.is-active(href="#" title="" class="")!= "Popular"
+                    a.forum__tabs(href="#" title="" class="")!= "New"
+                    a.forum__tabs(href="#" title="" class="")!= "Followed"
+
+                .forum__body-bottom
+                  .forum__body-left
+
+                    each val, idx in [0,1,2]
+                      .forum__box
+                        .forum__box-top
+                          .forum__box-left
+                            .forum__box-img
+                              img(
+                              srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                              alt="" title=""
+                              )
+                          .forum__box-middle
+                            p.forum__box-title!= "Please stop slamming the Klingon and High Valyrian courses, everyone."
+                          .forum__box-right
+                            .forum__box-badge
+                              span!= "102"
+
+                        .forum__box-bottom
+                          a.forum__box-btn.forum__box-btn--like(href="#" title="" class="")
+                            i.icon-font.icon-like
+                            span!= "12"
+                          a.forum__box-btn.forum__box-btn--dislike(href="#" title="" class="")
+                            i.icon-font.icon-like
+                          a.forum__box-btn.forum__box-btn--recent(href="#" title="" class="")
+                            i.icon-font.icon-recent
+                            span!= "1 day ago"
+                          a.forum__box-btn.forum__box-btn--profile(href="#" title="" class="")
+                            i.icon-font.icon-profile
+                            span!= "Autor Name"
+                          a.forum__box-btn.forum__box-btn--book(href="#" title="" class="")
+                            i.icon-font.icon-book
+                            span!= "Subscription Name"
+
+                  .forum__body-right
+                    a.forum__btn.c-btn.c-btn--bigH.c-btn--darkGreen(
+                    href="#" title="" class=""
+                    )
+                      i.icon-font.icon-forum
+                      span!= "Create a topic"
+
+                    .forum__feed
+                      .forum__feed-head
+                        p!= "Feed"
+                        a(
+                        href="#"
+                        title="" class=""
+                        )
+                          i.icon-font.icon-edit
+
+                      a(href="#").forum__feed-body.is-active
+                        div
+                        p!= "Name"
+
+                      a(href="#").forum__feed-body
+                        div
+                        p!= "Name"
+
+                      a(href="#").forum__feed-body
+                        div
+                        p!= "Name"
