@@ -9,3 +9,41 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--reportUser
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Report this user"
+          a.c-modal__close(
+          href="#"
+          title="" class=""
+          )
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__text!= "Why are you reporting this user?"
+
+          form.form(action="" method="")
+            .form__field.form__field--checkbox
+              .form__checkbox-wrap
+                input.form__checkbox(type="checkbox" id="reportUser0" name="reportUser0")
+                label(for="reportUser0")
+                  u
+                  span!= "There is inappropriate content on this user's account."
+                  i.icon-font.icon-check
+
+            .form__field.form__field--checkbox
+              .form__checkbox-wrap
+                input.form__checkbox(type="checkbox" id="reportUser1" checked name="reportUser1")
+                label(for="reportUser1")
+                  u
+                  span!= "I'm worried about this user."
+                  i.icon-font.icon-check
+
+            .form__field.form__field--input
+              .form__input-wrap
+                input.form__input(type="text" id="delAcc" name="delAcc" placeholder="Your feedback")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Continue"

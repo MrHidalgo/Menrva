@@ -56,11 +56,7 @@ gulp.task('pug', function() {
  */
 gulp.task('pug:watch', function() {
   gulp.watch(
-    [
-      configPath.src.templates + '/**',
-      configPath.src.templates + '/**/**',
-      configPath.src.templates + '/**/**/**',
-    ]
+    configPath.src.templates + '/**',
     ['pug']
   );
 });

@@ -117,10 +117,10 @@ PageList:
   ready: 55
 - file: profile3.html
   titleName: Report this user
-  ready: 1
+  ready: 55
 - file: profile4.html
   titleName: Report this note
-  ready: 1
+  ready: 55
 - file: profile5.html
   titleName: Send feedback 1
   ready: 1

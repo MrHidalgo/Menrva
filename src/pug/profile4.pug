@@ -9,3 +9,16 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--reportNote
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Report this note"
+          a.c-modal__close(
+            href="#"
+            title="" class=""
+          )
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__text!= "Thanks for letting us know about this! Please send more specific information about this account to <a href='mailto:support@menrva.com'>support@menrva.com</a> so we can investigate and take appropriate action. Thank you!"

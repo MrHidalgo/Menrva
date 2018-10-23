@@ -681,6 +681,10 @@
       }
     }
 
+    .c-modal--reportUser & {
+      margin-top: 30px;
+    }
+
     .new__form & {
       max-width: 255px;
       margin-left: auto;
@@ -814,7 +818,9 @@
     min-height: 52px;
     padding-bottom: 10px;
 
-    .c-modal--refer & {
+    .c-modal--refer &,
+    .c-modal--reportUser &,
+    .c-modal--reportNote & {
       padding-bottom: 30px;
     }
 
@@ -902,6 +908,21 @@
     .c-modal--delAcc &,
     .c-modal--delName & {
       padding-bottom: 30px;
+    }
+
+    .c-modal--reportUser & {
+      padding-bottom: 21px;
+      font-weight: 600;
+    }
+
+    .c-modal--reportNote & {
+      color: rgba($c-black, 0.5);
+      line-height: 1.8;
+      font-size: 14px;
+
+      a {
+        color: rgba($c-black, 1);
+      }
     }
   }
 
