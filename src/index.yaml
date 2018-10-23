@@ -89,7 +89,7 @@ PageList:
   ready: 55
 - file: search2.html
   titleName: Filter
-  ready: 0
+  ready: 55
 - file: search3.html
   titleName: Empty
   ready: 0
