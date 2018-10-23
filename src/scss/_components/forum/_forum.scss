@@ -197,6 +197,18 @@
       letter-spacing: 0.17px;
       font-size: 12px;
       font-weight: 500;
+
+      .forum__box--text & {
+        padding-bottom: 10px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-text {
+      font-size: 12px;
     }
 
     &-badge {

@@ -125,7 +125,8 @@
       border-bottom: 1px solid #cbcecb;
       margin-bottom: 40px;
     }
-    &--search {
+    &--search,
+    &--forum {
       padding-top: 27px;
       border-bottom: 1px solid #cbcecb;
       margin-bottom: 30px;
@@ -138,12 +139,21 @@
       }
     }
 
+    &--forum {
+      padding-top: 0;
+    }
+
     &-wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
       min-height: 42px;
       margin-bottom: 24px;
+
+      .section__subtitle--forum & {
+        min-height: auto;
+        margin-bottom: 10px;
+      }
     }
 
     &-left {

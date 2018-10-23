@@ -14,13 +14,70 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuMain
 
           .section__wrapper-right
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+            .section__title.section__title--forum
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-forum
+                  span!= "Forum"
+
+                .section__title-right
+                  .notes__search.notes__search--focus
+                    input.notes__search-input(type="text" name="" placeholder="Search forum" value="Some value...")
+                    button.notes__search-btn(type="submit")
+                      i.icon-font.icon-search
+                    a.notes__search-clear(
+                    href="#"
+                    title="" class=""
+                    )
+                      i.icon-font.icon-error
+
+            .section__subtitle.section__subtitle--forum
+              .section__subtitle-wrap
+                .section__subtitle-left
+                  span!= "3 results"
+
+                .section__subtitle-right
+
+            .forum
+              .forum__body
+
+                .forum__body-bottom
+                  .forum__body-left
+
+                    each val, idx in [0,1,2]
+                      .forum__box.forum__box--text
+                        p.forum__box-title!= "Welsh: Welcome <span>home</span> Welsh!"
+                        p.forum__box-text!= "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s , when an unknown printer took a galley of type and scrambled"
+
+                  .forum__body-right
+                    a.forum__btn.c-btn.c-btn--bigH.c-btn--darkGreen(
+                    href="#" title="" class=""
+                    )
+                      i.icon-font.icon-forum
+                      span!= "Create a topic"
+
+                    .forum__feed
+                      .forum__feed-head
+                        p!= "Feed"
+                        a(
+                        href="#"
+                        title="" class=""
+                        )
+                          i.icon-font.icon-edit
+
+                      a(href="#").forum__feed-body.is-active
+                        div
+                        p!= "Name"
+
+                      a(href="#").forum__feed-body
+                        div
+                        p!= "Name"
+
+                      a(href="#").forum__feed-body
+                        div
+                        p!= "Name"

@@ -149,7 +149,7 @@ PageList:
   ready: 55
 - file: forum6.html
   titleName: Search
-  ready: 1
+  ready: 55
 
 - file:
   titleName: =====SCHEDULE=====
