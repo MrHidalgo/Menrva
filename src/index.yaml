@@ -171,7 +171,7 @@ PageList:
   ready: 55
 - file: notes2.html
   titleName: Export
-  ready: 0
+  ready: 55s
 - file: notes3.html
   titleName: Remove
   ready: 0

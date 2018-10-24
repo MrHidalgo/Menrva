@@ -10,17 +10,75 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-            //include ./macros/_menuSetting
+    section#c-modal.c-modal.c-modal--notes
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Export"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
 
-          .section__wrapper-right
+        .c-modal__body
+          form.form(action="" method="")
+            .form__wrapper
+              .form__wrapper-top
+                .form__wrapper-left
+                  label.form__label.form__label--notes!= "Between term and definition"
+                  .form__field.form__field--radio
+                    input.form__radio(type="radio" id="notesExportTab" name="notesExportTerm")
+                    label(for="notesExportTab")
+                      span!= "Tab"
+                  .form__field.form__field--radio
+                    input.form__radio(type="radio" id="notesExportComma" name="notesExportTerm" checked)
+                    label(for="notesExportComma")
+                      span!= "Comma"
+                  .form__field.form__field--radio
+                    input.form__radio(type="radio" id="notesExportTermCustom" name="notesExportTerm")
+                    label(for="notesExportTermCustom")
+                      span!= "Custom"
+                  .form__field.form__field--custom
+                    input(type='text' name='' placeholder='-')
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+                .form__wrapper-right
+                  label.form__label.form__label--notes!= "Between rows"
+                  .form__field.form__field--radio
+                    input.form__radio(type="radio" id="notesExportLine" name="notesExportRows")
+                    label(for="notesExportLine")
+                      span!= "New line"
+                  .form__field.form__field--radio
+                    input.form__radio(type="radio" id="notesExportSemicolon" name="notesExportRows" checked)
+                    label(for="notesExportSemicolon")
+                      span!= "Semicolon"
+                  .form__field.form__field--radio
+                    input.form__radio(type="radio" id="notesExportRowCustom" name="notesExportRows")
+                    label(for="notesExportRowCustom")
+                      span!= "Custom"
+                  .form__field.form__field--custom
+                    input(type='text' name='' placeholder='\\n\\n')
+
+                .form__wrapper-left
+                  label.form__label.form__label--notes!= "Option"
+                  .form__field.form__field--checkbox.form__field--checkbox-wp
+                    .form__checkbox-wrap
+                      input.form__checkbox(type="checkbox" id="notesExport" name="" checked)
+                      label(for="notesExport")
+                        u
+                        span!= "Alphabetize"
+                        i.icon-font.icon-check
+
+              .form__wrapper-middle
+                .form__field.form__field--copy
+                  input(type='text' name='' placeholder='Copy and paste the text below. It is read-only.' readonly)
+                  a.c-btn.c-btn--darkGreen.c-btn--bigH(
+                    href="#"
+                    title="" class=""
+                  )!= "Copy text"
+
+              .form__wrapper-bottom
+
+                .form__field.form__field--textarea
+                  .form__textarea-wrap
+                    textarea.form__textarea(id="notesExportDesc" name="notesExportDesc" placeholder="Type description")
+                  .form__notify.form__notify--hide
+
+                .form__field.form__field--btn
+                  button.form__btn(type="submit")!= "Export"
