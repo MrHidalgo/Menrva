@@ -196,3 +196,60 @@ PageList:
 - file: notes10.html
   titleName: Discard work?
   ready: 55
+- file: notes11.html
+  titleName: Flashcard
+  ready: 0
+- file: notes12.html
+  titleName: Flashcard full screen
+  ready: 0
+- file: notes13.html
+  titleName: Flashcard setting
+  ready: 0
+- file: notes14.html
+  titleName: Create flashcard
+  ready: 0
+- file: notes15.html
+  titleName: Import flashcard 1
+  ready: 0
+- file: notes16.html
+  titleName: Import flashcard 2
+  ready: 0
+- file: notes17.html
+  titleName: Passage
+  ready: 0
+- file: notes18.html
+  titleName: Passage full screen
+  ready: 0
+- file: notes19.html
+  titleName: Passage setting
+  ready: 0
+- file: notes20.html
+  titleName: Create passage
+  ready: 0
+- file: notes21.html
+  titleName: Import passage 1
+  ready: 0
+- file: notes22.html
+  titleName: Import passage 2
+  ready: 0
+- file: notes23.html
+  titleName: Book
+  ready: 0
+- file: notes24.html
+  titleName: Book full screen
+  ready: 0
+- file: notes25.html
+  titleName: Book setting
+  ready: 0
+- file: notes26.html
+  titleName: Create book 1
+  ready: 0
+- file: notes27.html
+  titleName: Create book 2
+  ready: 0
+- file: notes28.html
+  titleName: Import book 2
+  ready: 0
+- file: notes29.html
+  titleName: Import book 2
+  ready: 0
