@@ -10,17 +10,39 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-            //include ./macros/_menuSetting
+    section#c-modal.c-modal.c-modal--settingNote
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Settings"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
 
-          .section__wrapper-right
+        .c-modal__body
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+          form.form(action="" method="")
+
+            div
+              label.form__label.form__label--notes!= "Underline for concealed words"
+              .form__field--group
+                .form__field.form__field--radio.form__field--radio--mr
+                  input.form__radio(type="radio" id="notesSettingUnderlineShow" name="notesettingWords")
+                  label(for="notesSettingUnderlineShow")
+                    span!= "Show"
+                .form__field.form__field--radio
+                  input.form__radio(type="radio" id="notesExportUnderlineHide" name="notesettingWords" checked)
+                  label(for="notesExportUnderlineHide")
+                    span!= "Hide"
+
+            div
+              label.form__label.form__label--notes!= "Memorization algorithm"
+              .form__field.form__field--radio
+                input.form__radio(type="radio" id="notesExportTab" name="notesSettingAlgorithm")
+                label(for="notesExportTab")
+                  span!= "Characters"
+              .form__field.form__field--radio
+                input.form__radio(type="radio" id="notesExportComma" name="notesSettingAlgorithm" checked)
+                label(for="notesExportComma")
+                  span!= "Words"
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Save"

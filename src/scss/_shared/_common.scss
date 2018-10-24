@@ -478,6 +478,11 @@
       align-items: center;
       min-height: 24px;
 
+      &--mr {
+        margin-right: 40px;
+      }
+
+
       > input {
         display: none;
         position: absolute;
@@ -847,11 +852,17 @@
       }
     }
 
-    .c-modal--reportUser & {
+    .c-modal--reportUser &,
+    .c-modal--settingNote & {
       margin-top: 30px;
     }
 
     .c-modal--notes & {
+      max-width: 129px;
+      margin-left: auto;
+    }
+
+    .c-modal--settingNote & {
       max-width: 129px;
       margin-left: auto;
     }
@@ -996,7 +1007,8 @@
     .c-modal--reportNote &,
     .c-modal--forum &,
     .c-modal--notes &,
-    .c-modal--removeNote & {
+    .c-modal--removeNote &,
+    .c-modal--settingNote & {
       padding-bottom: 30px;
     }
 
