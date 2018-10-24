@@ -192,7 +192,7 @@ PageList:
   ready: 55
 - file: notes9.html
   titleName: End session?
-  ready: 1
+  ready: 55
 - file: notes10.html
   titleName: Discard work?
   ready: 1
