@@ -854,7 +854,8 @@
 
     .c-modal--reportUser &,
     .c-modal--settingNote &,
-    .c-modal--reviewNotes & {
+    .c-modal--reviewNotes &,
+    .c-modal--creteCourse & {
       margin-top: 30px;
     }
 
@@ -992,6 +993,7 @@
       &:nth-child(3) {
         justify-content: space-between;
         padding: 0 15px 0 20px;
+        color: #333;
 
         i {
           font-size: 20px;
@@ -1051,7 +1053,8 @@
     .c-modal--removeNote &,
     .c-modal--settingNote &,
     .c-modal--reviewNotes &,
-    .c-modal--courseSaveNotes & {
+    .c-modal--courseSaveNotes &,
+    .c-modal--creteCourse & {
       padding-bottom: 30px;
     }
 

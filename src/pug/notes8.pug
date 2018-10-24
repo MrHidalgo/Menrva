@@ -10,17 +10,27 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-            //include ./macros/_menuSetting
+    section#c-modal.c-modal.c-modal--creteCourse
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Create a new course"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
 
-          .section__wrapper-right
+        .c-modal__body
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+          form.form(action="" method="")
+            .form__field.form__field--input
+              label.form__label(for="createCourseTitle")!= "Title"
+              .form__input-wrap
+                input.form__input(type="text" id="createCourseTitle" name="createCourseTitle" placeholder="Enter a title")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--input
+              label.form__label(for="createCourseDesc")!= "Description (optional)"
+              .form__input-wrap
+                input.form__input(type="text" id="createCourseDesc" name="createCourseDesc" placeholder="Enter a description")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Create a course"
