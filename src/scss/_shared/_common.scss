@@ -975,6 +975,40 @@
     }
   }
 
+  &--courseSaveNotes {
+    .c-btn {
+      max-width: 100%;
+
+      &:nth-child(1) {
+        margin-bottom: 30px;
+
+        i {
+          margin-right: 15px;
+          font-size: 17px;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        justify-content: space-between;
+        padding: 0 15px 0 20px;
+
+        i {
+          font-size: 20px;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(3) {
+        i {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
   &__wrapper {
     z-index: 1;
     position: relative;
@@ -1016,7 +1050,8 @@
     .c-modal--notes &,
     .c-modal--removeNote &,
     .c-modal--settingNote &,
-    .c-modal--reviewNotes & {
+    .c-modal--reviewNotes &,
+    .c-modal--courseSaveNotes & {
       padding-bottom: 30px;
     }
 

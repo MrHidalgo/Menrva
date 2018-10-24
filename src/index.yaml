@@ -186,7 +186,7 @@ PageList:
   ready: 55
 - file: notes7.html
   titleName: Save to course
-  ready: 1
+  ready: 55
 - file: notes8.html
   titleName: Create a new course
   ready: 1

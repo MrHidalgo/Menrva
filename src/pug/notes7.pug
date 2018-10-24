@@ -10,17 +10,23 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-            //include ./macros/_menuSetting
+    section#c-modal.c-modal.c-modal--courseSaveNotes
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Save to course"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
 
-          .section__wrapper-right
+        .c-modal__body
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+          a.c-btn.c-btn--bigH.c-btn--darkGreen(href="#" title="" class="")
+            i.icon-font.icon-folder-add
+            span!= "Create a new course"
+
+          a.c-btn.c-btn--bigH.c-btn--lightGray(href="#" title="" class="")
+            span!= "Course 1"
+            i.icon-font.icon-plus
+
+          a.c-btn.c-btn--bigH.c-btn--lightGray(href="#" title="" class="")
+            span!= "Course 1"
+            i.icon-font.icon-plus
