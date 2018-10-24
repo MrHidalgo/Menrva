@@ -839,7 +839,8 @@
 
     .c-modal--delName &,
     .c-modal--removeNote &,
-    .c-modal--endSession & {
+    .c-modal--endSession &,
+    .c-modal--discardWork & {
       &:first-of-type {
         background-color: $c-f4f4f4;
         color: rgba($c-0e1111, 0.5);
@@ -1191,7 +1192,8 @@
     }
 
     .c-modal--reportNote &,
-    .c-modal--endSession & {
+    .c-modal--endSession &,
+    .c-modal--discardWork & {
       color: rgba($c-black, 0.5);
       line-height: 1.8;
       font-size: 14px;
