@@ -171,13 +171,13 @@ PageList:
   ready: 55
 - file: notes2.html
   titleName: Export
-  ready: 55s
+  ready: 55
 - file: notes3.html
   titleName: Remove
-  ready: 0
+  ready: 55
 - file: notes4.html
   titleName: Settings
-  ready: 0
+  ready: 1
 - file: notes5.html
   titleName: Great work
   ready: 0

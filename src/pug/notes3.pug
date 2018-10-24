@@ -10,17 +10,19 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-            //include ./macros/_menuSetting
+    section#c-modal.c-modal.c-modal--removeNote
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Remove this note?"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
 
-          .section__wrapper-right
+        .c-modal__body
+          p.c-modal__subtitle!= "Note name"
+          p.c-modal__subinfo!= "You are about to delete this note and all of its data. No one will be able to access this note ever again."
+          p.c-modal__subinfo!= "Are you absolutely positive? There's no undo."
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+          form.form(action="" method="")
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Remove"
+              button.form__btn.form__btn--full(type="submit")!= "Cancel"

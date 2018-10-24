@@ -831,12 +831,19 @@
     font-size: 14px;
     font-weight: 500;
 
-    .c-modal--delName & {
+    .c-modal--delName &,
+    .c-modal--removeNote & {
       &:first-of-type {
         margin-top: 30px;
         margin-bottom: 20px;
         background-color: $c-f4f4f4;
         color: rgba($c-0e1111, 0.5);
+      }
+    }
+
+    .c-modal--removeNote & {
+      &:first-of-type {
+        margin-top: 10px;
       }
     }
 
@@ -988,7 +995,8 @@
     .c-modal--reportUser &,
     .c-modal--reportNote &,
     .c-modal--forum &,
-    .c-modal--notes & {
+    .c-modal--notes &,
+    .c-modal--removeNote & {
       padding-bottom: 30px;
     }
 
@@ -1051,8 +1059,14 @@
     text-align: center;
     font-size: 14px;
 
-    .c-modal--storage & {
+    .c-modal--storage &,
+    .c-modal--removeNote & {
       color: rgba($c-0e1111, 0.5);
+    }
+
+    .c-modal--removeNote & {
+      text-align: left;
+      padding-bottom: 20px;
     }
   }
   
@@ -1066,6 +1080,13 @@
     .c-modal--payment &,
     .c-modal--storage & {
       max-width: 100%;
+    }
+
+    .c-modal--removeNote & {
+      color: $c-black;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
     }
   }
 
