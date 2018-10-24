@@ -995,6 +995,11 @@
       padding-top: 40px;
       padding-bottom: 40px;
     }
+
+    .c-modal--notesGreat & {
+      max-width: 823px;
+      padding: 40px 60px;
+    }
   }
 
   &__header {
@@ -1099,6 +1104,51 @@
       text-align: left;
       font-size: 16px;
       font-weight: 600;
+    }
+
+    .c-modal--notesGreat & {
+      display: flex;
+      align-items: center;
+      min-height: 42px;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+
+      span {
+        color: #555;
+        letter-spacing: 0.23px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      a {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 100%;
+        border: 2px solid #9B9B9B;
+        @include transition(border-color);
+
+        &.is-active,
+        &:hover {
+          border-color: #019552;
+          @include transition(border-color);
+
+          i {
+            color: #019552;
+            @include transition(color);
+          }
+        }
+
+        i {
+          color: #9B9B9B;
+          font-size: 19px;
+          @include transition(color);
+        }
+      }
     }
   }
 

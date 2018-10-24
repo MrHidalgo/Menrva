@@ -132,23 +132,26 @@
 	@if $filename == shuffle {
 		$char: "\E023";
 	}
-	@if $filename == star-full {
+	@if $filename == star-fill {
 		$char: "\E024";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E025";
 	}
-	@if $filename == swap {
+	@if $filename == star {
 		$char: "\E026";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E027";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E028";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E029";
+	}
+	@if $filename == text {
+		$char: "\E02A";
 	}
 
 	@return $char;
@@ -303,6 +306,10 @@
 }
 .icon-shuffle {
 	@include icon(shuffle);
+
+}
+.icon-star-fill {
+	@include icon(star-fill);
 
 }
 .icon-star-full {

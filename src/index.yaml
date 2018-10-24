@@ -177,22 +177,22 @@ PageList:
   ready: 55
 - file: notes4.html
   titleName: Settings
-  ready: 1
+  ready: 55
 - file: notes5.html
   titleName: Great work
-  ready: 0
+  ready: 55
 - file: notes6.html
   titleName: Review level
-  ready: 0
+  ready: 1
 - file: notes7.html
   titleName: Save to course
-  ready: 0
+  ready: 1
 - file: notes8.html
   titleName: Create a new course
-  ready: 0
+  ready: 1
 - file: notes9.html
   titleName: End session?
-  ready: 0
+  ready: 1
 - file: notes10.html
   titleName: Discard work?
-  ready: 0
+  ready: 1

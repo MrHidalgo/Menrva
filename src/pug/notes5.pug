@@ -10,17 +10,91 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    section#section.section
-      .c-grid
-        .section__wrapper
-          .section__wrapper-left
-            //include ./macros/_menuSetting
+    section#c-modal.c-modal.c-modal--notesGreat
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Great work! You did it!"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
 
-          .section__wrapper-right
+        .c-modal__body
+          p.c-modal__subtitle
+            span!= "Did you like this note?"
+            a(href="#" title="" class="")
+              i.icon-font.icon-like
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+          .notes__statistics
+            p.notes__statistics-title!= "Statistics"
+            ul.notes__statistics-list
+              ul.notes__statistics-list
+                li.notes__statistics-item
+                  span!= "Session length"
+                  span!= "12:10.30"
+                li.notes__statistics-item
+                  span!= "Highest wmpm"
+                  span!= "12:10.30"
+                li.notes__statistics-item
+                  span!= "Total words"
+                  span!= "210"
+                li.notes__statistics-item
+                  span!= "Minimum memorization level"
+                  span!= "210"
+                li.notes__statistics-item
+                  span!= "Words memorized"
+                  span!= "68"
+                li.notes__statistics-item
+                  span!= "Maximum memorization level"
+                  span!= "68"
+                li.notes__statistics-item
+                  span!= "Average wmpm"
+                  span!= "10"
+                li.notes__statistics-item
+                  span!= "Session number"
+                  span!= "10"
+
+          .notes__graph
+            .notes__graph-wrapper
+              .notes__graph-left
+                p.notes__graph-title!= "Words memorized per minute (WMPM)"
+
+                .notes__graph-content
+                  img(
+                    srcset="./img/img-notes-graph-0.png, ./img/img-notes-graph-0@2x.png 2x"
+                    alt="" title=""
+                   )
+
+              .notes__graph-right
+                p.notes__graph-title!= "Memorization levels"
+
+                .notes__graph-content
+                  img(
+                    srcset="./img/img-notes-graph-1.png, ./img/img-notes-graph-1@2x.png 2x"
+                    alt="" title=""
+                  )
+
+          .notes__rate
+            .notes__rate-wrapper
+              .notes__rate-left
+                p.notes__rate-title!= "Personal note"
+
+                .notes__rate-info
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis "
+
+              .notes__rate-right
+                p.notes__rate-title!= "Rate difficulty"
+
+                .notes__rate-star
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-star-fill
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-star-fill
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-star-fill
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-star
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-star-full
+
+                p.notes__rate-subtitle.subtitle!= "Too hard!"
+
+                a.notes__rate-btn.c-btn.c-btn--bigH.c-btn--darkGreen(href="#" title="" class="")!= "Schedule review"
