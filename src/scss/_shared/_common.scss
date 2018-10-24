@@ -853,17 +853,19 @@
     }
 
     .c-modal--reportUser &,
-    .c-modal--settingNote & {
+    .c-modal--settingNote &,
+    .c-modal--reviewNotes & {
       margin-top: 30px;
     }
 
-    .c-modal--notes & {
+    .c-modal--notes &,
+    .c-modal--settingNote & {
       max-width: 129px;
       margin-left: auto;
     }
 
-    .c-modal--settingNote & {
-      max-width: 129px;
+    .c-modal--reviewNotes & {
+      max-width: 182px;
       margin-left: auto;
     }
 
@@ -1013,7 +1015,8 @@
     .c-modal--forum &,
     .c-modal--notes &,
     .c-modal--removeNote &,
-    .c-modal--settingNote & {
+    .c-modal--settingNote &,
+    .c-modal--reviewNotes & {
       padding-bottom: 30px;
     }
 
