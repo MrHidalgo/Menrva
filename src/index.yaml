@@ -234,7 +234,7 @@ PageList:
   ready: 1
 - file: notes23.html
   titleName: Book example
-  ready: 1
+  ready: 55
 - file: notes24.html
   titleName: Book full screen
   ready: 0
