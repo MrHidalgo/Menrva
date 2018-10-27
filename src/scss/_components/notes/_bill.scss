@@ -150,7 +150,11 @@
         }
       }
     }
-    &--full {}
+    &--full {
+      .tool__preview {
+        height: 472px;
+      }
+    }
   }
 
   &__block {
