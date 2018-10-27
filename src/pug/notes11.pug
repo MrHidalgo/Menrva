@@ -73,6 +73,54 @@ block content
                     span!= "1 year ago"
 
                 .bill__row.bill__row-1.bill__row--view
+                  .bill__view.bill__view--half
+                    .tool
+                      .tool__wrapper
+                        a.tool__btn(
+                        href="#" title="" class=""
+                        )
+                          i.icon-font.icon-arrow-view
+                        a.tool__btn(
+                        href="#" title="" class=""
+                        )
+                          i.icon-font.icon-arrow-view
+
+                        .tool__preview
+                          .tool__preview-control.d-flex.align-items-center.justify-content-between
+                            div.d-flex.align-items-center
+                              input(type="text" value="2")
+                              span!= "of <i>4</i>"
+                            div.d-flex.justify-content-end
+                              a(
+                                href="#"
+                                title="" class=""
+                              )
+                                i.icon-font.icon-fullscreen
+
+                          .tool__preview-scroll
+                            p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                        .tool__preview
+                          .tool__preview-scroll
+                            p!= "Lorem _____ dolor sit amet, ________ adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet _ magna aliquam erat ________. Ut wisi enim ad ____ veniam, quis nostrud exerci tatio"
+
+                      .tool__control
+                        .tool__control-wrap
+                          .tool__control-middle.d-flex.align-items-center
+                            .tool__control-line
+                              a(
+                              href="#"
+                              class=""
+                              data-toggle="tooltip" data-placement="top" title="Memorization level 25%"
+                              )
+
+                            .tool__control-group.d-flex.align-items-center.justify-content-end
+                              +btnPrevNext()
+                              +btnPrevNext()
+
+                          .tool__control-right.d-flex.align-items-center
+                            a.c-btn.c-btn--bigH.c-btn--darkGreen(href="#" title="" class="")!= "Start Session"
+
+
                 .bill__row.bill__row-2.bill__row--info
                   a(href="#" title="" class="")
                     i.icon-font.icon-notes

@@ -72,6 +72,11 @@ $(document).ready((ev) => {
   };
 
 
+  const initBootstrapMethod = () => {
+    $('[data-toggle="tooltip"]').tooltip();
+  };
+
+
 
   /**
    * @description Init all method
@@ -85,6 +90,7 @@ $(document).ready((ev) => {
     // callback
     initSelect();
     initSearch();
+    initBootstrapMethod();
   };
   initJquery();
 });

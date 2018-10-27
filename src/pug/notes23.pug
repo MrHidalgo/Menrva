@@ -73,7 +73,141 @@ block content
                     span!= "1 year ago"
 
                 .bill__row.bill__row-1.bill__row--view
+
                 .bill__row.bill__row-2.bill__row--book.bill__row--info
                   a(href="#" title="" class="")
                     .forum__box-badge
                     span!= "Comments (<i>5</i>)"
+
+                .bill__row.bill__row-3.bill__row--book.bill__row--post
+                  .forum
+                    .forum__box.forum__post
+                      .forum__post-bottom
+                        .forum__post-left
+                          .forum__post-img
+                            img(
+                            srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                            alt="" title=""
+                            )
+
+                        .forum__post-right
+                          form.form(action="" method="")
+                            .form__field.form__field--textarea
+                              .form__textarea-wrap
+                                textarea.form__textarea(id="" name="" placeholder="Add a comment")
+                              .form__notify.form__notify--hide
+
+                            .form__field.form__field--btn
+                              button.form__btn.forum__post-btn.c-btn.c-btn--lightGray(type="submit")!= "Cancel"
+                              button.form__btn.forum__post-btn(type="submit")!= "Comment"
+
+                    .forum__box.forum__post
+                      .forum__post-top.forum__post-top--wp
+                        .forum__post-left
+                          .forum__post-img
+                            img(
+                            srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                            alt="" title=""
+                            )
+                        .forum__post-right
+                          p.forum__post-user
+                            i.icon-font.icon-profile
+                            span!= "Author name"
+
+                          p.forum__post-text!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+                          .forum__post-control
+                            div
+                              a.forum__box-btn.forum__box-btn--like(href="#" title="" class="")
+                                i.icon-font.icon-like
+                                span!= "12"
+                              a.forum__box-btn.forum__box-btn--dislike(href="#" title="" class="")
+                                i.icon-font.icon-like
+                              a.forum__box-btn.forum__box-btn--recent(href="#" title="" class="")
+                                i.icon-font.icon-recent
+                                span!= "1 day ago"
+                              a.forum__box-btn.forum__box-btn--reply(href="#" title="" class="")
+                                i.icon-font.icon-export
+                                span!= "Reply"
+
+                            div
+                              .c-dropdown
+                                .dropdown
+                                  a.dropdown__btn(href="#" id="forumPostMess0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                    span
+                                    span
+                                    span
+                                  .dropdown-menu.dropdown-menu-right(aria-labelledby="forumPostMess0")
+                                    a.dropdown-item(href="#")
+                                      div
+                                        i.icon-font.icon-ban
+                                      span!= "Hide"
+                                    a.dropdown-item(href="#")
+                                      div
+                                        i.icon-font.icon-info
+                                      span!= "Report"
+
+                    .forum__box.forum__post.forum__post--ml
+                      .forum__post-top
+                        .forum__post-left
+                          .forum__post-img
+                            img(
+                            srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                            alt="" title=""
+                            )
+                        .forum__post-right
+                          p.forum__post-user
+                            i.icon-font.icon-profile
+                            span!= "Author name"
+
+                          p.forum__post-text!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+                          .forum__post-control
+                            div
+                              a.forum__box-btn.forum__box-btn--like(href="#" title="" class="")
+                                i.icon-font.icon-like
+                                span!= "12"
+                              a.forum__box-btn.forum__box-btn--dislike(href="#" title="" class="")
+                                i.icon-font.icon-like
+                              a.forum__box-btn.forum__box-btn--recent(href="#" title="" class="")
+                                i.icon-font.icon-recent
+                                span!= "1 day ago"
+                              a.forum__box-btn.forum__box-btn--reply(href="#" title="" class="")
+                                i.icon-font.icon-export
+                                span!= "Reply"
+
+                            div
+                              .c-dropdown
+                                .dropdown
+                                  a.dropdown__btn(href="#" id="forumPostMess2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                    span
+                                    span
+                                    span
+                                  .dropdown-menu.dropdown-menu-right(aria-labelledby="forumPostMess2")
+                                    a.dropdown-item(href="#")
+                                      div
+                                        i.icon-font.icon-ban
+                                      span!= "Hide"
+                                    a.dropdown-item(href="#")
+                                      div
+                                        i.icon-font.icon-info
+                                      span!= "Report"
+
+                      .forum__post-bottom.forum__post-bottom--pl
+                        .forum__post-left
+                          .forum__post-img
+                            img(
+                            srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
+                            alt="" title=""
+                            )
+
+                        .forum__post-right
+                          form.form(action="" method="")
+                            .form__field.form__field--textarea
+                              .form__textarea-wrap
+                                textarea.form__textarea(name="" placeholder="Add a comment")
+                              .form__notify.form__notify--hide
+
+                            .form__field.form__field--btn
+                              button.form__btn.forum__post-btn.c-btn.c-btn--lightGray(type="submit")!= "Cancel"
+                              button.form__btn.forum__post-btn(type="submit")!= "Comment"

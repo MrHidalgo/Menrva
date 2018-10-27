@@ -109,6 +109,10 @@
       }
     }
 
+    &--post {
+      padding-top: 30px;
+    }
+
     &--tabs {
       margin-bottom: 30px;
     }
@@ -124,6 +128,29 @@
         font-weight: 500;
       }
     }
+  }
+
+  &__view {
+    position: relative;
+
+    &--half {
+      .tool__preview {
+        height: 237px;
+        margin-bottom: 0;
+
+        &:first-of-type {
+          border-bottom: 1px solid #cbcecb;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 30px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+    }
+    &--full {}
   }
 
   &__block {
