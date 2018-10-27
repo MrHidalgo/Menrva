@@ -9,3 +9,22 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuMain
+
+          .section__wrapper-right
+
+            .section__title.section__title--notes
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-bill
+                  span!= "Create book"
+
+                .section__title-right
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-error
