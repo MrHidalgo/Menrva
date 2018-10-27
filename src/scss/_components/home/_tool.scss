@@ -110,6 +110,12 @@
       .icon-fullscreen {
         font-size: 20px;
       }
+      .icon-star-full {
+        font-size: 22px;
+      }
+      .icon-edit {
+        font-size: 22px;
+      }
     }
 
     &-scroll {
@@ -129,6 +135,10 @@
       font-size: 22px;
       font-weight: 600;
       padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 
