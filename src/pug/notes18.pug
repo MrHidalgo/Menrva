@@ -9,3 +9,59 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#fullscreen.fullscreen
+      .fullscreen__wrapper
+        .fullscreen__wrapper-top
+
+          p.fullscreen__title!= "Menrva is now full screen (Press Esc to exit full screen mode)"
+
+          .tool.tool--full
+            .tool__wrapper
+              .tool__preview
+                .tool__preview-control.d-flex.align-items-center.justify-content-between
+                  div.d-flex.align-items-center
+                    input(type="text" value="2")
+                    span!= "of <i>4</i>"
+                  div.d-flex.justify-content-end
+                    a(
+                    href="#"
+                    title="" class=""
+                    )
+                      i.icon-font.icon-star-full
+
+                .tool__preview-scroll
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                  p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+
+        .fullscreen__wrapper-bottom
+          .tool
+            .tool__control
+              .tool__control-wrap
+                .tool__control-left.d-flex.align-items-center
+                  +btnKeyboard()
+                  +btnStar()
+
+                .tool__control-middle.d-flex.align-items-center
+                  .tool__control-shuffle
+                    +btnShuffle()
+
+                  .tool__control-line
+                    a(
+                    href="#"
+                    title="" class=""
+                    )
+
+                  .tool__control-group.d-flex.align-items-center.justify-content-end
+                    +btnPrevNext()
+                    +btnPrevNext()
+
+                .tool__control-right.d-flex.align-items-center.justify-content-end
+                  +btnSwap()
+                  +btnText()
+                  +btnSetting()

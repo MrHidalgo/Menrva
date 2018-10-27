@@ -219,7 +219,7 @@ PageList:
   ready: 55
 - file: notes18.html
   titleName: Passage full screen
-  ready: 1
+  ready: 55
 - file: notes19.html
   titleName: Passage setting
   ready: 0
