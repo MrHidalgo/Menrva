@@ -132,53 +132,56 @@
 	@if $filename == remove {
 		$char: "\E023";
 	}
-	@if $filename == save {
+	@if $filename == safety {
 		$char: "\E024";
 	}
-	@if $filename == schedule {
+	@if $filename == save {
 		$char: "\E025";
 	}
-	@if $filename == search {
+	@if $filename == schedule {
 		$char: "\E026";
 	}
-	@if $filename == select {
+	@if $filename == search {
 		$char: "\E027";
 	}
-	@if $filename == send-feedback {
+	@if $filename == select {
 		$char: "\E028";
 	}
-	@if $filename == setting {
+	@if $filename == send-feedback {
 		$char: "\E029";
 	}
-	@if $filename == shuffle {
+	@if $filename == setting {
 		$char: "\E02A";
 	}
-	@if $filename == speaker {
+	@if $filename == shuffle {
 		$char: "\E02B";
 	}
-	@if $filename == star-fill {
+	@if $filename == speaker {
 		$char: "\E02C";
 	}
-	@if $filename == star-full {
+	@if $filename == star-fill {
 		$char: "\E02D";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E02E";
 	}
-	@if $filename == swap {
+	@if $filename == star {
 		$char: "\E02F";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E030";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E031";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E032";
 	}
-	@if $filename == width-small {
+	@if $filename == text {
 		$char: "\E033";
+	}
+	@if $filename == width-small {
+		$char: "\E034";
 	}
 
 	@return $char;
@@ -333,6 +336,10 @@
 }
 .icon-remove {
 	@include icon(remove);
+
+}
+.icon-safety {
+	@include icon(safety);
 
 }
 .icon-save {

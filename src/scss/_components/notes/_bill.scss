@@ -139,6 +139,12 @@
         font-size: 14px;
       }
     }
+
+    &--public {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #cbcecb;
+    }
   }
 
   &__view {
@@ -356,6 +362,23 @@
           max-width: calc((100% / 2) - 10px);
         }
       }
+    }
+  }
+
+  &__public {
+    display: flex;
+    align-items: center;
+
+    &-left {
+      p {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    .form__field,
+    label {
+      margin-bottom: 0;
     }
   }
 }

@@ -572,7 +572,15 @@
         justify-content: center;
 
         > div {
-          &:nth-child(1) {}
+          &:nth-child(1) {
+            display: flex;
+            align-items: center;
+
+            i {
+              margin-right: 10px;
+              font-size: 18px;
+            }
+          }
           &:nth-child(2) {
             position: relative;
             width: 32px;
@@ -590,7 +598,7 @@
               width: 18px;
               height: 18px;
               border-radius: 100%;
-              background-color: #52805b;
+              background-color: #019552;
               @include transition(left);
             }
           }

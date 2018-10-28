@@ -105,3 +105,20 @@ block content
                                     option(value="1")!= "Category ..."
                                   span.select__icon-wrap
                                     i.icon-font.icon-arrow
+
+                .bill__row.bill__row-7.bill__row--public
+                  .bill__public.d-flex.align-items-center.justify-content-between
+                    .bill__public-left
+                      p!= "+ Import from Word, Excel, Google Docs, etc."
+
+                    .bill__public-right.d-flex.justify-content-end
+                      form.form(action="" method="")
+
+                        .form__field.form__field--swipe
+                          input(type="checkbox" id="publicSwipe" name="")
+                          label(for="publicSwipe")
+                            div
+                              i.icon-font.icon-safety
+                              p!= "Public note"
+                            div
+                            div
