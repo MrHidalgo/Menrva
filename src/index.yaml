@@ -210,7 +210,7 @@ PageList:
   ready: 55
 - file: notes15.html
   titleName: Import flashcard
-  ready: 1
+  ready: 55
 - file: notes16.html
   titleName: Flashcard
   ready: 55

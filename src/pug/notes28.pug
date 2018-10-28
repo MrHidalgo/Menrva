@@ -1,8 +1,8 @@
 ---
-title: Menrva - Import book 1
+title: Menrva - Import book
 
 contentClassName: notes
-dataPageName: notes3
+dataPageName: notes28
 login: true
 ---
 extends shared/_layout
@@ -31,6 +31,24 @@ block content
 
             .bill
               .bill__wrapper
+
+                .bill__row.bill__row-7.bill__row--import.bill__row--importBook
+                  div.bill__import-wrapper
+                    p.bill__import-text!= "Import your data. <span>Click <a href='#'>here</a> to upload your data.</span>"
+
+                  .bill__import-block.section__block.mb-0
+                    ul
+                      li
+                        div
+                          p!= "Book name"
+                          p!= "25mb"
+                        div.d-flex.justify-content-end
+                          a(
+                            href="#"
+                            title="" class=""
+                          )
+                            i.icon-font.icon-remove
+
                 .bill__row.bill__row-7.bill__row--option
                   form.form(action="" method="")
                     .form__wrapper
