@@ -227,7 +227,7 @@ PageList:
   titleName: Create passage
   ready: 1
 - file: notes21.html
-  titleName: Import passage 1
+  titleName: Import passage
   ready: 1
 - file: notes22.html
   titleName: Passage

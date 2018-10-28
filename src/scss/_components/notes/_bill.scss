@@ -59,6 +59,20 @@
     &-5 {}
     &-6 {}
 
+    &--title {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #cbcecb;
+
+      span {
+        color: $c-0e1111;
+        letter-spacing: 0.21px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
     &--info {
       display: flex;
       align-items: center;
