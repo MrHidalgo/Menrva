@@ -207,13 +207,13 @@ PageList:
   ready: 55
 - file: notes14.html
   titleName: Create flashcard
-  ready: 1
+  ready: 55
 - file: notes15.html
   titleName: Import flashcard
   ready: 1
 - file: notes16.html
   titleName: Flashcard
-  ready: 1
+  ready: 55
 - file: notes17.html
   titleName: Passage example
   ready: 55
