@@ -2,7 +2,7 @@
 title: Menrva - Create flashcard
 
 contentClassName: notes
-dataPageName: notes3
+dataPageName: notes14
 login: true
 ---
 extends shared/_layout
@@ -28,3 +28,80 @@ block content
                 .section__title-right
                   a(href="#" title="" class="")
                     i.icon-font.icon-error
+
+            .bill
+              .bill__wrapper
+                .bill__row.bill__row-6.bill__row--create
+                  form.form(action="" method="")
+                    .bill__create
+                      .bill__create-left
+                        label.form__label()!= "Cover"
+
+                        .bill__create-box
+                          img(
+                            srcset="./img/img-create.png, ./img/img-create@2x.png 2x"
+                            alt="" title=""
+                           )
+
+                          p!= "Drag and drop any image or choose an image"
+
+                      .bill__create-right.d-flex.flex-column.justify-content-between
+
+                        .form__field.form__field--input
+                          label.form__label(for="createTitle")!= "Title"
+                          .form__input-wrap
+                            input.form__input(type="text" id="createTitle" name="createTitle" placeholder="Type your title")
+                          .form__notify.form__notify--hide
+
+                        .form__field.form__field--input
+                          label.form__label(for="createDescription")!= "Description  (optional)"
+                          .form__input-wrap
+                            input.form__input(type="text" id="createDescription" name="createDescription" placeholder="Type your description")
+                          .form__notify.form__notify--hide
+
+                        .form__field.form__field--group.d-flex.justify-content-between
+                          div
+                            label.form__label!= "Course  (optional)"
+                            .form__field.form__field--select
+                              .form__select-wrap
+                                .form__select
+                                  span.select__value
+                                  select(name="")
+                                    option(value="0" disabled selected hidden)!= "Course"
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                    option(value="1")!= "Course ..."
+                                  span.select__icon-wrap
+                                    i.icon-font.icon-arrow
+
+                          div
+                            label.form__label!= "Category (optional)"
+                            .form__field.form__field--select
+                              .form__select-wrap
+                                .form__select
+                                  span.select__value
+                                  select(name="")
+                                    option(value="0" disabled selected hidden)!= "Category"
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                    option(value="1")!= "Category ..."
+                                  span.select__icon-wrap
+                                    i.icon-font.icon-arrow

@@ -871,7 +871,7 @@
     padding: 0 20px;
     border-radius: 4px;
     border: 1px solid $c-cbcecb;
-    background-color: transparent;
+    background-color: $c-white;
     @include inputPlaceholder {
       color: #7f7f7f;
     }
@@ -918,7 +918,7 @@
     height: 54px;
     border-radius: 4px;
     border: 1px solid $c-cbcecb;
-    background-color: transparent;
+    background-color: $c-white;
 
     select {
       opacity: 0;
