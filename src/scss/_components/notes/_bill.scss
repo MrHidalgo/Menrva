@@ -73,6 +73,50 @@
       }
     }
 
+    &--option {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #cbcecb;
+
+      .form {
+        &__wrapper {
+          &-top {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          &-left,
+          &-right {
+            width: 50%;
+          }
+
+          &-left {
+            padding-right: 10px;
+          }
+          &-right {
+            padding-left: 10px;
+          }
+        }
+        &__field {
+          &-cover {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          &--custom  {
+            input {
+              margin-left: 0;
+            }
+          }
+        }
+        &__btn {
+          max-width: 155px;
+          margin-left: auto;
+          margin-top: 0;
+        }
+      }
+    }
+
     &--info {
       display: flex;
       align-items: center;

@@ -33,5 +33,60 @@ block content
             .bill
               .bill__wrapper
 
+                .bill__row.bill__row-7.bill__row--option
+                  form.form(action="" method="")
+                    .form__wrapper
+                      .form__wrapper-top
+                        .form__wrapper-left
+                          label.form__label.form__label--notes!= "Between term and definition"
+                          .form__field-cover
+                            .form__field.form__field--radio
+                              input.form__radio(type="radio" id="notesExportTab" name="notesExportTerm")
+                              label(for="notesExportTab")
+                                span!= "Tab"
+                            .form__field.form__field--radio
+                              input.form__radio(type="radio" id="notesExportComma" name="notesExportTerm" checked)
+                              label(for="notesExportComma")
+                                span!= "Comma"
+                            .form__field.form__field--radio
+                              input.form__radio(type="radio" id="notesExportTermCustom" name="notesExportTerm")
+                              label(for="notesExportTermCustom")
+                                span!= "Custom"
+                            .form__field.form__field--custom
+                              input(type='text' name='' placeholder='-')
+
+                        .form__wrapper-right
+                          label.form__label.form__label--notes!= "Between rows"
+                          .form__field-cover
+                            .form__field.form__field--radio
+                              input.form__radio(type="radio" id="notesExportLine" name="notesExportRows")
+                              label(for="notesExportLine")
+                                span!= "New line"
+                            .form__field.form__field--radio
+                              input.form__radio(type="radio" id="notesExportSemicolon" name="notesExportRows" checked)
+                              label(for="notesExportSemicolon")
+                                span!= "Semicolon"
+                            .form__field.form__field--radio
+                              input.form__radio(type="radio" id="notesExportRowCustom" name="notesExportRows")
+                              label(for="notesExportRowCustom")
+                                span!= "Custom"
+                            .form__field.form__field--custom
+                              input(type='text' name='' placeholder='\\n\\n')
+
+                        .form__wrapper-left
+                          label.form__label.form__label--notes!= "Option"
+                          .form__field.form__field--checkbox.form__field--checkbox-wp
+                            .form__checkbox-wrap
+                              input.form__checkbox(type="checkbox" id="notesExport" name="" checked)
+                              label(for="notesExport")
+                                u
+                                span!= "Alphabetize"
+                                i.icon-font.icon-check
+
+                        .form__wrapper-right
+                          .form__field.form__field--btn
+                            button.form__btn(type="submit")!= "Import"
+
+
                 .bill__row.bill__row--title
                   span!= "Preview"
