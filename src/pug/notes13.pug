@@ -2,10 +2,91 @@
 title: Menrva - Flashcard setting
 
 contentClassName: notes
-dataPageName: notes3
+dataPageName: notes13
 login: true
 ---
 extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--pageSetting
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Page settings"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          form.form(action="" method="")
+            label.form__label()!= "Font"
+            .form__field.form__field--select
+              .form__select-wrap
+                .form__select
+                  span.select__value
+                  select(name="")
+                    option(value="0" disabled selected hidden)!= "Poppins"
+                    option(value="january")!= "Tahoma"
+                    option(value="february")!= "Lato"
+                    option(value="march")!= "Times New Roman"
+                  span.select__icon-wrap
+                    i.icon-font.icon-arrow
+
+            label.form__label()!= "Font size"
+            .form__field.form__field--range
+              p.icon-text-wrap
+                i.icon-font.icon-text
+              input(type="range" min="0" max="100" step="1" value="30")
+              p.icon-text-wrap
+                i.icon-font.icon-text
+
+            label.form__label()!= "Page width"
+            .form__field.form__field--range
+              p.icon-width-wrap
+                span
+              input(type="range" min="0" max="100" step="1" value="10")
+              p.icon-width-wrap
+                span
+
+            label.form__label()!= "Brightness"
+            .form__field.form__field--range
+              p
+                i.icon-font.icon-light
+              input(type="range" min="0" max="100" step="1" value="60")
+              p
+                i.icon-font.icon-light
+
+            label.form__label()!= "Alignment"
+            .form__field--group.justify-content-between
+              .form__field.form__field--radio.form__field--radio--mr
+                input.form__radio(type="radio" id="pageSettingJustified" name="pageSettingAlign")
+                label(for="pageSettingJustified")
+                  span!= "Justified"
+              .form__field.form__field--radio.form__field--radio--mr
+                input.form__radio(type="radio" id="pageSettingAlignLeft" name="pageSettingAlign" checked)
+                label(for="pageSettingAlignLeft")
+                  span!= "Left-aligned"
+              .form__field.form__field--radio
+                input.form__radio(type="radio" id="pageSettingAlignRight" name="pageSettingAlign")
+                label(for="pageSettingAlignRight")
+                  span!= "Right-aligned"
+
+            label.form__label()!= "Line spacing"
+            .form__field--group.justify-content-between
+              .form__field.form__field--radio.form__field--radio--mr
+                input.form__radio(type="radio" id="pageSettingSpacSmall" name="pageSettingSpacing")
+                label(for="pageSettingSpacSmall")
+                  span!= "Small"
+              .form__field.form__field--radio.form__field--radio--mr
+                input.form__radio(type="radio" id="pageSettingSpacMedium" name="pageSettingSpacing" checked)
+                label(for="pageSettingSpacMedium")
+                  span!= "Medium"
+              .form__field.form__field--radio
+                input.form__radio(type="radio" id="pageSettingSpacLarge" name="pageSettingSpacing")
+                label(for="pageSettingSpacLarge")
+                  span!= "Large"
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Save"
+

@@ -204,7 +204,7 @@ PageList:
   ready: 55
 - file: notes13.html
   titleName: Page setting
-  ready: 1
+  ready: 55
 - file: notes14.html
   titleName: Create flashcard
   ready: 1

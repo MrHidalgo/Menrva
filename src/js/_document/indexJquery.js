@@ -72,8 +72,24 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
   const initBootstrapMethod = () => {
     $('[data-toggle="tooltip"]').tooltip();
+  };
+
+
+  const inputRangeInit = () => {
+    $('input[type=range]').on('input', function (e) {
+      let min = e.target.min,
+        max = e.target.max,
+        val = e.target.value;
+
+      $(e.target).css({
+        'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+      });
+    }).trigger('input');
   };
 
 
@@ -91,6 +107,7 @@ $(document).ready((ev) => {
     initSelect();
     initSearch();
     initBootstrapMethod();
+    inputRangeInit();
   };
   initJquery();
 });

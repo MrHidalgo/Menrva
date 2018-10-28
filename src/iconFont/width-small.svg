@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>width-small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notes-/-Book-/-3" transform="translate(-477.000000, -456.000000)">
+            <g id="Pop-up" transform="translate(416.000000, 108.000000)">
+                <g id="Icon-/-Aa-Copy-3" transform="translate(57.000000, 344.000000)">
+                    <g id="width-small" transform="translate(4.000000, 4.000000)">
+                        <path d="M0.432926829,9.06812467 L3.41463415,11.5254417 C3.471545,11.5782875 3.5,11.6433275 3.5,11.7205637 C3.5,11.7977999 3.471545,11.8628399 3.41463415,11.9156856 L0.432926829,14.3851978 C0.347560549,14.4583689 0.254065549,14.4725964 0.152439024,14.4278808 C0.0508125,14.3831651 0,14.3038976 0,14.1900759 L0,9.26324662 C0,9.14942491 0.0508125,9.07015741 0.152439024,9.02544174 C0.254065549,8.98072607 0.347560549,8.99495357 0.432926829,9.06812467 Z" id="caret-right---anticon" fill="#000000"></path>
+                        <path d="M19.4329268,9.06812467 L22.4146341,11.5254417 C22.471545,11.5782875 22.5,11.6433275 22.5,11.7205637 C22.5,11.7977999 22.471545,11.8628399 22.4146341,11.9156856 L19.4329268,14.3851978 C19.3475605,14.4583689 19.2540655,14.4725964 19.152439,14.4278808 C19.0508125,14.3831651 19,14.3038976 19,14.1900759 L19,9.26324662 C19,9.14942491 19.0508125,9.07015741 19.152439,9.02544174 C19.2540655,8.98072607 19.3475605,8.99495357 19.4329268,9.06812467 Z" id="caret-right---anticon-copy" fill="#000000" transform="translate(20.750000, 11.726661) scale(-1, 1) translate(-20.750000, -11.726661) "></path>
+                        <path d="M6,1 L17,1" id="Path-2" stroke="#000000" stroke-width="1.6" fill-rule="nonzero"></path>
+                        <path d="M6,1 L6,22" id="Path-5" stroke="#000000" stroke-width="1.6" fill-rule="nonzero"></path>
+                        <path d="M17,1 L17,22" id="Path-6" stroke="#000000" stroke-width="1.6" fill-rule="nonzero"></path>
+                        <path d="M6,22 L17,22" id="Path-7" stroke="#000000" stroke-width="1.6" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

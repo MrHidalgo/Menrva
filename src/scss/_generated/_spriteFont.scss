@@ -93,86 +93,92 @@
 	@if $filename == keyboard {
 		$char: "\E016";
 	}
-	@if $filename == like {
+	@if $filename == light {
 		$char: "\E017";
 	}
-	@if $filename == logout {
+	@if $filename == like {
 		$char: "\E018";
 	}
-	@if $filename == notes {
+	@if $filename == logout {
 		$char: "\E019";
 	}
-	@if $filename == notification {
+	@if $filename == notes {
 		$char: "\E01A";
 	}
-	@if $filename == notify {
+	@if $filename == notification {
 		$char: "\E01B";
 	}
-	@if $filename == play {
+	@if $filename == notify {
 		$char: "\E01C";
 	}
-	@if $filename == plus {
+	@if $filename == play {
 		$char: "\E01D";
 	}
-	@if $filename == prev-next {
+	@if $filename == plus {
 		$char: "\E01E";
 	}
-	@if $filename == profile {
+	@if $filename == prev-next {
 		$char: "\E01F";
 	}
-	@if $filename == recent {
+	@if $filename == profile {
 		$char: "\E020";
 	}
-	@if $filename == refer {
+	@if $filename == recent {
 		$char: "\E021";
 	}
-	@if $filename == remove {
+	@if $filename == refer {
 		$char: "\E022";
 	}
-	@if $filename == save {
+	@if $filename == remove {
 		$char: "\E023";
 	}
-	@if $filename == schedule {
+	@if $filename == save {
 		$char: "\E024";
 	}
-	@if $filename == search {
+	@if $filename == schedule {
 		$char: "\E025";
 	}
-	@if $filename == select {
+	@if $filename == search {
 		$char: "\E026";
 	}
-	@if $filename == send-feedback {
+	@if $filename == select {
 		$char: "\E027";
 	}
-	@if $filename == setting {
+	@if $filename == send-feedback {
 		$char: "\E028";
 	}
-	@if $filename == shuffle {
+	@if $filename == setting {
 		$char: "\E029";
 	}
-	@if $filename == speaker {
+	@if $filename == shuffle {
 		$char: "\E02A";
 	}
-	@if $filename == star-fill {
+	@if $filename == speaker {
 		$char: "\E02B";
 	}
-	@if $filename == star-full {
+	@if $filename == star-fill {
 		$char: "\E02C";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E02D";
 	}
-	@if $filename == swap {
+	@if $filename == star {
 		$char: "\E02E";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E02F";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E030";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E031";
+	}
+	@if $filename == text {
+		$char: "\E032";
+	}
+	@if $filename == width-small {
+		$char: "\E033";
 	}
 
 	@return $char;
@@ -275,6 +281,10 @@
 }
 .icon-keyboard {
 	@include icon(keyboard);
+
+}
+.icon-light {
+	@include icon(light);
 
 }
 .icon-like {
@@ -383,5 +393,9 @@
 }
 .icon-text {
 	@include icon(text);
+
+}
+.icon-width-small {
+	@include icon(width-small);
 
 }

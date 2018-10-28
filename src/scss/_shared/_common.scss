@@ -242,6 +242,170 @@
       }
     }
 
+    &--range {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+
+      p {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+
+        &.icon-width-wrap {
+          &:first-of-type {
+            span {
+              width: 13px;
+
+              &:before {
+                left: 1px;
+              }
+              &:after {
+                right: 1px;
+              }
+            }
+          }
+          &:last-of-type {
+            span {
+              width: 19px;
+
+              &:before {
+                left: 7px;
+              }
+              &:after {
+                right: 7px;
+              }
+            }
+          }
+
+          span {
+            height: 21px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 2px;
+            border: 1.6px solid $c-0e1111;
+
+            &:before,
+            &:after {
+              content: '';
+              position: absolute;
+              top: 9px;
+              width: 0;
+              height: 0;
+              border-width: 3px;
+              border-style: solid;
+            }
+
+            &:before {
+              left: 1px;
+              border-color: transparent transparent transparent $c-0e1111;
+            }
+            &:after {
+              right: 1px;
+              border-color: transparent $c-0e1111 transparent transparent;
+            }
+          }
+        }
+
+        &.icon-text-wrap {
+          &:first-of-type {
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: -8px;
+              left: 0;
+              width: 0;
+              height: 0;
+              margin-left: 4px;
+              border-width: 6px;
+              border-style: solid;
+              border-color: #000 transparent transparent transparent;
+            }
+          }
+          &:last-of-type {
+            &:before {
+              content: '';
+              position: absolute;
+              top: -8px;
+              left: 0;
+              width: 0;
+              height: 0;
+              margin-left: 4px;
+              border-width: 6px;
+              border-style: solid;
+              border-color: transparent transparent #000 transparent;
+            }
+          }
+        }
+
+        i {
+          color: $c-0e1111;
+        }
+
+        &:first-of-type {
+          .icon-light {
+            font-size: 20px;
+          }
+        }
+        &:last-of-type {
+          .icon-light {
+            font-size: 24px;
+          }
+        }
+      }
+
+      input {
+        outline: none;
+        cursor: pointer;
+        width: 100%;
+        max-width: calc(100% - (45px * 2));
+        margin-left: auto;
+        margin-right: auto;
+        height: 6px;
+        border-radius: 6px;
+        background-color: rgba(#f6f6f6, 1);
+        background-image: linear-gradient(#d8d8d8, #d8d8d8);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+
+        &::-webkit-slider-runnable-track {
+          box-shadow: none;
+          border: none;
+          background: transparent;
+          -webkit-appearance: none;
+        }
+
+        &::-moz-range-track {
+          box-shadow: none;
+          border: none;
+          background: transparent;
+        }
+
+        &::-moz-focus-outer {
+          border: 0;
+        }
+
+        &::-webkit-slider-thumb {
+          width: 18px;
+          height: 18px;
+          background: #019552;
+          border-radius: 100%;
+          -webkit-appearance: none;
+        }
+
+        &::-moz-range-thumb {
+          width: 18px;
+          height: 18px;
+          background: #019552;
+          border-radius: 100%;
+        }
+      }
+    }
+
     &--copy {
       display: flex;
       align-items: center;
@@ -857,7 +1021,8 @@
     }
 
     .c-modal--notes &,
-    .c-modal--settingNote & {
+    .c-modal--settingNote &,
+    .c-modal--pageSetting & {
       max-width: 129px;
       margin-left: auto;
     }
@@ -1025,7 +1190,8 @@
 
     .c-modal--refer &,
     .c-modal--forum &,
-    .c-modal--notes & {
+    .c-modal--notes &,
+    .c-modal--pageSetting & {
       max-width: 609px;
       padding-top: 40px;
       padding-bottom: 40px;
