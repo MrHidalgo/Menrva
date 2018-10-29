@@ -17,6 +17,7 @@
 
   &__title {
     &--notes,
+    &--schedule,
     &--recent,
     &--forum {
       border-bottom: 1px solid #cbcecb;
@@ -26,6 +27,44 @@
         align-items: center;
         justify-content: flex-end;
         width: 100%;
+      }
+    }
+
+    &--schedule {
+      border-bottom: none;
+
+      .section__title-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 54px;
+
+        > div {
+          display: flex;
+          align-items: center;
+        }
+
+        p,
+        span {
+          display: flex;
+          align-items: center;
+        }
+
+        .icon-calendar {
+          font-size: 18px;
+        }
+
+        a {
+          color: #333;
+
+          &:last-of-type {
+            transform: rotate(-180deg);
+          }
+
+          i {
+            font-size: 20px;
+          }
+        }
       }
     }
 
@@ -127,6 +166,9 @@
       }
       .icon-import {
         font-size: 22px;
+      }
+      .icon-schedule {
+        font-size: 24px;
       }
     }
 

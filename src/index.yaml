@@ -157,10 +157,10 @@ PageList:
 
 - file: schedule1.html
   titleName: Schedule 1
-  ready: 0
-- file: schedule12.html
+  ready: 55
+- file: schedule2.html
   titleName: Schedule 1
-  ready: 0
+  ready: 1
 
 - file:
   titleName: =====NOTES=====

@@ -48,140 +48,143 @@
 	@if $filename == book {
 		$char: "\E007";
 	}
-	@if $filename == check {
+	@if $filename == calendar {
 		$char: "\E008";
 	}
-	@if $filename == edit {
+	@if $filename == check {
 		$char: "\E009";
 	}
-	@if $filename == error {
+	@if $filename == edit {
 		$char: "\E00A";
 	}
-	@if $filename == export {
+	@if $filename == error {
 		$char: "\E00B";
 	}
-	@if $filename == eye {
+	@if $filename == export {
 		$char: "\E00C";
 	}
-	@if $filename == filter {
+	@if $filename == eye {
 		$char: "\E00D";
 	}
-	@if $filename == folder-add {
+	@if $filename == filter {
 		$char: "\E00E";
 	}
-	@if $filename == forum {
+	@if $filename == folder-add {
 		$char: "\E00F";
 	}
-	@if $filename == fullscreen {
+	@if $filename == forum {
 		$char: "\E010";
 	}
-	@if $filename == i-fb {
+	@if $filename == fullscreen {
 		$char: "\E011";
 	}
-	@if $filename == i-gp {
+	@if $filename == i-fb {
 		$char: "\E012";
 	}
-	@if $filename == i-tw {
+	@if $filename == i-gp {
 		$char: "\E013";
 	}
-	@if $filename == import {
+	@if $filename == i-tw {
 		$char: "\E014";
 	}
-	@if $filename == info {
+	@if $filename == import {
 		$char: "\E015";
 	}
-	@if $filename == keyboard {
+	@if $filename == info {
 		$char: "\E016";
 	}
-	@if $filename == light {
+	@if $filename == keyboard {
 		$char: "\E017";
 	}
-	@if $filename == like {
+	@if $filename == light {
 		$char: "\E018";
 	}
-	@if $filename == logout {
+	@if $filename == like {
 		$char: "\E019";
 	}
-	@if $filename == notes {
+	@if $filename == logout {
 		$char: "\E01A";
 	}
-	@if $filename == notification {
+	@if $filename == notes {
 		$char: "\E01B";
 	}
-	@if $filename == notify {
+	@if $filename == notification {
 		$char: "\E01C";
 	}
-	@if $filename == play {
+	@if $filename == notify {
 		$char: "\E01D";
 	}
-	@if $filename == plus {
+	@if $filename == play {
 		$char: "\E01E";
 	}
-	@if $filename == prev-next {
+	@if $filename == plus {
 		$char: "\E01F";
 	}
-	@if $filename == profile {
+	@if $filename == prev-next {
 		$char: "\E020";
 	}
-	@if $filename == recent {
+	@if $filename == profile {
 		$char: "\E021";
 	}
-	@if $filename == refer {
+	@if $filename == recent {
 		$char: "\E022";
 	}
-	@if $filename == remove {
+	@if $filename == refer {
 		$char: "\E023";
 	}
-	@if $filename == safety {
+	@if $filename == remove {
 		$char: "\E024";
 	}
-	@if $filename == save {
+	@if $filename == safety {
 		$char: "\E025";
 	}
-	@if $filename == schedule {
+	@if $filename == save {
 		$char: "\E026";
 	}
-	@if $filename == search {
+	@if $filename == schedule {
 		$char: "\E027";
 	}
-	@if $filename == select {
+	@if $filename == search {
 		$char: "\E028";
 	}
-	@if $filename == send-feedback {
+	@if $filename == select {
 		$char: "\E029";
 	}
-	@if $filename == setting {
+	@if $filename == send-feedback {
 		$char: "\E02A";
 	}
-	@if $filename == shuffle {
+	@if $filename == setting {
 		$char: "\E02B";
 	}
-	@if $filename == speaker {
+	@if $filename == shuffle {
 		$char: "\E02C";
 	}
-	@if $filename == star-fill {
+	@if $filename == speaker {
 		$char: "\E02D";
 	}
-	@if $filename == star-full {
+	@if $filename == star-fill {
 		$char: "\E02E";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E02F";
 	}
-	@if $filename == swap {
+	@if $filename == star {
 		$char: "\E030";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E031";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E032";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E033";
 	}
-	@if $filename == width-small {
+	@if $filename == text {
 		$char: "\E034";
+	}
+	@if $filename == width-small {
+		$char: "\E035";
 	}
 
 	@return $char;
@@ -224,6 +227,10 @@
 }
 .icon-book {
 	@include icon(book);
+
+}
+.icon-calendar {
+	@include icon(calendar);
 
 }
 .icon-check {

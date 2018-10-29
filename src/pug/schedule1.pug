@@ -1,7 +1,7 @@
 ---
 title: Menrva - Schedule 1
 
-contentClassName: schedule
+contentClassName: calendar
 dataPageName: schedule1
 login: true
 ---
@@ -14,13 +14,149 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            //include ./macros/_menuSetting
+            include ./macros/_menuNavigation
+
+            .schedule__row.schedule__row-0
+              .schedule__subtitle
+                p.pr-3
+                  i.icon-font.icon-calendar
+                  span.pl-2!= "September 2018"
+
+                div
+                  a(href="#" title="" class="mr-3")
+                    i.icon-font.icon-prev-next
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-prev-next
+
+            .schedule__row.schedule__row-1
+              .schedule__calendar.schedule__calendar--small
+                .schedule__calendar-head
+                  each val, idx in ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
+                    a(href="#" title="" class="")!= val
+                .schedule__calendar-body
+                  div.schedule__calendar-row
+                    each val, idx in [31,1,2,3,4,5,6]
+                      if(val === 31)
+                        a.schedule__calendar-block.is-uncurrent(href="#" title="" class="")
+                          span.schedule__calendar-val!= val
+                      else
+                        a.schedule__calendar-block(href="#" title="" class="")
+                          span.schedule__calendar-val!= val
+                  div.schedule__calendar-row
+                    each val, idx in [7,8,9,10,11,12,13]
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                  div.schedule__calendar-row
+                    each val, idx in [14,15,16,17,18,19, 20]
+                      if(val === 17)
+                        a.schedule__calendar-block.is-active(href="#" title="" class="")
+                          span.schedule__calendar-val!= val
+                      else
+                        a.schedule__calendar-block(href="#" title="" class="")
+                          span.schedule__calendar-val!= val
+                  div.schedule__calendar-row
+                    each val, idx in [21,22,23,24,25,26,27]
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                  div.schedule__calendar-row
+                    each val, idx in [28,29,30,1,2,3,4]
+                      if(val === 1 || val === 2 || val === 3 || val === 4)
+                        a.schedule__calendar-block.is-uncurrent(href="#" title="" class="")
+                          span.schedule__calendar-val!= val
+                      else
+                        a.schedule__calendar-block(href="#" title="" class="")
+                          span.schedule__calendar-val!= val
+
+            .schedule__row.schedule__row-2
+              .schedule__subtitle
+                p.pr-3
+                  i.icon-font.icon-recent
+                  span.pl-2!= "Overdue"
+
+                div
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-remove
+
+            .schedule__row.schedule__row-3
+              .schedule__notes-wrapper
+                a.schedule__notes.schedule__notes-0(href="#")
+                  p!= "Note name"
+                  span!= "1 Aug"
+
+                a.schedule__notes.schedule__notes-1(href="#")
+                  p!= "Note name"
+                  span!= "13 Sep"
 
           .section__wrapper-right
 
-            //h1.section__title
-            //  .section__title-wrap
-            //    .section__title-left
-            //      .section__title-icon
-            //        +iconSVG('profile')
-            //      span!= "Profile"
+            .section__title.section__title--schedule
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-schedule
+                  span!= "Schedule"
+
+                .section__title-right
+                  span.pr-4!= "Today"
+                  p.pr-3
+                    i.icon-font.icon-calendar
+                    span.pl-2!= "September 2018"
+
+                  a(href="#" title="" class="mr-3")
+                    i.icon-font.icon-prev-next
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-prev-next
+
+            .forum__tabs-wrapper
+              a.forum__tabs.is-active(href="#" title="" class="")!= "Month"
+              a.forum__tabs(href="#" title="" class="")!= "Week"
+
+            .schedule__calendar.schedule__calendar--big
+              .schedule__calendar-head
+                each val, idx in ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
+                  a(href="#" title="" class="")!= val
+              .schedule__calendar-body
+                div.schedule__calendar-row
+                  -
+                    var weekName = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+                  each val, idx in [31,1,2,3,4,5,6]
+                    if(val === 31)
+                      a.schedule__calendar-block.is-uncurrent(href="#" title="" class="")
+                        span.schedule__calendar-week!= weekName[idx]
+                        span.schedule__calendar-val!= val
+                    else
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-week!= weekName[idx]
+                        span.schedule__calendar-val!= val
+                div.schedule__calendar-row
+                  each val, idx in [7,8,9,10,11,12,13]
+                    if(val === 13)
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                        div.schedule__calendar-note
+                          p!= "Note name"
+                    else
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                div.schedule__calendar-row
+                  each val, idx in [14,15,16,17,18,19, 20]
+                    if(val === 17)
+                      a.schedule__calendar-block.is-active(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                        div.schedule__calendar-note
+                          p!= "Note name"
+                    else
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                div.schedule__calendar-row
+                  each val, idx in [21,22,23,24,25,26,27]
+                    a.schedule__calendar-block(href="#" title="" class="")
+                      span.schedule__calendar-val!= val
+                div.schedule__calendar-row
+                  each val, idx in [28,29,30,1,2,3,4]
+                    if(val === 1 || val === 2 || val === 3 || val === 4)
+                      a.schedule__calendar-block.is-uncurrent(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
+                    else
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-val!= val
