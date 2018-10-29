@@ -110,16 +110,25 @@
     &--big {
       padding-bottom: 50px;
 
-      .schedule__calendar-head {
-        display: none;
-      }
       .schedule__calendar-block {
         width: 116px;
         height: 116px;
         padding: 4px;
+        margin-right: -1px;
+        margin-bottom: -1px;
+        background-color: $c-white;
+        border: 1px solid #cbcecb;
+      }
+    }
+    &--week {
+      .schedule__calendar-block {
+        width: 116px;
+        min-height: 580px;
+        padding: 4px;
         border: 1px solid #cbcecb;
         margin-right: -1px;
         margin-bottom: -1px;
+        background-color: $c-white;
       }
     }
 

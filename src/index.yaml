@@ -156,11 +156,11 @@ PageList:
   ready: 0
 
 - file: schedule1.html
-  titleName: Schedule 1
+  titleName: Schedule month
   ready: 55
 - file: schedule2.html
-  titleName: Schedule 1
-  ready: 1
+  titleName: Schedule week
+  ready: 55
 
 - file:
   titleName: =====NOTES=====

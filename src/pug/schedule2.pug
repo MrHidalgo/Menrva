@@ -1,5 +1,5 @@
 ---
-title: Menrva - Schedule 2
+title: Menrva - Schedule week
 
 contentClassName: calendar
 dataPageName: schedule2
@@ -110,4 +110,19 @@ block content
             .forum__tabs-wrapper
               a.forum__tabs.is-active(href="#" title="" class="")!= "Month"
               a.forum__tabs(href="#" title="" class="")!= "Week"
+
+            .schedule__calendar.schedule__calendar--week
+              .schedule__calendar-body
+                div.schedule__calendar-row
+                  -
+                    var weekName = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+                  each val, idx in [31,1,2,3,4,5,6]
+                    if(val === 31)
+                      a.schedule__calendar-block.is-uncurrent(href="#" title="" class="")
+                        span.schedule__calendar-week!= weekName[idx]
+                        span.schedule__calendar-val!= val
+                    else
+                      a.schedule__calendar-block(href="#" title="" class="")
+                        span.schedule__calendar-week!= weekName[idx]
+                        span.schedule__calendar-val!= val
 
