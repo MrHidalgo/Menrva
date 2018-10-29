@@ -125,3 +125,49 @@ block content
 
                 .bill__row.bill__row--title.pt-0
                   span!= "Preview"
+
+                .bill__row.bill__row-9.bill__row--preview
+                  .bill__preview
+                    .bill__preview-head.d-flex.justify-content-end
+                      .c-dropdown
+                        .dropdown
+                          a.dropdown__btn(href="#" id="notesFlashcardTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                            span
+                            span
+                            span
+                          .dropdown-menu.dropdown-menu-right(aria-labelledby="notesFlashcardTitle")
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-edit
+                              span!= "Edit"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-star-full
+                              span!= "Set as primary"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-remove
+                              span!= "Remove"
+
+                    .bill__preview-body
+                      .tool
+                        .tool__wrapper
+                          .tool__preview
+                            .tool__preview-control.d-flex.align-items-center.justify-content-between
+                              div.d-flex.align-items-center
+                                input(type="text" value="2")
+                                span!= "of <i>4</i>"
+                              div.d-flex.justify-content-end
+                                a(
+                                href="#"
+                                title="" class=""
+                                )
+                                  i.icon-font.icon-edit
+
+                            .tool__preview-scroll
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                .bill__row.bill__row-5.bill__row--btn
+                  a.c-btn.c-btn--bigH.c-btn--darkGreen.mr-0(href="#" title="" class="")!= "Create"

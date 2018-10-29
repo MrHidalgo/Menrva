@@ -246,10 +246,10 @@ PageList:
   ready: 55
 - file: notes27.html
   titleName: Create book 2
-  ready: 1
+  ready: 55
 - file: notes28.html
   titleName: Import book
-  ready: 1
+  ready: 55
 - file: notes29.html
   titleName: Book
-  ready: 1
+  ready: 55

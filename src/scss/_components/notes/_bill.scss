@@ -7,8 +7,6 @@
   }
 
   &__row {
-    &-0 {}
-    &-1 {}
     &-2 {
       &.bill__row--info {
         margin-bottom: 0;
@@ -54,10 +52,6 @@
         }
       }
     }
-    &-3 {}
-    &-4 {}
-    &-5 {}
-    &-6 {}
 
     &--title {
       padding-top: 30px;
@@ -644,6 +638,41 @@
       height: auto;
       min-height: 60px;
       max-height: 160px;
+    }
+  }
+
+  &__preview {
+    padding: 20px 30px 30px;
+    border-radius: 4px;
+    background-color: rgba(#d8d8d8, 0.5);
+    box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
+
+    &-head {
+      padding-bottom: 20px;
+    }
+
+    .tool {
+      background-color: transparent;
+
+      &__wrapper {
+        padding-top: 0;
+      }
+
+      &__preview {
+        height: 676px;
+        margin-bottom: 0;
+        border: none;
+        box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
+
+        &-scroll {
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
