@@ -225,13 +225,13 @@ PageList:
   ready: 0
 - file: notes20.html
   titleName: Create passage
-  ready: 1
+  ready: 55
 - file: notes21.html
   titleName: Import passage
-  ready: 1
+  ready: 55
 - file: notes22.html
   titleName: Passage
-  ready: 1
+  ready: 55
 - file: notes23.html
   titleName: Book example
   ready: 55

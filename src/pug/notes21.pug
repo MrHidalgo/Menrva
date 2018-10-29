@@ -106,3 +106,42 @@ block content
 
                 .bill__row.bill__row--title
                   span!= "Preview"
+
+                form.form(action="" method="")
+                  .bill__row.bill__row-8.bill__row--box
+                    .bill__box.section__block
+                      .bill__box-left
+                        span.bill__box-num!= "1"
+
+                      .bill__box-right
+                        .form__field.form__field--textarea.is-valid
+                          label.form__label(for="notesCreateText0")!= "Passage"
+                          .form__textarea-wrap
+                            textarea.form__textarea(id="notesCreateText0" name="notesCreateText0" placeholder="Passage")
+                          .form__notify.form__notify--hide
+
+                    .bill__box.section__block
+                      .bill__box-left
+                        a.bill__box-btn(
+                        href="#"
+                        title="" class=""
+                        )
+                          i.icon-font.icon-remove
+
+                      .bill__box-right
+                        .form__field.form__field--textarea
+                          label.form__label(for="notesCreateText1")!= "Passage"
+                          .form__textarea-wrap
+                            textarea.form__textarea(id="notesCreateText1" name="notesCreateText1" placeholder="Passage")
+                          .form__notify.form__notify--hide
+
+                    .bill__box.bill__box--opacity.section__block
+                      .bill__box-left
+                        span.bill__box-num!= "3"
+
+                      .bill__box-right
+                        .form__field.form__field--textarea
+                          label.form__label(for="notesCreateText2")!= "Passage"
+                          .form__textarea-wrap
+                            textarea.form__textarea(id="notesCreateText2" name="notesCreateText2" placeholder="Passage")
+                          .form__notify.form__notify--hide

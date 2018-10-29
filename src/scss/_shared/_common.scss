@@ -242,6 +242,16 @@
       }
     }
 
+    &.is-valid {
+      .form__input,
+      .form__select,
+      .form__textarea {
+        border-color: #00bd70;
+      }
+
+
+    }
+
     &--range {
       display: flex;
       align-items: center;

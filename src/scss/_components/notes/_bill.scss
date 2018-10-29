@@ -603,6 +603,49 @@
       margin-bottom: 0;
     }
   }
+
+  &__box {
+    display: flex;
+    align-items: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &--opacity {
+      opacity: 0.5;
+    }
+
+    &-left  {
+      width: 50px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 50px);
+    }
+
+    &-num {
+      color: #333;
+      letter-spacing: 0.46px;
+      font-size: 24px;
+    }
+
+    &-btn {
+      display: flex;
+
+      i {
+        color: $c-0e1111;
+        font-size: 22px;
+      }
+    }
+
+    .form__textarea-wrap {
+      height: auto;
+      min-height: 60px;
+      max-height: 160px;
+    }
+  }
 }
 
 // BILL :: END
