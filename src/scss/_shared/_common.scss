@@ -1504,7 +1504,14 @@
   align-items: center;
 
   &__left {
+    position: relative;
     margin-right: 40px;
+
+    &.c-dropdown {
+      .dropdown-menu {
+        transform: translate3d(-140px, 34px, 0px) !important;
+      }
+    }
   }
 
   &__right {
@@ -1672,6 +1679,7 @@
     }
 
     span {
+      white-space: nowrap;
       font-size: 12px;
       font-weight: 500;
     }

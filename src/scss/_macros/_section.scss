@@ -118,6 +118,30 @@
           font-size: 13px;
         }
       }
+
+      .c-dropdown {
+        position: relative;
+
+        > a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          color: $c-0e1111;
+
+          .icon-switcher-add {
+            font-size: 19px;
+          }
+
+        }
+
+        .dropdown-item {
+          span {
+            font-weight: normal;
+          }
+        }
+      }
     }
 
     &-icon {

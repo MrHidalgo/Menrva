@@ -9,8 +9,18 @@ include ./_mixin/_modal
 include ./_mixin/_nav
 
 mixin btnStar()
-  a(href="#" title="" class="")
-    i.icon-font.icon-star
+  .c-dropdown
+    a(href="#" id="toolStar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+      i.icon-font.icon-star
+    .dropdown-menu.dropdown-menu-left.up(aria-labelledby="toolStar")
+      a.dropdown-item(href="#")
+        div
+          i.icon-font.icon-star
+        span!= "All"
+      a.dropdown-item(href="#")
+        div
+          i.icon-font.icon-star-fill
+        span!= "Starred"
 
 mixin btnSwitcher()
   a(href="#" title="" class="")
@@ -33,8 +43,59 @@ mixin btnPrevNext()
     i.icon-font.icon-prev-next
 
 mixin btnKeyboard()
-  a(href="#" title="" class="")
-    i.icon-font.icon-keyboard
+  .c-dropdown.c-dropdown--keyboard
+    a(href="#" id="toolKeyboard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+      i.icon-font.icon-keyboard
+    .dropdown-menu.dropdown-menu-left.up(aria-labelledby="toolKeyboard")
+      a.dropdown-item(href="#")
+        span!= "Increase level"
+        div
+          i.top
+      a.dropdown-item(href="#")
+        span!= "Decrease level"
+        div
+          i.bottom
+      a.dropdown-item(href="#")
+        span!= "Previous card"
+        div
+          i.left
+      a.dropdown-item(href="#")
+        span!= "Next card"
+        div
+          i.right
+      a.dropdown-item(href="#")
+        span!= "Switch mode"
+        div
+          span!= "Z"
+      a.dropdown-item(href="#")
+        span!= "All words"
+        div
+          span!= "SPACE"
+      a.dropdown-item(href="#")
+        span!= "Autoplay"
+        div
+          span!= "A"
+      a.dropdown-item(href="#")
+        span!= "Star"
+        div
+          span!= "S"
+      a.dropdown-item(href="#")
+        span!= "Shuffle"
+        div
+          span!= "D"
+      a.dropdown-item(href="#")
+        span!= "Edit"
+        div
+          span!= "E"
+      a.dropdown-item(href="#")
+        span!= "Full screen"
+        div
+          span!= "F"
+      a.dropdown-item(href="#")
+        span!= "Reverse"
+        div
+          span!= "R"
+
 
 mixin btnShuffle()
   a(href="#" title="" class="")

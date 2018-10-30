@@ -58,13 +58,17 @@ header#header.header
                   )!= "Lorem Ipsum"
 
           .profile
-            .profile__left
-              a.profile__link(
-                href="#"
-                title="" class=""
-              )
+            .profile__left.c-dropdown
+              a.profile__link(href="#" id="createNotesHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
                 i.icon-font.icon-switcher-add
                 span!= "Create note"
+              .dropdown-menu.dropdown-menu-right(aria-labelledby="createNotesHeader")
+                a.dropdown-item(href="#")
+                  span!= "Book"
+                a.dropdown-item(href="#")
+                  span!= "Passage"
+                a.dropdown-item(href="#")
+                  span!= "Flashcards"
 
             .profile__right
               .dropdown
