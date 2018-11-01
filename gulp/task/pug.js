@@ -30,7 +30,6 @@ const srcPath = [
 gulp.task('pug', function() {
   return gulp
     .src(srcPath)
-      .pipe(changedInPlace(configOption.changed))
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(frontMatter({
         property: 'data'
@@ -41,6 +40,7 @@ gulp.task('pug', function() {
           env : (argv.prod) ? 'production' : ""
         },
       }))
+      .pipe(changedInPlace(configOption.changed))
       .pipe(gulpif(argv.prod, htmlmin({
         collapseBooleanAttributes: true,
         collapseWhitespace: true,
