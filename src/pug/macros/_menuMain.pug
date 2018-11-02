@@ -1,6 +1,25 @@
 // MAIN NAV :: START
 
+-
+  var headerTitle = [
+    {
+      href: '#',
+      name: 'Classes'
+    }
+  ];
+
+  var headerAdd = [
+    {
+      href: '#',
+      icon: 'join',
+      name: 'Join or create a class'
+    }
+  ];
+
 section#menu.menu
-  +navIcon('header', dataObj.navHeaderMain)
+  +navIcon('sidebar nav--sidebar-0', dataObj.navHeaderMain)
+  +nav('sidebar nav--sidebar-1', headerTitle)
+  +navImage('sidebar nav--sidebar-2', dataObj.navHeaderClass)
+  +navIcon('sidebar nav--sidebar-3', headerAdd)
 
 // MAIN NAV :: END

@@ -72,7 +72,7 @@ header#header.header
 
             .profile__right
               .dropdown
-                a.dropdown__btn(href="#" id="profileDropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                a.dropdown__btn.profile__user.is-notify(href="#" id="profileDropdown0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
                   img(
                     srcset="./img/img-user-0.png, ./img/img-user-0@2x.png 2x"
                     alt="" title=""
@@ -89,22 +89,47 @@ header#header.header
                       p!= "User Name"
                       span!= "Student"
 
-                  a.dropdown-item(href="#")
+                  a.dropdown-item.dropdown-item-2(href="#")
                     div
                       i.icon-font.icon-profile
                     span!= "Profile"
-                  a.dropdown-item(href="#")
+                  a.dropdown-item.dropdown-item-2(href="#")
                     div
                       i.icon-font.icon-logout
                     span!= "Log out"
-                  a.dropdown-item(href="#")
+                  a.dropdown-item.dropdown-item-3(href="#")
+                    div
+                      i.icon-font.icon-theme
+                    span!= "Night theme"
+                    div
+                      .form
+                        .form__field.form__field--swipe
+                          input(type="checkbox" id="profileTheme" name="")
+                          label(for="profileTheme")
+                            div
+                            div
+                            div
+
+                  a.dropdown-item.dropdown-item-2(href="#")
                     div
                       i.icon-font.icon-setting
                     span!= "Setting"
-                  a.dropdown-item(href="#")
+                  a.dropdown-item.dropdown-item-2(href="#")
+                    div
+                      i.icon-font.icon-help
+                    span!= "Help"
+                  a.dropdown-item.dropdown-item-2(href="#")
                     div
                       i.icon-font.icon-send-feedback
                     span!= "Send feedback"
+                  a.dropdown-item.dropdown-item-3(href="#")
+                    div
+                      i.icon-font.icon-forum
+                    span!= "Message"
+                    div
+                      .dropdown-item-indicator!= "1"
+
+
 
 
 

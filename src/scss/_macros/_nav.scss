@@ -1,6 +1,14 @@
 // NAV :: START
 
 .nav {
+
+  &--sidebar {
+    &-0,
+    &-3 {
+      padding-bottom: 60px;
+    }
+  }
+
   &__title {
     padding-bottom: 20px;
     color: $c-white;
@@ -72,16 +80,36 @@
       }
     }
 
+    &-icon,
+    &-image {
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+    }
+
     &-icon {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 24px;
-      height: 24px;
-      margin-right: 15px;
+
 
       > i {
         font-size: 20px;
+      }
+    }
+
+    &-image {
+      position: relative;
+      border-radius: 50%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
     }
 
