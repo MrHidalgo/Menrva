@@ -8,6 +8,10 @@
     font-size: 20px;
     font-weight: 600;
 
+    &:hover {
+      color: $c-white;
+    }
+
     p {
       line-height: 1;
     }

@@ -25,6 +25,10 @@
   &__btn {
     margin-left: auto;
     margin-bottom: 20px;
+
+    &:hover {
+      color: $c-white;
+    }
   }
 
   &__text {

@@ -2,9 +2,16 @@
 
 .header {
   z-index: 50;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   background-color: $c-00bd70;
   box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
+
+  .fixed-badge & {
+    top: 60px;
+  }
 
   &__wrapper {
     display: flex;
@@ -37,10 +44,18 @@
     padding-right: 39px;
     color: $c-white;
     font-weight: 500;
+
+    &:hover {
+      color: $c-white;
+    }
   }
 
   &__btn {
     font-size: 12px;
+
+    &:hover {
+      color: $c-white;
+    }
   }
 }
 

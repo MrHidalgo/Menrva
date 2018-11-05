@@ -7,7 +7,7 @@ html(lang="en")
   head
     include _head
 
-  body(data-file!= dataPageName)
+  body(data-file!= dataPageName class!= (dataPageName === 'reset2') ? 'fixed-badge':'')
 
     if(dataPageName === 'reset2')
       include ../components/reset/_badge-info
