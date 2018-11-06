@@ -48,14 +48,19 @@ block content
                       .dropdown-menu.dropdown-menu-right(aria-labelledby="viewProfile")
                         a.dropdown-item(href="#")
                           div
+                            i.icon-font.icon-forum
+                          span!= "Send message"
+                        a.dropdown-item(href="#")
+                          div
                             i.icon-font.icon-info
                           span!= "Report"
 
               .view__body
                 .view__body-top
                   .view__tabs-wrapper
-                    a.view__tabs(href="#" title="" class="")!= "My courses"
-                    a.view__tabs.is-active(href="#" title="" class="")!= "My notes"
+                    a.view__tabs(href="#" title="" class="")!= "Created classes"
+                    a.view__tabs(href="#" title="" class="")!= "Created courses"
+                    a.view__tabs.is-active(href="#" title="" class="")!= "Created notes "
 
                 .view__body-bottom
                   .notes__box-wrapper
