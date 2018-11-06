@@ -17,6 +17,7 @@
 
   &__title {
     &--notes,
+    &--messages,
     &--schedule,
     &--recent,
     &--forum {
@@ -194,6 +195,9 @@
       .icon-schedule {
         font-size: 24px;
       }
+      .icon-message-unread {
+        font-size: 18px;
+      }
     }
 
     span {
@@ -211,6 +215,7 @@
       margin-bottom: 40px;
     }
     &--search,
+    &--messages,
     &--forum {
       padding-top: 27px;
       border-bottom: 1px solid #cbcecb;
@@ -271,6 +276,9 @@
 
       .icon-notes {
         font-size: 23px;
+      }
+      .icon-messages-new {
+        font-size: 20px;
       }
     }
 

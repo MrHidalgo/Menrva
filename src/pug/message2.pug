@@ -1,0 +1,43 @@
+---
+title: Menrva - Conversation with...
+
+contentClassName: p-messages
+dataPageName: message2
+---
+extends shared/_layout
+
+block content
+  div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuMessages
+
+          .section__wrapper-right
+
+            .section__title.section__title--messages
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-message-unread
+                  span!= "Conversation with Sophie McCarthy"
+
+                .section__title-right
+                  .c-dropdown.ml-4
+                    .dropdown
+                      a.dropdown__btn(href="#" id="messagesTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        span
+                        span
+                        span
+                      .dropdown-menu.dropdown-menu-right(aria-labelledby="messagesTitle")
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-message-all
+                          span!= "Archive"
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-remove
+                          span!= "Remove"
+

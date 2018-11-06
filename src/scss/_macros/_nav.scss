@@ -1,7 +1,6 @@
 // NAV :: START
 
 .nav {
-
   &--sidebar {
     &-0,
     &-3 {
@@ -124,6 +123,26 @@
       &:hover {
         color: $c-white;
         @include transition(color);
+      }
+    }
+  }
+
+  &__item {
+    &-message {
+      &-all {
+        i {
+          font-size: 18px;
+        }
+      }
+      &-unread {
+        i {
+          font-size: 15px;
+        }
+      }
+      &-archived {
+        i {
+          font-size: 20px;
+        }
       }
     }
   }

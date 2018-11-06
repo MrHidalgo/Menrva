@@ -253,3 +253,20 @@ PageList:
 - file: notes29.html
   titleName: Book
   ready: 55
+
+- file:
+  titleName: =====MESSAGES=====
+  ready: 0
+
+- file: message1.html
+  titleName: Messages
+  ready: 55
+- file: message2.html
+  titleName: Conversation with ...
+  ready: 1
+- file: message3.html
+  titleName: New message
+  ready: 1
+- file: message4.html
+  titleName: New message list
+  ready: 1
