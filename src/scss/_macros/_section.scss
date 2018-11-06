@@ -18,6 +18,7 @@
   &__title {
     &--notes,
     &--messages,
+    &--browse,
     &--schedule,
     &--recent,
     &--forum {
@@ -197,6 +198,9 @@
       }
       .icon-message-unread {
         font-size: 18px;
+      }
+      .icon-browse {
+        font-size: 25px;
       }
     }
 

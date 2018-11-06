@@ -270,3 +270,47 @@ PageList:
 - file: message4.html
   titleName: New message list
   ready: 55
+
+- file:
+  titleName: =====BROWSE=====
+  ready: 0
+
+- file: browse1.html
+  titleName: Browse
+  ready: 55
+- file: browse2.html
+  titleName: Filter
+  ready: 1
+- file: browse3.html
+  titleName: Category
+  ready: 1
+- file: browse4.html
+  titleName: Category filter
+  ready: 1
+- file: browse5.html
+  titleName: Note
+  ready: 1
+- file: browse6.html
+  titleName: Note suggest edits
+  ready: 1
+- file: browse7.html
+  titleName: Report this note 1
+  ready: 1
+- file: browse8.html
+  titleName: Report this note 2
+  ready: 1
+- file: browse9.html
+  titleName: Export
+  ready: 1
+- file: browse10.html
+  titleName: Info 1
+  ready: 1
+- file: browse11.html
+  titleName: Info 2
+  ready: 1
+- file: browse12.html
+  titleName: Info 3
+  ready: 1
+- file: browse13.html
+  titleName: Course
+  ready: 1

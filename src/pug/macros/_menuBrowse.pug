@@ -1,0 +1,42 @@
+// MESSAGES NAV :: START
+
+-
+  var navBrowseCourse = [
+    {
+      href: '#',
+      name: 'Medicine'
+    },
+    {
+      href: '#',
+      name: 'Languages'
+    },
+    {
+      href: '#',
+      name: 'Web development'
+    },
+    {
+      href: '#',
+      name: 'Business'
+    },
+    {
+      href: '#',
+      name: '+ Show more'
+    },
+  ];
+
+section#menu.menu
+  .menu__wrapper
+    a.menu__link(
+      href="#"
+      title="" class=""
+    )
+      .menu__link-icon
+        i.icon-font.icon-arrow
+      span!= "Navigation"
+
+  +navIcon('sidebar', dataObj.navHeaderBrowse1)
+  +nav('sidebar nav--sidebar-3 nav--browse', navBrowseCourse)
+  +navIcon('sidebar', dataObj.navHeaderBrowse2)
+  +nav('sidebar nav--sidebar-3 nav--browse', navBrowseCourse)
+
+// MESSAGES NAV :: END
