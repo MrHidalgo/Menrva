@@ -283,7 +283,7 @@ PageList:
   ready: 55
 - file: browse3.html
   titleName: Category
-  ready: 1
+  ready: 55
 - file: browse4.html
   titleName: Category filter
   ready: 1

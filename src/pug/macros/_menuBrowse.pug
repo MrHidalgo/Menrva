@@ -34,9 +34,9 @@ section#menu.menu
         i.icon-font.icon-arrow
       span!= "Navigation"
 
-  +navIcon('sidebar', dataObj.navHeaderBrowse1)
-  +nav('sidebar nav--sidebar-3 nav--browse', navBrowseCourse)
-  +navIcon('sidebar', dataObj.navHeaderBrowse2)
-  +nav('sidebar nav--sidebar-3 nav--browse', navBrowseCourse)
+  +navIcon('sidebar', dataObj.navHeaderBrowse1, false)
+  +nav('sidebar nav--sidebar-3 nav--browse nav--wicon', navBrowseCourse, true)
+  +navIcon('sidebar', dataObj.navHeaderBrowse2, false)
+  +nav('sidebar nav--sidebar-3 nav--browse nav--wicon', navBrowseCourse, false)
 
 // MESSAGES NAV :: END

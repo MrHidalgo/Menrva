@@ -86,6 +86,10 @@
       &:before {
         background-color: #00bd70;
         @include transition(background-color);
+
+        .nav--wicon & {
+          display: none;
+        }
       }
     }
 

@@ -17,9 +17,9 @@
   ];
 
 section#menu.menu
-  +navIcon('sidebar nav--sidebar-0', dataObj.navHeaderMain)
-  +nav('sidebar nav--sidebar-1', headerTitle)
-  +navImage('sidebar nav--sidebar-2', dataObj.navHeaderClass)
-  +navIcon('sidebar nav--sidebar-3', headerAdd)
+  +navIcon('sidebar nav--sidebar-0', dataObj.navHeaderMain, true)
+  +nav('sidebar nav--sidebar-1', headerTitle, false)
+  +navImage('sidebar nav--sidebar-2', dataObj.navHeaderClass, false)
+  +navIcon('sidebar nav--sidebar-3', headerAdd, false)
 
 // MAIN NAV :: END
