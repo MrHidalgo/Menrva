@@ -9,3 +9,213 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuBrowse
+
+          .section__wrapper-right
+
+            .section__title.section__title--notes
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-bill
+                  span!= "Note Name (Flashcard example)"
+
+                .section__title-right
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-notify
+                  a(href="#" title="" class="ml-3")
+                    i.icon-font.icon-info
+
+                  .c-dropdown.ml-4
+                    .dropdown
+                      a.dropdown__btn(href="#" id="notesFlashcardTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        span
+                        span
+                        span
+                      .dropdown-menu.dropdown-menu-right(aria-labelledby="notesFlashcardTitle")
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-import
+                          span!= "Import"
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-remove
+                          span!= "Remove"
+
+            .bill
+              .bill__wrapper
+                .bill__row.bill__row-0.bill__row--info
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-profile
+                    span!= "Owner name"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-select
+                    span!= "12K"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-like
+                    span!= "567"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-save
+                    span!= "67"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-recent
+                    span!= "1 year ago"
+
+                .bill__row.bill__row-1.bill__row--view
+                  .bill__view.bill__view--half
+                    .tool
+                      .tool__wrapper
+                        a.tool__btn(
+                        href="#" title="" class=""
+                        )
+                          i.icon-font.icon-arrow-view
+                        a.tool__btn(
+                        href="#" title="" class=""
+                        )
+                          i.icon-font.icon-arrow-view
+
+                        .tool__preview
+                          .tool__preview-control.d-flex.align-items-center.justify-content-between
+                            div.d-flex.align-items-center
+                              input(type="text" value="2")
+                              span!= "of <i>4</i>"
+                            div.d-flex.justify-content-end
+                              a(
+                              href="#"
+                              title="" class=""
+                              )
+                                i.icon-font.icon-fullscreen
+
+                          .tool__preview-scroll
+                            p!= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio"
+                        .tool__preview
+                          .tool__preview-scroll
+                            p!= "Lorem _____ dolor sit amet, ________ adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet _ magna aliquam erat ________. Ut wisi enim ad ____ veniam, quis nostrud exerci tatio"
+
+                      .tool__control
+                        .tool__control-wrap
+                          .tool__control-middle.d-flex.align-items-center
+                            .tool__control-line
+                              a(
+                              href="#"
+                              class=""
+                              data-toggle="tooltip" data-placement="top" title="Memorization level 25%"
+                              )
+
+                            .tool__control-group.d-flex.align-items-center.justify-content-end
+                              +btnPrevNext()
+                              +btnPrevNext()
+
+                          .tool__control-right.d-flex.align-items-center
+                            a.c-btn.c-btn--bigH.c-btn--darkGreen(href="#" title="" class="")!= "Start Session"
+
+
+                .bill__row.bill__row-2.bill__row--info
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-notes
+                    span!= "Flashcards in this note (<i>4</i>)"
+                  a(href="#" title="" class="")
+                    .forum__box-badge
+                    span!= "Comments (<i>5</i>)"
+
+                .bill__row.bill__row-3.bill__row--tabs
+                  .view__tabs-wrapper
+                    a.view__tabs.is-active(href="#" title="" class="")!= "Original"
+                    a.view__tabs(href="#" title="" class="")!= "Alphabetical"
+                    a.view__tabs(href="#" title="" class="")!= "Favorite"
+
+                form.form.bill__row.bill__row-4.bill__row--card.bill__block-wrapper(action="" method="")
+                  .section__block.bill__block.bill__block--three.bill__block--text
+                    .bill__block-left
+                      div
+                        span!= "1"
+                      div
+                        p!= "Lorem Ipsum is simply dummy text of the printing"
+                    .bill__block-middle
+                      p!= "Lorem Ipsum is simply dummy text of the printing"
+                    .bill__block-right
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-edit
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-star-full
+
+                  .section__block.bill__block.bill__block--three.bill__block--input
+                    .bill__block-left
+                      div
+                        span!= "2"
+                      div
+                        .form__field.form__field--input
+                          label.form__label(for="flashcardsBlock0")!= "Term"
+                          .form__input-wrap
+                            input.form__input(type="text" id="flashcardsBlock0" name="flashcardsBlock0" placeholder="Lorem Ipsum is simply dummy text")
+                          .form__notify.form__notify--hide
+
+                    .bill__block-middle
+                      .form__field.form__field--input
+                        label.form__label(for="flashcardsBlock1")!= "Definition"
+                        .form__input-wrap
+                          input.form__input(type="text" id="flashcardsBlock1" name="flashcardsBlock1" placeholder="Lorem Ipsum is simply dummy text")
+                        .form__notify.form__notify--hide
+
+                    .bill__block-right
+                      a.bill__block-btn.bill__block-btn--check(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-check
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-star-full
+
+                  .section__block.bill__block.bill__block--three.bill__block--text
+                    .bill__block-left
+                      div
+                        span!= "3"
+                      div
+                        p!= "Lorem Ipsum is simply dummy text of the printing"
+                    .bill__block-middle
+                      p!= "Lorem Ipsum is simply dummy text of the printing"
+                    .bill__block-right
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-edit
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-star-full
+
+                  .section__block.bill__block.bill__block--three.bill__block--text
+                    .bill__block-left
+                      div
+                        span!= "4"
+                      div
+                        p!= "Lorem Ipsum is simply dummy text of the printing"
+                    .bill__block-middle
+                      p!= "Lorem Ipsum is simply dummy text of the printing"
+                    .bill__block-right
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-edit
+                      a.bill__block-btn(
+                      href="#"
+                      title="" class=""
+                      )
+                        i.icon-font.icon-star-full
