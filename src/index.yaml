@@ -292,7 +292,7 @@ PageList:
   ready: 55
 - file: browse6.html
   titleName: Note suggest edits
-  ready: 1
+  ready: 55
 - file: browse7.html
   titleName: Report this note 1
   ready: 55

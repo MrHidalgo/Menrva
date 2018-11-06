@@ -9,3 +9,31 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--browseSuggest
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Suggest edits"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          p.c-modal__subinfo!= "When writing a suggestion, please be precise and thorough and include excerpts from the note whenever possible."
+
+          form.form(action="" method="")
+
+            .form__field.form__field--textarea
+              label.form__label(for="browseSuggest0")!= "Note excerpt"
+              .form__textarea-wrap
+                textarea.form__textarea(id="browseSuggest0" name="browseSuggest0" placeholder="Type description")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--textarea
+              label.form__label(for="browseSuggest1")!= "Your suggestion"
+              .form__textarea-wrap
+                textarea.form__textarea(id="browseSuggest1" name="browseSuggest1" placeholder="Type description")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn(type="submit")!= "Send"

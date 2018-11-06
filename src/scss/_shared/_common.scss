@@ -1096,6 +1096,11 @@
       margin-left: auto;
     }
 
+    .c-modal--browseSuggest & {
+      max-width: 116px;
+      margin-left: auto;
+    }
+
     .new__form & {
       max-width: 255px;
       margin-left: auto;
@@ -1237,6 +1242,12 @@
     }
   }
 
+  &--browseReport {
+    .form__field {
+      margin-bottom: 10px;
+    }
+  }
+
   &__wrapper {
     z-index: 1;
     position: relative;
@@ -1255,6 +1266,7 @@
     .c-modal--refer &,
     .c-modal--forum &,
     .c-modal--notes &,
+    .c-modal--browseSuggest &,
     .c-modal--pageSetting & {
       max-width: 609px;
       padding-top: 40px;
@@ -1337,6 +1349,11 @@
     }
 
     .c-modal--removeNote & {
+      text-align: left;
+      padding-bottom: 20px;
+    }
+
+    .c-modal--browseSuggest & {
       text-align: left;
       padding-bottom: 20px;
     }
