@@ -27,3 +27,28 @@ block content
                 .section__title-right
                   a(href="#" title="" class="")
                     i.icon-font.icon-error
+
+            .message
+              .message__box.section__block
+                form.form(action="" method="")
+                  .message__box-input
+                    .form__field.form__field--input
+                      label.form__label(for="sendMessageTo")!= "To"
+                      .form__input-wrap
+                        input.form__input(type="text" id="sendMessageTo" name="sendMessageTo" placeholder="Enter a username or email")
+                      .form__notify.form__notify--hide
+
+
+                  .message__box-textarea
+                    div
+                      .message__block-img
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+
+                    div
+                      .form__field.form__field--textarea
+                        .form__textarea-wrap
+                          textarea.form__textarea(id="" name="" placeholder="Add a comment")
+                        .form__notify.form__notify--hide
+
+                      .form__field.form__field--btn
+                        button.form__btn.message__box-btn(type="submit")!= "Send"
