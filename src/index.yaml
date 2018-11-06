@@ -301,7 +301,7 @@ PageList:
   ready: 1
 - file: browse9.html
   titleName: Export
-  ready: 1
+  ready: 55
 - file: browse10.html
   titleName: Info 1
   ready: 1
