@@ -1937,7 +1937,53 @@
 // custon dropdown :: end
 
 // tooltip
-//.tooltip {}
+.tooltip {
+  position: relative;
+  top: -15px !important;
+  left: 2px !important;
+  padding: 15px 22px;
+  border-radius: 4px;
+  background-color: $c-white;
+  box-shadow: 0 2px 14px 0 rgba($c-black, 0.13);
+
+  &:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    width: 15px;
+    height: 20px;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    background-color: $c-white;
+    box-shadow: 0 2px 14px 0 rgba($c-black, 0.13);
+  }
+
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: $c-white;
+  }
+
+  > .tooltip-inner {
+    z-index: 2;
+    position: relative;
+    background-color: $c-white;
+    color: #000;
+  }
+}
+
+.tooltip > .arrow {
+  display: none;
+}
 // tooltip :: end
 
 // COMMON :: END
