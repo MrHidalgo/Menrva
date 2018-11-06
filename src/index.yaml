@@ -280,7 +280,7 @@ PageList:
   ready: 55
 - file: browse2.html
   titleName: Filter
-  ready: 1
+  ready: 55
 - file: browse3.html
   titleName: Category
   ready: 1
