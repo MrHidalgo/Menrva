@@ -19,6 +19,7 @@
     &--notes,
     &--messages,
     &--browse,
+    &--statistic,
     &--schedule,
     &--recent,
     &--forum {
@@ -201,6 +202,9 @@
       }
       .icon-browse {
         font-size: 25px;
+      }
+      .icon-statistics {
+        font-size: 19px;
       }
     }
 

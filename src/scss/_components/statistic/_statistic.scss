@@ -1,0 +1,41 @@
+// STATISTIC :: START
+
+.statistic {
+  padding-top: 30px;
+
+  &__box {
+    display: flex;
+    padding: 25px 40px;
+
+    &-left,
+    &-right {
+      width: 50%;
+
+      p {
+        padding-bottom: 17px;
+        padding-left: 50px;
+        color: #555352;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-left {
+      padding-right: 10px;
+    }
+
+    &-right {
+      padding-left: 10px;
+    }
+  }
+}
+
+// STATISTIC :: END

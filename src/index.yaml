@@ -314,3 +314,11 @@ PageList:
 - file: browse13.html
   titleName: Course
   ready: 55
+
+- file:
+  titleName: =====STATISTIC=====
+  ready: 0
+
+- file: statistic.html
+  titleName: Statistic
+  ready: 55
