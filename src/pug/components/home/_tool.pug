@@ -6,6 +6,17 @@ section#tool.tool
       h1.tool__title.title!= "An innovative study tool"
 
       .tool__preview
+        .tool__preview-control.d-flex.align-items-center.justify-content-between
+          div.d-flex.align-items-center
+            input(type="text" value="2")
+            span!= "of <i>4</i>"
+          div.d-flex.justify-content-end
+            a(
+            href="#"
+            title="" class=""
+            )
+              i.icon-font.icon-star-full
+
         .tool__preview-scroll
           p!= "The following is an excerpt from “Gray’s Anatomy: Descriptive and Applied,” published in 1913:"
           p!= "The skull, formed by the union of the several cranial and facial bones already described, when considered as a whole is divisible into five regions — a superior region or vertex, an inferior region or base, two lateral regions, and an anterior region, the face… [Regarding the skull's surface], the external face (norma verticalis) is bounded, in front, by the glabella and superciliary ridges; behind, by the occipital protuberance and superior curved lines of the occipital bone; laterally, by an imaginary line extending from the outer end of the superior curved line, along the temporal ridge, to the external angular process of the frontal bone."
