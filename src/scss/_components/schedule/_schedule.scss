@@ -165,7 +165,8 @@
     &-block {
       &.is-active {
         span {
-          background-color: #d8d8d8;
+          color: $c-white;
+          background-color: #019552;
         }
       }
       &.is-uncurrent {
@@ -181,7 +182,7 @@
       justify-content: center;
       width: 22px;
       height: 22px;
-      border-radius: 3px;
+      border-radius: 50%;
       color: $c-black;
       font-size: 12px;
     }
