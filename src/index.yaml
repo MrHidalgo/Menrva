@@ -263,7 +263,7 @@ PageList:
   ready: 55
 - file: message2.html
   titleName: Conversation with ...
-  ready: 1
+  ready: 55
 - file: message3.html
   titleName: New message
   ready: 1
