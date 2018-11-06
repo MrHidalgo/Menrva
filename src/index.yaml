@@ -304,13 +304,13 @@ PageList:
   ready: 55
 - file: browse10.html
   titleName: Info 1
-  ready: 1
+  ready: 55
 - file: browse11.html
   titleName: Info 2
-  ready: 1
+  ready: 55
 - file: browse12.html
   titleName: Info 3
-  ready: 1
+  ready: 55
 - file: browse13.html
   titleName: Course
   ready: 55

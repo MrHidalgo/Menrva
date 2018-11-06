@@ -9,3 +9,85 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--browseInfo
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Information"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          .browse
+            .browse__wrapper
+              .browse__user
+                .browse__user-left
+                  .browse__user-img
+                    img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+
+                .browse__user-right
+                  p!= "James David"
+                  span!= "Owner"
+
+            .browse__wrapper
+              .browse__info-wrapper
+                a.browse__info(href="#" class="" title="")
+                  p!= "60"
+                  span!= "Followers"
+                a.browse__info.is-active(href="#" class="" title="")
+                  p!= "10"
+                  span!= "Courses"
+
+            .browse__wrapper
+              .browse__followers-wrapper
+                div
+                  a.browse__followers(href="#" class="" title="")
+                    div
+                      span
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Paul Gibson"
+                  a.browse__followers(href="#" class="" title="")
+                    div
+                      span
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Alejandro Bell"
+                  a.browse__followers(href="#" class="" title="")
+                    div
+                      span
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Ann Holland"
+                  a.browse__followers(href="#" class="" title="")
+                    div
+                      span
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Charlie Hawkins"
+                  a.browse__followers(href="#" class="" title="")
+                    div
+                      span
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "James Yates"
+                  a.browse__followers(href="#" class="" title="")
+                    div
+                      span
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Mark Wilkins"
+                a.c-btn.c-btn--darkGreen.c-btn--bigH(href="#" class="" title="")!= "Show more"
+
+            .browse__wrapper
+              .browse__desc-wrapper
+                div.browse__desc
+                  p!= "Viewable by"
+                  span!= "Everyone"
+                div.browse__desc
+                  p!= "Language"
+                  span!= "English"
+                div.browse__desc
+                  p!= "Created"
+                  span!= "1 year ago"
