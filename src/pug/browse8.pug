@@ -9,3 +9,19 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--reportNote
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Report this note"
+          a.c-modal__close(
+          href="#"
+          title="" class=""
+          )
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__text!= "Thank you for letting us know. Because content on Menrva is created by individual students and teachers, not the Menrva team, you may run into mistakes while browsing other users’ notes. To learn more about how to correct errors you find in notes, please read our Help Center article."
+
+        .form__field.form__field--btn
+          button.form__btn.form__btn--full(type="submit")!= "Help Center"

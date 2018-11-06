@@ -295,10 +295,10 @@ PageList:
   ready: 1
 - file: browse7.html
   titleName: Report this note 1
-  ready: 1
+  ready: 55
 - file: browse8.html
   titleName: Report this note 2
-  ready: 1
+  ready: 55
 - file: browse9.html
   titleName: Export
   ready: 55
