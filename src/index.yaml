@@ -289,7 +289,7 @@ PageList:
   ready: 55
 - file: browse5.html
   titleName: Note
-  ready: 1
+  ready: 55
 - file: browse6.html
   titleName: Note suggest edits
   ready: 1
@@ -313,4 +313,4 @@ PageList:
   ready: 1
 - file: browse13.html
   titleName: Course
-  ready: 1
+  ready: 55
