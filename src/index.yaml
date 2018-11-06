@@ -286,7 +286,7 @@ PageList:
   ready: 55
 - file: browse4.html
   titleName: Category filter
-  ready: 1
+  ready: 55
 - file: browse5.html
   titleName: Note
   ready: 1
