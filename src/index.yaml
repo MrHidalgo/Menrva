@@ -344,10 +344,10 @@ PageList:
   ready: 55
 - file: classes6.html
   titleName: Member notes
-  ready: 1
+  ready: 55
 - file: classes7.html
   titleName: Member course
-  ready: 1
+  ready: 55
 - file: classes8.html
   titleName: Members
   ready: 1
