@@ -1,6 +1,23 @@
 // CLASSES :: START
 
 .classes {
+  &--admin {
+    .notes__box {
+      .notes__box-right {
+        .c-dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__row {
+    &--pending {
+      padding-top: 30px;
+      border-top: 1px solid #cbcecb;
+    }
+  }
+
   &__title {
     display: flex;
     align-items: center;
@@ -168,6 +185,14 @@
     &-right {
       width: 100%;
       max-width: calc(100% - 80px);
+
+      .classes--admin & {
+        max-width: calc(100% - (80px + 34px));
+      }
+    }
+
+    &-option {
+      width: 34px;
     }
 
     p {
@@ -177,6 +202,23 @@
 
     span {
       letter-spacing: 0.17px;
+    }
+  }
+
+  .notes__box {
+    .c-dropdown {
+      display: none;
+    }
+  }
+
+  &__btn {
+    &--recent {
+      max-width: 213px;
+      margin-left: auto;
+    }
+    &--members {
+      max-width: 129px;
+      margin-left: auto;
     }
   }
 }

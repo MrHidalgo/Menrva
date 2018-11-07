@@ -356,16 +356,16 @@ PageList:
   ready: 55
 - file: classes10.html
   titleName: Admin recent
-  ready: 1
+  ready: 55
 - file: classes11.html
   titleName: Admin notes
-  ready: 1
+  ready: 55
 - file: classes12.html
   titleName: Admin course
-  ready: 1
+  ready: 55
 - file: classes13.html
   titleName: Admin members
-  ready: 1
+  ready: 55
 - file: classes14.html
   titleName: Admin edit class 1
   ready: 1

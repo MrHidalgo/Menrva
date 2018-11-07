@@ -8,4 +8,124 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuClassMember
+
+          .section__wrapper-right
+
+            .classes.classes--admin
+              .classes__wrapper
+                .classes__row.classes__row-0
+                  .classes__title
+                    .classes__title-left
+                      .classes__title-user
+                        div
+                          i
+                            img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+
+                        div
+                          p!= "Class 1 (Admin view)"
+                          span!= "Institution name"
+
+                    .classes__title-right
+                      a.classes__title-link(href="#" class="" title="")
+                        i.icon-font.icon-switcher-add
+                      a.classes__title-link(href="#" class="" title="")
+                        i.icon-font.icon-members-add
+                      .c-dropdown
+                        .dropdown
+                          a.dropdown__btn(href="#" id="classMemberTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                            span
+                            span
+                            span
+                          .dropdown-menu.dropdown-menu-right(aria-labelledby="classMemberTitle")
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-edit
+                              span!= "Edit"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-notification
+                              span!= "Notification"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-drop
+                              span!= "Drop class"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-user-delete
+                              span!= "Remove all members"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-remove
+                              span!= "Delete class"
+
+                  .classes__desc
+                    p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make"
+
+
+                .classes__row.classes__row-1
+
+                  .section__subtitle.section__subtitle--classes
+                    .section__subtitle-wrap
+                      .section__subtitle-left
+                        .section__subtitle-icon
+                          i.icon-font.icon-notes
+                        span!= "120 Notes"
+
+                      .section__subtitle-right
+                        a(href="#" class="" title="")
+                          span!= "Sort by"
+                          i.icon-font.icon-arrow
+
+
+                .classes__row.classes__row-2
+
+                  .notes__box-wrapper
+                    each val, idx in [1,2,3,4,5,6]
+                      .notes__box(class!= "notes__box-" + idx)
+                        .notes__box-left
+                        .notes__box-middle
+                          p.notes__box-title!= "Note " + val
+                          .notes__box-info
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-select
+                              span!= "12K"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-like
+                              span!= "567"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-save
+                              span!= "67"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-profile
+                              span!= "Owner Name"
+                            a(href="#" title="" class="")
+                              i.icon-font.icon-recent
+                              span!= "1 year ago"
+
+                        .notes__box-right
+                          .notes__box-drop.c-dropdown
+                            .dropdown
+                              a.dropdown__btn(href="#" id="classNotes-" + idx data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                span
+                                span
+                                span
+                              .dropdown-menu.dropdown-menu-right(aria-labelledby="classNotes-" + idx)
+                                a.dropdown-item(href="#")
+                                  div
+                                    i.icon-font.icon-edit
+                                  span!= "Edit"
+                                a.dropdown-item(href="#")
+                                  div
+                                    i.icon-font.icon-export-2
+                                  span!= "Export"
+                                a.dropdown-item(href="#")
+                                  div
+                                    i.icon-font.icon-remove
+                                  span!= "Remove"

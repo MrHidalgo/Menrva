@@ -8,4 +8,124 @@ login: true
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuClassMember
+
+          .section__wrapper-right
+
+            .classes.classes--admin
+              .classes__wrapper
+                .classes__row.classes__row-0
+                  .classes__title
+                    .classes__title-left
+                      .classes__title-user
+                        div
+                          i
+                            img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+
+                        div
+                          p!= "Class 1 (Admin view)"
+                          span!= "Institution name"
+
+                    .classes__title-right
+                      a.classes__title-link(href="#" class="" title="")
+                        i.icon-font.icon-switcher-add
+                      a.classes__title-link(href="#" class="" title="")
+                        i.icon-font.icon-members-add
+                      .c-dropdown
+                        .dropdown
+                          a.dropdown__btn(href="#" id="classMemberTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                            span
+                            span
+                            span
+                          .dropdown-menu.dropdown-menu-right(aria-labelledby="classMemberTitle")
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-edit
+                              span!= "Edit"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-notification
+                              span!= "Notification"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-drop
+                              span!= "Drop class"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-user-delete
+                              span!= "Remove all members"
+                            a.dropdown-item(href="#")
+                              div
+                                i.icon-font.icon-remove
+                              span!= "Delete class"
+
+                  .classes__desc.classes__desc--mb
+                    p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make"
+
+                .classes__row.classes__row-1
+
+                  .classes__block-wrapper
+                    p.classes__block-title!= "A couple of hours ago"
+                    .classes__block.classes__block--recent
+                      .classes__block-left
+                        div
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+
+                      .classes__block-right
+                        p!= "Darrell McBride"
+                        span!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+                      .classes__block-option
+                        .c-dropdown
+                          .dropdown
+                            a.dropdown__btn(href="#" id="someId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                              span
+                              span
+                              span
+                            .dropdown-menu.dropdown-menu-right(aria-labelledby="someId1")
+                              a.dropdown-item(href="#")
+                                div
+                                  i.icon-font.icon-edit
+                                span!= "Edit"
+                              a.dropdown-item(href="#")
+                                div
+                                  i.icon-font.icon-remove
+                                span!= "Remove"
+
+                  .classes__block-wrapper
+                    p.classes__block-title!= "This week"
+                    .classes__block.classes__block--recent
+                      .classes__block-left
+                        div
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+
+                      .classes__block-right
+                        p!= "Darrell McBride"
+                        span!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+                      .classes__block-option
+                        .c-dropdown
+                          .dropdown
+                            a.dropdown__btn(href="#" id="someId2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                              span
+                              span
+                              span
+                            .dropdown-menu.dropdown-menu-right(aria-labelledby="someId2")
+                              a.dropdown-item(href="#")
+                                div
+                                  i.icon-font.icon-edit
+                                span!= "Edit"
+                              a.dropdown-item(href="#")
+                                div
+                                  i.icon-font.icon-remove
+                                span!= "Remove"
+
+
+                .classes__row.classes__row-2
+                  a.classes__btn.classes__btn--recent.c-btn.c-btn--darkGreen(href="#" class="" title="")!= "Add an announcement"

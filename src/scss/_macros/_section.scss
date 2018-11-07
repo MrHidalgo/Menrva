@@ -238,6 +238,18 @@
       }
     }
 
+    &--classes {
+      .section__subtitle-right {
+        a {
+
+          .icon-arrow {
+            margin-left: 8px;
+            font-size: 8px;
+          }
+        }
+      }
+    }
+
     &--forum {
       padding-top: 0;
     }
