@@ -354,3 +354,51 @@ PageList:
 - file: classes9.html
   titleName: Drop this class
   ready: 55
+- file: classes10.html
+  titleName: Admin recent
+  ready: 1
+- file: classes11.html
+  titleName: Admin notes
+  ready: 1
+- file: classes12.html
+  titleName: Admin course
+  ready: 1
+- file: classes13.html
+  titleName: Admin members
+  ready: 1
+- file: classes14.html
+  titleName: Admin edit class 1
+  ready: 1
+- file: classes15.html
+  titleName: Admin edit class 2
+  ready: 1
+- file: classes16.html
+  titleName: Admin edit class 3
+  ready: 1
+- file: classes17.html
+  titleName: Admin edit class 4
+  ready: 1
+- file: classes18.html
+  titleName: Admin drop this class 1
+  ready: 1
+- file: classes19.html
+  titleName: Admin remove all members
+  ready: 1
+- file: classes20.html
+  titleName: Admin drop this class 2
+  ready: 1
+- file: classes21.html
+  titleName: Admin statistics 1
+  ready: 1
+- file: classes22.html
+  titleName: Admin statistics 2
+  ready: 1
+- file: classes23.html
+  titleName: Admin statistics 3
+  ready: 1
+- file: classes24.html
+  titleName: Admin create an announcement
+  ready: 1
+- file: classes25.html
+  titleName: Admin edit an announcement
+  ready: 1
