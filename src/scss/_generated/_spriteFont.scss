@@ -57,167 +57,179 @@
 	@if $filename == check {
 		$char: "\E00A";
 	}
-	@if $filename == edit {
+	@if $filename == courses {
 		$char: "\E00B";
 	}
-	@if $filename == error {
+	@if $filename == edit {
 		$char: "\E00C";
 	}
-	@if $filename == export-2 {
+	@if $filename == error {
 		$char: "\E00D";
 	}
-	@if $filename == export {
+	@if $filename == export-2 {
 		$char: "\E00E";
 	}
-	@if $filename == eye {
+	@if $filename == export {
 		$char: "\E00F";
 	}
-	@if $filename == filter {
+	@if $filename == eye {
 		$char: "\E010";
 	}
-	@if $filename == folder-add {
+	@if $filename == filter {
 		$char: "\E011";
 	}
-	@if $filename == folder {
+	@if $filename == folder-add {
 		$char: "\E012";
 	}
-	@if $filename == forum {
+	@if $filename == folder {
 		$char: "\E013";
 	}
-	@if $filename == fullscreen {
+	@if $filename == forum {
 		$char: "\E014";
 	}
-	@if $filename == help {
+	@if $filename == fullscreen {
 		$char: "\E015";
 	}
-	@if $filename == i-fb {
+	@if $filename == help {
 		$char: "\E016";
 	}
-	@if $filename == i-gp {
+	@if $filename == i-fb {
 		$char: "\E017";
 	}
-	@if $filename == i-tw {
+	@if $filename == i-gp {
 		$char: "\E018";
 	}
-	@if $filename == import {
+	@if $filename == i-tw {
 		$char: "\E019";
 	}
-	@if $filename == info {
+	@if $filename == import {
 		$char: "\E01A";
 	}
-	@if $filename == join {
+	@if $filename == info {
 		$char: "\E01B";
 	}
-	@if $filename == keyboard {
+	@if $filename == join {
 		$char: "\E01C";
 	}
-	@if $filename == light {
+	@if $filename == keyboard {
 		$char: "\E01D";
 	}
-	@if $filename == like {
+	@if $filename == light {
 		$char: "\E01E";
 	}
-	@if $filename == logout {
+	@if $filename == like {
 		$char: "\E01F";
 	}
-	@if $filename == message-all {
+	@if $filename == logout {
 		$char: "\E020";
 	}
-	@if $filename == message-archived {
+	@if $filename == members-add {
 		$char: "\E021";
 	}
-	@if $filename == message-unread {
+	@if $filename == members {
 		$char: "\E022";
 	}
-	@if $filename == messages-new {
+	@if $filename == message-all {
 		$char: "\E023";
 	}
-	@if $filename == notes {
+	@if $filename == message-archived {
 		$char: "\E024";
 	}
-	@if $filename == notification {
+	@if $filename == message-unread {
 		$char: "\E025";
 	}
-	@if $filename == notify {
+	@if $filename == messages-new {
 		$char: "\E026";
 	}
-	@if $filename == play {
+	@if $filename == notes {
 		$char: "\E027";
 	}
-	@if $filename == plus {
+	@if $filename == notification {
 		$char: "\E028";
 	}
-	@if $filename == prev-next {
+	@if $filename == notify {
 		$char: "\E029";
 	}
-	@if $filename == profile {
+	@if $filename == play {
 		$char: "\E02A";
 	}
-	@if $filename == recent {
+	@if $filename == plus {
 		$char: "\E02B";
 	}
-	@if $filename == refer {
+	@if $filename == prev-next {
 		$char: "\E02C";
 	}
-	@if $filename == remove {
+	@if $filename == profile {
 		$char: "\E02D";
 	}
-	@if $filename == safety {
+	@if $filename == recent {
 		$char: "\E02E";
 	}
-	@if $filename == save {
+	@if $filename == refer {
 		$char: "\E02F";
 	}
-	@if $filename == schedule {
+	@if $filename == remove {
 		$char: "\E030";
 	}
-	@if $filename == search {
+	@if $filename == safety {
 		$char: "\E031";
 	}
-	@if $filename == select {
+	@if $filename == save {
 		$char: "\E032";
 	}
-	@if $filename == send-feedback {
+	@if $filename == schedule {
 		$char: "\E033";
 	}
-	@if $filename == setting {
+	@if $filename == search {
 		$char: "\E034";
 	}
-	@if $filename == shuffle {
+	@if $filename == select {
 		$char: "\E035";
 	}
-	@if $filename == speaker {
+	@if $filename == send-feedback {
 		$char: "\E036";
 	}
-	@if $filename == star-fill {
+	@if $filename == setting {
 		$char: "\E037";
 	}
-	@if $filename == star-full {
+	@if $filename == shuffle {
 		$char: "\E038";
 	}
-	@if $filename == star {
+	@if $filename == speaker {
 		$char: "\E039";
 	}
-	@if $filename == statistics {
+	@if $filename == star-fill {
 		$char: "\E03A";
 	}
-	@if $filename == swap {
+	@if $filename == star-full {
 		$char: "\E03B";
 	}
-	@if $filename == switcher-add {
+	@if $filename == star {
 		$char: "\E03C";
 	}
-	@if $filename == switcher {
+	@if $filename == statistics {
 		$char: "\E03D";
 	}
-	@if $filename == text {
+	@if $filename == swap {
 		$char: "\E03E";
 	}
-	@if $filename == theme {
+	@if $filename == switcher-add {
 		$char: "\E03F";
 	}
-	@if $filename == width-small {
+	@if $filename == switcher {
 		$char: "\E040";
+	}
+	@if $filename == text {
+		$char: "\E041";
+	}
+	@if $filename == theme {
+		$char: "\E042";
+	}
+	@if $filename == user-delete {
+		$char: "\E043";
+	}
+	@if $filename == width-small {
+		$char: "\E044";
 	}
 
 	@return $char;
@@ -272,6 +284,10 @@
 }
 .icon-check {
 	@include icon(check);
+
+}
+.icon-courses {
+	@include icon(courses);
 
 }
 .icon-edit {
@@ -356,6 +372,14 @@
 }
 .icon-logout {
 	@include icon(logout);
+
+}
+.icon-members-add {
+	@include icon(members-add);
+
+}
+.icon-members {
+	@include icon(members);
 
 }
 .icon-message-all {
@@ -484,6 +508,10 @@
 }
 .icon-theme {
 	@include icon(theme);
+
+}
+.icon-user-delete {
+	@include icon(user-delete);
 
 }
 .icon-width-small {

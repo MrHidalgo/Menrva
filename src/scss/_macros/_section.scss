@@ -223,6 +223,7 @@
       margin-bottom: 40px;
     }
     &--search,
+    &--classes,
     &--messages,
     &--forum {
       padding-top: 27px;
@@ -287,6 +288,12 @@
       }
       .icon-messages-new {
         font-size: 20px;
+      }
+      .icon-courses {
+        font-size: 20px;
+      }
+      .icon-account {
+        font-size: 22px;
       }
     }
 
