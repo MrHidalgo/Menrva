@@ -26,6 +26,10 @@
     &-left {
       width: 100%;
       max-width: calc(100% - 112px);
+
+      .classes--join & {
+        max-width: calc(100% - 183px);
+      }
     }
 
     &-right {
@@ -33,6 +37,16 @@
       align-items: center;
       justify-content: space-between;
       width: 112px;
+
+      .classes--join & {
+        width: 183px;
+
+        a {
+          &:hover {
+            color: $c-white;
+          }
+        }
+      }
     }
 
     &-user {
