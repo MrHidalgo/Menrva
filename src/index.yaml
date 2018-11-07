@@ -380,13 +380,13 @@ PageList:
   ready: 1
 - file: classes18.html
   titleName: Admin drop this class 1
-  ready: 1
+  ready: 55
 - file: classes19.html
   titleName: Admin remove all members
-  ready: 1
+  ready: 55
 - file: classes20.html
   titleName: Admin drop this class 2
-  ready: 1
+  ready: 55
 - file: classes21.html
   titleName: Admin statistics 1
   ready: 1
