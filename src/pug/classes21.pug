@@ -9,3 +9,182 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--classesStat
+      .c-modal__wrapper
+        .c-modal__content
+          .c-modal__content-menu
+            .c-modal__header.d-flex.align-items-center
+              a.c-modal__hamburger(href="#" title="" class="")
+                span
+              p!= "Class memorization levels"
+
+            .c-modal__table
+              .c-modal__table-head
+                .c-modal__table-tr
+                  .c-modal__table-th
+                    a.is-active(href="#" class="" title="")
+                      i.icon-font.icon-statistics
+
+                  .c-modal__table-th
+                    a.is-sort(href="#" class="" title="" table-sort-js)
+                      span!= "Members"
+
+                  .c-modal__table-th
+                    a(href="#" class="" title="" table-sort-js)
+                      span!= "Max ML"
+
+                  .c-modal__table-th
+                    a(href="#" class="" title="" table-sort-js)
+                      span!= "Time spent"
+
+              .c-modal__table-body
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+                .c-modal__table-tr
+                  .c-modal__table-td
+                    a(href="#" class="" title="")
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  .c-modal__table-td
+                    p!= "Jane Oliver"
+                    span!= "Note name"
+                  .c-modal__table-td
+                    p!= "220"
+                  .c-modal__table-td
+                    p!= "01:20:32"
+
+
+          .c-modal__content-body
+            .c-modal__header.d-flex.align-items-center
+              p.c-modal__title.subtitle!= "Josie Edwards statistics"
+              a.c-modal__export(href="#" title="" class="")
+                i.icon-font.icon-export-2
+              a.c-modal__close(href="#" title="" class="")
+                i.icon-font.icon-error
+
+            .c-modal__body
+              p.c-modal__subtitle!= "Note name"
+
+              .notes__statistics
+                p.notes__statistics-title!= "Recent statistics"
+                ul.notes__statistics-list
+                  ul.notes__statistics-list
+                    li.notes__statistics-item
+                      span!= "Session length"
+                      span!= "12:10.30"
+                    li.notes__statistics-item
+                      span!= "Highest wmpm"
+                      span!= "12:10.30"
+                    li.notes__statistics-item
+                      span!= "Total words"
+                      span!= "210"
+                    li.notes__statistics-item
+                      span!= "Minimum memorization level"
+                      span!= "210"
+                    li.notes__statistics-item
+                      span!= "Words memorized"
+                      span!= "68"
+                    li.notes__statistics-item
+                      span!= "Maximum memorization level"
+                      span!= "68"
+                    li.notes__statistics-item
+                      span!= "Average wmpm"
+                      span!= "10"
+                    li.notes__statistics-item
+                      span!= "Session number"
+                      span!= "10"
+
+              .notes__graph
+                .notes__graph-wrapper
+                  .notes__graph-left
+                    p.notes__graph-title!= "Words memorized per minute (WMPM)"
+
+                    .notes__graph-content
+                      img(
+                      srcset="./img/img-notes-graph-0.png, ./img/img-notes-graph-0@2x.png 2x"
+                      alt="" title=""
+                      )
+
+                  .notes__graph-right
+                    p.notes__graph-title!= "Memorization levels"
+
+                    .notes__graph-content
+                      img(
+                      srcset="./img/img-notes-graph-1.png, ./img/img-notes-graph-1@2x.png 2x"
+                      alt="" title=""
+                      )

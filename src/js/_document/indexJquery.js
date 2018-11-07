@@ -80,6 +80,9 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
   const inputRangeInit = () => {
     $('input[type=range]').on('input', function (e) {
       let min = e.target.min,
@@ -92,6 +95,42 @@ $(document).ready((ev) => {
     }).trigger('input');
   };
 
+
+  /**
+   *
+   */
+  const initModalStatisticMenu = () => {
+    $('.c-modal__hamburger').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      elem.closest(".c-modal").toggleClass('is-close');
+    });
+  };
+
+
+  /**
+   *
+   */
+  const initTableBtn = () => {
+    $('.c-modal__table-td > a, .c-modal__table-th:first-child > a').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      $('.c-modal__table-td > a, .c-modal__table-th:first-child > a').removeClass('is-active');
+      elem.addClass('is-active');
+    });
+  };
+
+
+  /**
+   *
+   */
+  const initTableSort = () => {
+    $('[table-sort-js]').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      elem.toggleClass('is-sort');
+    });
+  };
 
 
   /**
@@ -108,6 +147,9 @@ $(document).ready((ev) => {
     initSearch();
     initBootstrapMethod();
     inputRangeInit();
+    initModalStatisticMenu();
+    initTableBtn();
+    initTableSort();
   };
   initJquery();
 });

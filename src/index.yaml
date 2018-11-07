@@ -389,13 +389,13 @@ PageList:
   ready: 55
 - file: classes21.html
   titleName: Admin statistics 1
-  ready: 1
+  ready: 55
 - file: classes22.html
   titleName: Admin statistics 2
-  ready: 1
+  ready: 55
 - file: classes23.html
   titleName: Admin statistics 3
-  ready: 1
+  ready: 55
 - file: classes24.html
   titleName: Admin create an announcement
   ready: 55

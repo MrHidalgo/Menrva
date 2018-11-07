@@ -251,6 +251,10 @@
   &__graph {
     padding-bottom: 30px;
 
+    .c-modal--classesStat & {
+      padding-bottom: 0;
+    }
+
     &-wrapper {
       display: flex;
     }
