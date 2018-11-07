@@ -109,6 +109,29 @@
     background-color: $c-white;
     box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
 
+    &--members {
+      p {
+        color: $c-0e1111;
+        font-size: 14px;
+      }
+
+      span {
+        color: #7F7F7F;
+        font-weight: normal;
+      }
+    }
+
+    &--recent {
+      p {
+        color: #333333;
+      }
+
+      span {
+        color: $c-0e1111;
+        font-weight: 500;
+      }
+    }
+
     &-title {
       padding-bottom: 20px;
       color: #7F7F7F;
@@ -145,18 +168,15 @@
     &-right {
       width: 100%;
       max-width: calc(100% - 80px);
+    }
 
-      p {
-        padding-bottom: 7px;
-        color: #333333;
-        letter-spacing: 0.2px;
-      }
+    p {
+      padding-bottom: 7px;
+      letter-spacing: 0.2px;
+    }
 
-      span {
-        color: #000;
-        letter-spacing: 0.17px;
-        font-weight: 500;
-      }
+    span {
+      letter-spacing: 0.17px;
     }
   }
 }
