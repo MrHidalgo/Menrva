@@ -47,3 +47,29 @@ block content
                   a(href="#" title="" class="")
                     i.icon-font.icon-members-add
                     span!= "Create a class"
+
+
+            each val, idx in [1,2,3]
+              .notes__box.notes__box--classesJoin
+                .notes__box-left
+                  img(src="./img/img-bg-designed.jpg" srcset="./img/img-bg-designed@2x.jpg 2x" alt="" title="")
+                .notes__box-middle
+                  .notes__box-info
+                    a(href="#" title="" class="")
+                      span!= "Institution name, Location"
+
+                  p.notes__box-title!= "Lorem Ipsum"
+
+                  .notes__box-info
+                    a(href="#" title="" class="")
+                      i.icon-font.icon-courses
+                      span!= "67"
+                    a(href="#" title="" class="")
+                      i.icon-font.icon-notes
+                      span!= "567"
+                    a(href="#" title="" class="")
+                      i.icon-font.icon-account
+                      span!= "16"
+
+                .notes__box-right
+                  a.c-btn.c-btn--darkGreen(href="#" class="" title="")!= "Request to join"
