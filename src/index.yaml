@@ -335,7 +335,7 @@ PageList:
   ready: 55
 - file: classes3.html
   titleName: Report 1
-  ready: 1
+  ready: 55
 - file: classes4.html
   titleName: Report 2
-  ready: 1
+  ready: 55

@@ -9,3 +9,46 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--reportUser.c-modal--classesReport
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Report this class"
+          a.c-modal__close(
+          href="#"
+          title="" class=""
+          )
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__text!= "Why are you reporting this class?"
+
+          form.form(action="" method="")
+            .form__field.form__field--radio
+              input.form__radio(type="radio" id="reportNote0" name="reportNoteBrowse")
+              label(for="reportNote0")
+                span!= "The class name is misleading"
+
+            .form__field.form__field--radio
+              input.form__radio(type="radio" id="reportNote1" name="reportNoteBrowse")
+              label(for="reportNote1")
+                span!= "It is inappropriate."
+
+            .form__field.form__field--radio
+              input.form__radio(type="radio" id="reportNote2" name="reportNoteBrowse" checked)
+              label(for="reportNote2")
+                span!= "it is being used to cheat."
+
+            .form__field.form__field--input
+              .form__input-wrap
+                input.form__input(type="text" id="delAcc" name="delAcc" placeholder="Your feedback")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--radio
+              input.form__radio(type="radio" id="reportNote3" name="reportNoteBrowse")
+              label(for="reportNote3")
+                span!= "It violates my intellectual property rights."
+
+
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Continue"
