@@ -368,16 +368,16 @@ PageList:
   ready: 55
 - file: classes14.html
   titleName: Admin edit class 1
-  ready: 1
+  ready: 55
 - file: classes15.html
   titleName: Admin edit class 2
-  ready: 1
+  ready: 55
 - file: classes16.html
   titleName: Admin edit class 3
-  ready: 1
+  ready: 55
 - file: classes17.html
   titleName: Admin edit class 4
-  ready: 1
+  ready: 55
 - file: classes18.html
   titleName: Admin drop this class 1
   ready: 55

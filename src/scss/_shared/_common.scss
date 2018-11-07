@@ -548,6 +548,14 @@
           }
         }
       }
+
+      .c-modal--classAdminEdit & {
+        justify-content: space-between;
+
+        > div {
+          width: calc(50% - 12px);
+        }
+      }
     }
 
     &--swipe {
@@ -961,6 +969,14 @@
         a {
           font-size: 12px;
 
+          &.form__input-dropdown--add {
+            color: $c-0e1111;
+
+            &:hover {
+              color: rgba($c-0e1111, 0.75);
+            }
+          }
+
           &:hover {
             color: $c-white;
           }
@@ -1068,6 +1084,13 @@
     &--notes {
       padding-bottom: 20px;
     }
+
+    .c-modal--classAdminEdit & {
+      & + label {
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+    }
   }
 
   &__btn {
@@ -1127,6 +1150,11 @@
 
     .c-modal--classesInvite & {
       margin-top: 0;
+    }
+
+    .c-modal--classAdminEdit & {
+      max-width: 160px;
+      margin-left: auto;
     }
 
     .new__form & {
@@ -1308,6 +1336,11 @@
       max-width: 823px;
       padding: 40px 60px;
     }
+
+    .c-modal--classAdminEdit & {
+      max-width: 697px;
+      padding: 40px 60px;
+    }
   }
 
   &__header {
@@ -1487,6 +1520,12 @@
       a {
         color: rgba($c-black, 1);
       }
+    }
+
+    .c-modal--classAdminEdit & {
+      padding-bottom: 30px;
+      color: #333;
+      font-weight: 600;
     }
   }
 

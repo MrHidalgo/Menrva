@@ -533,13 +533,25 @@
   &__create {
     display: flex;
 
+    .c-modal--classAdminEdit & {
+      padding-bottom: 40px;
+    }
+
     &-left {
       width: 288px;
+
+      .c-modal--classAdminEdit & {
+        width: 207px;
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 288px);
+
+      .c-modal--classAdminEdit & {
+        max-width: calc(100% - 207px);
+      }
     }
 
     &-box {
@@ -557,12 +569,26 @@
       background-color: $c-white;
       text-align: center;
 
+      .c-modal--classAdminEdit & {
+        width: 167px;
+        height: 170px;
+      }
+
       img {
         margin-bottom: 30px;
+
+        .c-modal--classAdminEdit & {
+          transform: scale(0.75);
+          margin-bottom: 15px;
+        }
       }
 
       p {
         font-size: 14px;
+
+        .c-modal--classAdminEdit & {
+          font-size: 12px;
+        }
       }
     }
 

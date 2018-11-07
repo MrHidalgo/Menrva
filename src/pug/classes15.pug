@@ -9,3 +9,68 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--classAdminEdit
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Edit class"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          form.form(action="" method="")
+            .bill__create
+              .bill__create-left
+                label.form__label()!= "Cover"
+
+                .bill__create-box
+                  img(
+                  srcset="./img/img-create.png, ./img/img-create@2x.png 2x"
+                  alt="" title=""
+                  )
+
+                  p!= "Choose an image"
+
+              .bill__create-right.d-flex.flex-column.justify-content-between
+
+                .form__field.form__field--input
+                  label.form__label(for="createTitle")!= "Class name"
+                  .form__input-wrap
+                    input.form__input(type="text" id="createTitle" name="createTitle" placeholder="Type your title")
+                  .form__notify.form__notify--hide
+
+                .form__field.form__field--input
+                  label.form__label(for="createDescription")!= "Description  (optional)"
+                  .form__input-wrap
+                    input.form__input(type="text" id="createDescription" name="createDescription" placeholder="Type your description")
+                  .form__notify.form__notify--hide
+
+            .form__field.form__field--input.form__field--dropdown
+              label.form__label!= "Institution (optional)"
+              .form__input-wrap
+                input.form__input(type="text" id="sendMessageTo" name="sendMessageTo" placeholder="Enter name of institution")
+              .form__input-dropdown
+                div
+                  ul
+                    li
+                      a.form__input-dropdown--add(href="#")!= "Add institution"
+                    li
+                      p!= "Lorem 1  ·  City "
+                    li
+                      p!= "Lorem 2  ·  City "
+                    li
+                      p!= "Lorem 3  ·  City "
+
+            p.c-modal__text!= "Select from existing institutions instead."
+
+            .form__field.form__field--checkbox
+              .form__checkbox-wrap
+                input.form__checkbox(type="checkbox" id="notesExport" name="")
+                label(for="notesExport")
+                  u
+                  span!= "Allow other members to add notes and new members."
+                  i.icon-font.icon-check
+
+            .form__field.form__field--btn
+              button.form__btn(type="submit")!= "Create class"
