@@ -872,6 +872,11 @@
         max-width: 200px;
         margin-left: auto;
       }
+
+      .c-modal--classesInvite & {
+        width: 100%;
+        max-width: 137px;
+      }
     }
 
     &--link {
@@ -879,10 +884,18 @@
     }
 
     &--dropdown {
+      .form__input-dropdown {
+        display: none;
+      }
+
       &.is-find {
         .form__input {
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
+        }
+
+        .form__input-dropdown {
+          display: block;
         }
       }
     }
@@ -912,8 +925,6 @@
     &-dropdown {
       z-index: 1;
       overflow-y: auto;
-      display: flex;
-      flex-direction: column;
       position: absolute;
       top: 100%;
       left: 0;
@@ -927,7 +938,7 @@
       border-bottom: 1px solid #CBCECB;
       background-color: #fff;
 
-      a {
+      li {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -944,6 +955,14 @@
         span {
           color: #7f7f7f;
           font-weight: normal;
+        }
+
+        a {
+          font-size: 12px;
+
+          &:hover {
+            color: $c-white;
+          }
         }
       }
     }
@@ -1101,6 +1120,10 @@
     .c-modal--browseSuggest & {
       max-width: 116px;
       margin-left: auto;
+    }
+
+    .c-modal--classesInvite & {
+      margin-top: 0;
     }
 
     .new__form & {
@@ -1269,6 +1292,7 @@
     .c-modal--forum &,
     .c-modal--notes &,
     .c-modal--browseSuggest &,
+    .c-modal--classesInvite &,
     .c-modal--pageSetting & {
       max-width: 609px;
       padding-top: 40px;
@@ -1430,6 +1454,7 @@
     font-size: 12px;
 
     .c-modal--reset &,
+    .c-modal--classesInvite &,
     .c-modal--delAcc &,
     .c-modal--delName & {
       padding-bottom: 30px;

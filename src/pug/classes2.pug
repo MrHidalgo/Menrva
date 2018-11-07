@@ -1,0 +1,44 @@
+---
+title: Menrva - Classes invite members 2
+
+contentClassName: p-classes
+dataPageName: classes2
+login: true
+---
+extends shared/_layout
+
+block content
+  div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--classesInvite
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Invite members"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__text!= "Invite members to this class by typing in their username or email address."
+
+          form.form(action="" method="")
+            .form__field--group
+              .form__field.form__field--input.form__field--dropdown.is-find
+                .form__input-wrap
+                  input.form__input(type="text" id="sendMessageTo" name="sendMessageTo" placeholder="Enter a username or email")
+                .form__input-dropdown
+                  div
+                    ul
+                      li
+                        p!= "Josh192"
+                        span!= "School name"
+                      li
+                        p!= "Josh12"
+                        a.c-btn.c-btn--darkGreen(href="#" class="" title="")!= "Invite sent!"
+                      li
+                        p!= "Josh1"
+                        a.c-btn.c-btn--darkGreen(href="#" class="" title="")!= "Invite sent!"
+                      li
+                        p!= "Jos"
+
+              .form__field.form__field--btn
+                button.form__btn(type="submit")!= "Send invite"

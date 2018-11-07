@@ -322,3 +322,20 @@ PageList:
 - file: statistic.html
   titleName: Statistic
   ready: 55
+
+- file:
+  titleName: =====CLASSES=====
+  ready: 0
+
+- file: classes1.html
+  titleName: Invite members 1
+  ready: 55
+- file: classes2.html
+  titleName: Invite members 2
+  ready: 55
+- file: classes3.html
+  titleName: Report 1
+  ready: 1
+- file: classes4.html
+  titleName: Report 2
+  ready: 1
