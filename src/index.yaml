@@ -398,7 +398,7 @@ PageList:
   ready: 1
 - file: classes24.html
   titleName: Admin create an announcement
-  ready: 1
+  ready: 55
 - file: classes25.html
   titleName: Admin edit an announcement
-  ready: 1
+  ready: 55

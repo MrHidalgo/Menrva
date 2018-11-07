@@ -9,3 +9,24 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--classAnnouncement
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Create an announcement"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          p.c-modal__subinfo!= "Your accouncement"
+
+          form.form(action="" method="")
+
+            .form__field.form__field--textarea
+              .form__textarea-wrap
+                textarea.form__textarea(id="1" name="1" placeholder="")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn(type="submit")!= "Create"

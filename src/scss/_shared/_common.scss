@@ -1119,7 +1119,8 @@
       margin-left: auto;
     }
 
-    .c-modal--browseSuggest & {
+    .c-modal--browseSuggest &,
+    .c-modal--classAnnouncement & {
       max-width: 116px;
       margin-left: auto;
     }
@@ -1295,6 +1296,7 @@
     .c-modal--forum &,
     .c-modal--notes &,
     .c-modal--browseSuggest &,
+    .c-modal--classAnnouncement &,
     .c-modal--classesInvite &,
     .c-modal--pageSetting & {
       max-width: 609px;
@@ -1385,6 +1387,13 @@
     .c-modal--browseSuggest & {
       text-align: left;
       padding-bottom: 20px;
+    }
+    
+    .c-modal--classAnnouncement & {
+      padding-bottom: 30px;
+      color: #7F7F7F;
+      text-align: left;
+      font-weight: 500;
     }
   }
   
