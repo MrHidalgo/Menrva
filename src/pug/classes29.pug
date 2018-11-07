@@ -1,0 +1,19 @@
+---
+title: Menrva - Classes join or create
+
+contentClassName: p-classes
+dataPageName: classes29
+login: true
+---
+extends shared/_layout
+
+block content
+  div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuClassMember
+
+          .section__wrapper-right

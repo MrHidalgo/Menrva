@@ -1,0 +1,45 @@
+---
+title: Menrva - Classes join or create
+
+contentClassName: p-classes
+dataPageName: classes26
+login: true
+---
+extends shared/_layout
+
+block content
+  div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuMain
+
+          .section__wrapper-right
+
+            .section__title.section__title--browse
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-members-add
+                  span!= "Join or create a class"
+
+                .section__title-right
+                  .notes__search
+                    input.notes__search-input(type="text" name="" placeholder="Search note")
+                    button.notes__search-btn(type="submit")
+                      i.icon-font.icon-search
+                    a.notes__search-clear(
+                    href="#"
+                    title="" class=""
+                    )
+                      i.icon-font.icon-error
+
+            .section__subtitle.section__subtitle--search
+              .section__subtitle-wrap
+                .section__subtitle-left
+                .section__subtitle-right
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-members-add
+                    span!= "Create a class"
