@@ -1,0 +1,28 @@
+---
+title: Menrva - Classes drop this class
+
+contentClassName: p-classes
+dataPageName: classes9
+login: true
+---
+extends shared/_layout
+
+block content
+  div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--removeNote
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Drop this class?"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__subtitle!= "Class name"
+          p.c-modal__subinfo!= "You are about to drop this class. Doing so will permanently remove you from it."
+          p.c-modal__subinfo!= "Are you absolutely positive? There's no undo."
+
+          form.form(action="" method="")
+            .form__field.form__field--btn
+              button.form__btn.form__btn--full(type="submit")!= "Yes, drop class"
+              button.form__btn.form__btn--full(type="submit")!= "Cancel"

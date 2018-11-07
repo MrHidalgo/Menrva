@@ -339,3 +339,18 @@ PageList:
 - file: classes4.html
   titleName: Report 2
   ready: 55
+- file: classes5.html
+  titleName: Member recent
+  ready: 1
+- file: classes6.html
+  titleName: Member notes
+  ready: 1
+- file: classes7.html
+  titleName: Member course
+  ready: 1
+- file: classes8.html
+  titleName: Members
+  ready: 1
+- file: classes9.html
+  titleName: Drop this class
+  ready: 55
