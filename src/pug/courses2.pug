@@ -9,3 +9,50 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--coursesEdit
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Create a new course"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          form.form(action="" method="")
+            .form__field.form__field--input
+              label.form__label(for="forumTopicTitle")!= "Title"
+              .form__input-wrap
+                input.form__input(type="text" id="forumTopicTitle" name="forumTopicTitle" placeholder="Course 1")
+              .form__notify.form__notify--hide
+
+            label.form__label()!= "Category (optional)"
+            .form__field.form__field--select
+              .form__select-wrap
+                .form__select
+                  span.select__value
+                  select(name="")
+                    option(value="0" disabled selected hidden)!= "Select a category"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                  span.select__icon-wrap
+                    i.icon-font.icon-arrow
+
+            .form__field.form__field--input
+              label.form__label(for="1")!= "Description"
+              .form__input-wrap
+                input.form__input(type="text" id="1" name="1" placeholder="Enter description")
+              .form__notify.form__notify--hide
+
+            .form__field.form__field--btn
+              button.form__btn(type="submit")!= "Create a course"
