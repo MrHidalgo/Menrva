@@ -258,7 +258,16 @@ PageList:
   ready: 55
 - file: notes31.html
   titleName: Sort by custom
-  ready: 1
+  ready: 55
+- file: notes32.html
+  titleName: Share access 1
+  ready: 55
+- file: notes33.html
+  titleName: Share access 2
+  ready: 55
+- file: notes34.html
+  titleName: Share access 3
+  ready: 55
 
 - file:
   titleName: =====MESSAGES=====

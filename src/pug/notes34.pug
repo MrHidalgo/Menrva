@@ -1,0 +1,70 @@
+---
+title: Menrva - Notes share access 3
+
+contentClassName: p-notes
+dataPageName: notes34
+login: true
+---
+extends shared/_layout
+
+block content
+  div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--classesInvite
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Share access"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+          p.c-modal__text!= "Share access to this note with other users by typing in their username."
+
+          form.form(action="" method="")
+            .form__field--group
+              .form__field.form__field--input.form__field--dropdown
+                .form__input-wrap
+                  input.form__input(type="text" id="sendMessageTo" name="sendMessageTo" placeholder="")
+                .form__input-dropdown
+                  div
+                    ul
+                      li
+                        p!= "Josh192"
+                        span!= "School name"
+                      li
+                        p!= "Josh12"
+                      li
+                        p!= "Josh1"
+                      li
+                        p!= "Jos"
+
+              .form__field.form__field--btn
+                button.form__btn.c-btn.c-btn--lightGray(type="submit")!= "Send invite"
+
+          .c-modal__users
+            p.c-modal__text!= "2 members"
+
+            ul
+              each val, idx in [1,2,3]
+                li
+                  a
+                    div
+                      i
+                        img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Jane Oliver"
+                      span!= "Student"
+
+                  if(idx !== 0)
+                    .c-dropdown
+                      .dropdown
+                        a.dropdown__btn(href="#" id="notesFlashcardTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                          span
+                          span
+                          span
+                        .dropdown-menu.dropdown-menu-right(aria-labelledby="notesFlashcardTitle")
+                          a.dropdown-item(href="#")
+                            div
+                              i.icon-font.icon-remove
+                            span!= "Remove"
+

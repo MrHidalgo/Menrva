@@ -1900,12 +1900,31 @@
     overflow-y: auto;
     height: calc(100% - 31px);
 
+    .c-modal--classesInvite & {
+      overflow: unset;
+      height: auto;
+      margin-top: 10px;
+      padding-top: 30px;
+      border-top: 1px solid #CBCECB;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+
     li {
       padding-left: 20px;
       padding-right: 15px;
       padding-bottom: 32px;
 
-      a {
+      > a {
         cursor: pointer;
         display: flex;
         align-items: center;
