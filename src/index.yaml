@@ -465,10 +465,10 @@ PageList:
   ready: 1
 - file: courses9.html
   titleName: Edit course
-  ready: 1
+  ready: 55
 - file: courses10.html
   titleName: Remove course
-  ready: 1
+  ready: 55
 - file: courses11.html
   titleName: Sort by
   ready: 55
