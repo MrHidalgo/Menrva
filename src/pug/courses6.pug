@@ -9,3 +9,52 @@ extends shared/_layout
 
 block content
   div.body(class!= contentClassName)
+
+    section#c-modal.c-modal.c-modal--courseSaveNotes
+      .c-modal__wrapper
+        .c-modal__header.d-flex.align-items-center
+          p.c-modal__title.subtitle!= "Add a note"
+          a.c-modal__close(href="#" title="" class="")
+            i.icon-font.icon-error
+
+        .c-modal__body
+
+          form.form(action="" method="")
+            label.form__label()!= "Course"
+            .form__field.form__field--select
+              .form__select-wrap
+                .form__select
+                  span.select__value
+                  select(name="")
+                    option(value="0" disabled selected hidden)!= "Course name 1"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                    option(value="1")!= "Some courses title name"
+                  span.select__icon-wrap
+                    i.icon-font.icon-arrow
+
+          .btn__wrapper-add
+            a.c-btn.c-btn--bigH.c-btn--lightGray(href="#" title="" class="")
+              span!= "Course 1"
+              i.icon-font.icon-plus
+
+            a.c-btn.c-btn--bigH.c-btn--lightGray(href="#" title="" class="")
+              span!= "Course 1"
+              i.icon-font.icon-plus
+
+            a.c-btn.c-btn--bigH.c-btn--lightGray(href="#" title="" class="")
+              span!= "Course 1"
+              i.icon-font.icon-plus
+
+          .btn__wrapper-link
+            a.c-btn.c-btn--bigH.c-btn--darkGreen(href="#" title="" class="")
+              span!= "This note has been removed from the course"

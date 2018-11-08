@@ -451,16 +451,16 @@ PageList:
   ready: 55
 - file: courses4.html
   titleName: Add a note 1
-  ready: 1
+  ready: 55
 - file: courses5.html
   titleName: Add a note 2
-  ready: 1
+  ready: 55
 - file: courses6.html
   titleName: Add a note 3
-  ready: 1
+  ready: 55
 - file: courses7.html
   titleName: Add a note 4
-  ready: 1
+  ready: 0
 - file: courses8.html
   titleName: Course 1
   ready: 55

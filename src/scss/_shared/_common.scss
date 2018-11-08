@@ -1336,8 +1336,10 @@
   &--courseSaveNotes {
     .c-btn {
       max-width: 100%;
+    }
 
-      &:nth-child(1) {
+    .btn__wrapper-link {
+      .c-btn {
         margin-bottom: 30px;
 
         &:hover {
@@ -1349,24 +1351,23 @@
           font-size: 17px;
         }
       }
+    }
 
-      &:nth-child(2),
-      &:nth-child(3) {
+    .btn__wrapper-add {
+      .c-btn {
         justify-content: space-between;
         padding: 0 15px 0 20px;
+        margin-bottom: 20px;
         color: #333;
+
+        &:last-of-type {
+          i {
+            transform: rotate(45deg);
+          }
+        }
 
         i {
           font-size: 20px;
-        }
-      }
-
-      &:nth-child(2) {
-        margin-bottom: 20px;
-      }
-      &:nth-child(3) {
-        i {
-          transform: rotate(45deg);
         }
       }
     }
