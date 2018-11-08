@@ -462,7 +462,7 @@ PageList:
   ready: 1
 - file: courses8.html
   titleName: Course 1
-  ready: 1
+  ready: 55
 - file: courses9.html
   titleName: Edit course
   ready: 55

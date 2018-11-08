@@ -149,6 +149,15 @@
       }
     }
 
+    &-desc {
+      p {
+        padding-bottom: 30px;
+        color: #7F7F7F;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
     &-icon {
       display: flex;
       align-items: center;
