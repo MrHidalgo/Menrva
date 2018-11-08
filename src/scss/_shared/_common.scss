@@ -556,6 +556,20 @@
           width: calc(50% - 12px);
         }
       }
+
+      .c-modal--notesSuggestions & {
+        justify-content: flex-end;
+        margin-bottom: 0;
+
+        .form__field--btn {
+          width: 100%;
+          max-width: 146px;
+
+          &:first-of-type {
+            margin-right: 30px;
+          }
+        }
+      }
     }
 
     &--swipe {
@@ -1355,6 +1369,14 @@
       max-width: calc(98px + 823px);
       @include transition(max-width);
     }
+
+    .c-modal--notesSuggestions & {
+      max-width: 905px;
+      padding: 0;
+      box-shadow: none;
+      border-radius: 0;
+      background-color: transparent;
+    }
   }
 
   &__content {
@@ -1426,6 +1448,10 @@
           font-weight: 600;
         }
       }
+
+      .c-modal--notesSuggestions & {
+        width: calc(905px - 609px);
+      }
     }
 
     &-body {
@@ -1439,6 +1465,11 @@
       .c-modal--classesStat.is-close & {
         left: 98px;
         @include transition(left);
+      }
+
+      .c-modal--notesSuggestions & {
+        left: calc(905px - 609px);
+        width: 609px;
       }
     }
   }
@@ -1539,6 +1570,13 @@
     
     .c-modal--classAnnouncement & {
       padding-bottom: 30px;
+      color: #7F7F7F;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    .c-modal--notesSuggestions & {
+      padding-bottom: 20px;
       color: #7F7F7F;
       text-align: left;
       font-weight: 500;
@@ -1653,6 +1691,12 @@
       padding-bottom: 30px;
       color: #333;
       font-weight: 600;
+    }
+
+    .c-modal--notesSuggestions & {
+      padding-bottom: 30px;
+      text-align: left;
+      line-height: 1.8;
     }
   }
 
@@ -1838,6 +1882,65 @@
           object-fit: cover;
           object-position: center;
         }
+      }
+    }
+  }
+
+  &__users {
+    overflow-y: auto;
+    height: calc(100% - 31px);
+
+    li {
+      padding-left: 20px;
+      padding-right: 15px;
+      padding-bottom: 32px;
+
+      a {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        > div {
+          &:first-of-type {
+            width: 58px;
+          }
+          &:last-of-type {
+            width: 100%;
+            max-width: calc(100% - 58px);
+          }
+        }
+      }
+
+      i {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      p {
+        color: #555352;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      span {
+        color: #7F7F7F;
       }
     }
   }
