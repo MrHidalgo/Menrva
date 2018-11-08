@@ -126,122 +126,125 @@
 	@if $filename == like {
 		$char: "\E021";
 	}
-	@if $filename == lock {
+	@if $filename == lock-2 {
 		$char: "\E022";
 	}
-	@if $filename == logout {
+	@if $filename == lock {
 		$char: "\E023";
 	}
-	@if $filename == members-add {
+	@if $filename == logout {
 		$char: "\E024";
 	}
-	@if $filename == members {
+	@if $filename == members-add {
 		$char: "\E025";
 	}
-	@if $filename == message-all {
+	@if $filename == members {
 		$char: "\E026";
 	}
-	@if $filename == message-archived {
+	@if $filename == message-all {
 		$char: "\E027";
 	}
-	@if $filename == message-unread {
+	@if $filename == message-archived {
 		$char: "\E028";
 	}
-	@if $filename == messages-new {
+	@if $filename == message-unread {
 		$char: "\E029";
 	}
-	@if $filename == notes {
+	@if $filename == messages-new {
 		$char: "\E02A";
 	}
-	@if $filename == notification {
+	@if $filename == notes {
 		$char: "\E02B";
 	}
-	@if $filename == notify {
+	@if $filename == notification {
 		$char: "\E02C";
 	}
-	@if $filename == picture {
+	@if $filename == notify {
 		$char: "\E02D";
 	}
-	@if $filename == play {
+	@if $filename == picture {
 		$char: "\E02E";
 	}
-	@if $filename == plus {
+	@if $filename == play {
 		$char: "\E02F";
 	}
-	@if $filename == prev-next {
+	@if $filename == plus {
 		$char: "\E030";
 	}
-	@if $filename == profile {
+	@if $filename == prev-next {
 		$char: "\E031";
 	}
-	@if $filename == recent {
+	@if $filename == profile {
 		$char: "\E032";
 	}
-	@if $filename == refer {
+	@if $filename == recent {
 		$char: "\E033";
 	}
-	@if $filename == remove {
+	@if $filename == refer {
 		$char: "\E034";
 	}
-	@if $filename == safety {
+	@if $filename == remove {
 		$char: "\E035";
 	}
-	@if $filename == save {
+	@if $filename == safety {
 		$char: "\E036";
 	}
-	@if $filename == schedule {
+	@if $filename == save {
 		$char: "\E037";
 	}
-	@if $filename == search {
+	@if $filename == schedule {
 		$char: "\E038";
 	}
-	@if $filename == select {
+	@if $filename == search {
 		$char: "\E039";
 	}
-	@if $filename == send-feedback {
+	@if $filename == select {
 		$char: "\E03A";
 	}
-	@if $filename == setting {
+	@if $filename == send-feedback {
 		$char: "\E03B";
 	}
-	@if $filename == shuffle {
+	@if $filename == setting {
 		$char: "\E03C";
 	}
-	@if $filename == speaker {
+	@if $filename == shuffle {
 		$char: "\E03D";
 	}
-	@if $filename == star-fill {
+	@if $filename == speaker {
 		$char: "\E03E";
 	}
-	@if $filename == star-full {
+	@if $filename == star-fill {
 		$char: "\E03F";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E040";
 	}
-	@if $filename == statistics {
+	@if $filename == star {
 		$char: "\E041";
 	}
-	@if $filename == swap {
+	@if $filename == statistics {
 		$char: "\E042";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E043";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E044";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E045";
 	}
-	@if $filename == theme {
+	@if $filename == text {
 		$char: "\E046";
 	}
-	@if $filename == user-delete {
+	@if $filename == theme {
 		$char: "\E047";
 	}
-	@if $filename == width-small {
+	@if $filename == user-delete {
 		$char: "\E048";
+	}
+	@if $filename == width-small {
+		$char: "\E049";
 	}
 
 	@return $char;
@@ -388,6 +391,10 @@
 }
 .icon-like {
 	@include icon(like);
+
+}
+.icon-lock-2 {
+	@include icon(lock-2);
 
 }
 .icon-lock {
