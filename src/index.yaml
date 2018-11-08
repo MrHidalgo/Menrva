@@ -441,7 +441,7 @@ PageList:
   ready: 0
 - file: courses1.html
   titleName: Main
-  ready: 1
+  ready: 55
 - file: courses2.html
   titleName: Create new
   ready: 1
