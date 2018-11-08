@@ -37,6 +37,11 @@ block content
                     href="#"
                     title="" class=""
                     )
+                      i.icon-font.icon-speaker
+                    a(
+                    href="#"
+                    title="" class=""
+                    )
                       i.icon-font.icon-star-full
 
                 .tool__preview-scroll
@@ -57,6 +62,8 @@ block content
                   +btnStar()
 
                 .tool__control-middle.d-flex.align-items-center
+                  .tool__control-swap
+                    +btnSwap()
                   .tool__control-shuffle
                     +btnShuffle()
 
@@ -72,6 +79,5 @@ block content
                     +btnPrevNext()
 
                 .tool__control-right.d-flex.align-items-center.justify-content-end
-                  +btnSwap()
                   +btnText()
                   +btnSetting()

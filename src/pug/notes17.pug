@@ -14,7 +14,7 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            include ./macros/_menuMain
+            include ./macros/_menuNotes
 
           .section__wrapper-right
 
@@ -26,8 +26,12 @@ block content
                   span!= "Note Name (Passage example)"
 
                 .section__title-right
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-notify
                   a(href="#" title="" class="ml-3")
                     i.icon-font.icon-edit
+                  a(href="#" title="" class="ml-3")
+                    i.icon-font.icon-info
 
                   .c-dropdown.ml-4
                     .dropdown

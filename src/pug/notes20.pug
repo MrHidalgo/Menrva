@@ -14,7 +14,7 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
-            include ./macros/_menuMain
+            include ./macros/_menuNotes
 
           .section__wrapper-right
 
@@ -112,8 +112,11 @@ block content
                       p!= "+ Import from Word, Excel, Google Docs, etc."
 
                     .bill__public-right.d-flex.justify-content-end
-                      form.form(action="" method="")
+                      p.bill__public-lock
+                        i.icon-font.icon-lock
+                        span!= "Access for 2 members"
 
+                      form.form(action="" method="")
                         .form__field.form__field--swipe
                           input(type="checkbox" id="publicSwipe" name="")
                           label(for="publicSwipe")
