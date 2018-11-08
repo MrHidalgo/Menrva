@@ -1319,6 +1319,16 @@
     }
   }
 
+  &--settingNote {
+    .form__field--group {
+      justify-content: space-between;
+
+      > div {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+
   &__wrapper {
     z-index: 1;
     position: relative;
@@ -1900,6 +1910,13 @@
         display: flex;
         align-items: center;
 
+        &.is-active {
+          p {
+            color: #019552;
+            @include transition(color);
+          }
+        }
+
         > div {
           &:first-of-type {
             width: 58px;
@@ -1937,6 +1954,7 @@
         color: #555352;
         font-size: 14px;
         font-weight: 600;
+        @include transition(color);
       }
 
       span {

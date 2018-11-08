@@ -21,7 +21,7 @@ block content
               ul
                 each val, idx in [1,2,3,4,5,6,7,8,9,0]
                   li
-                    a
+                    a(class!= (idx === 0) ? 'is-active':'')
                       div
                         i
                           img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")

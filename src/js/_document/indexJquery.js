@@ -134,6 +134,18 @@ $(document).ready((ev) => {
 
 
   /**
+   *
+   */
+  const initNotesSuggestUsers = () => {
+    $('.c-modal__users a').on('click', (ev) => {
+
+      $('.c-modal__users a').removeClass('is-active');
+      $(ev.currentTarget).addClass('is-active');
+    });
+  };
+
+
+  /**
    * @description Init all method
    */
   const initJquery = () => {
@@ -150,6 +162,7 @@ $(document).ready((ev) => {
     initModalStatisticMenu();
     initTableBtn();
     initTableSort();
+    initNotesSuggestUsers();
   };
   initJquery();
 });
