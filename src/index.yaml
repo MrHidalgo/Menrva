@@ -205,6 +205,9 @@ PageList:
 - file: notes35.html
   titleName: Flashcard full screen 2
   ready: 55
+- file: notes36.html
+  titleName: Flashcard full screen 3
+  ready: 55
 - file: notes13.html
   titleName: Page setting
   ready: 55

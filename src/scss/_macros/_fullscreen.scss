@@ -9,6 +9,35 @@
   height: 100vh;
   background-color: #f9fbf9;
 
+  &--image {
+    .fullscreen__wrapper-top {
+      height: 100vh;
+    }
+    .tool__preview {
+      padding: 0;
+    }
+    .tool__preview-control {
+      z-index: 2;
+      position: relative;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $c-white;
+        box-shadow: 0 3px 4px 0 rgba($c-black, 0.1);
+
+        i {
+          color: #9B9B9B;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

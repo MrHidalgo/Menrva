@@ -1,0 +1,35 @@
+---
+title: Menrva - Flashcard full screen 3
+
+contentClassName: notes
+dataPageName: notes36
+login: true
+---
+extends shared/_layout
+
+block content
+  div.body.body--start(class!= contentClassName)
+
+    section#fullscreen.fullscreen.fullscreen--image
+      .fullscreen__wrapper
+        .fullscreen__wrapper-top
+
+          p.fullscreen__title!= "Menrva is now full screen (Press Esc to exit full screen mode)"
+
+          .tool.tool--full
+            .tool__wrapper
+              .tool__preview
+                .tool__preview-control.d-flex.align-items-center.justify-content-between
+                  div.d-flex.align-items-center
+                  div.d-flex.justify-content-end
+                    a(
+                    href="#"
+                    title="" class=""
+                    )
+                      i.icon-font.icon-error
+
+                .tool__preview-figure
+                  img(src="./img/img-bg-designed.jpg" srcset="./img/img-bg-designed@2x.jpg 2x" alt="" title="")
+                  div
+                  div
+                  div

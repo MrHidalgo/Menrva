@@ -622,6 +622,22 @@
     label {
       margin-bottom: 0;
     }
+
+    &-lock {
+      display: flex;
+      align-items: center;
+      padding-right: 30px;
+
+      i {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      span {
+        color: $c-black;
+        font-size: 14px;
+      }
+    }
   }
 
   &__box {
