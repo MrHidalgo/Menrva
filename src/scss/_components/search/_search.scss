@@ -20,6 +20,20 @@
         font-size: 12px;
       }
     }
+
+    .c-btn {
+      max-width: 255px;
+      margin-top: 30px;
+
+      &:hover {
+        color: $c-white;
+      }
+
+      i {
+        margin-right: 15px;
+        font-size: 17px;
+      }
+    }
   }
 
   &__filter {

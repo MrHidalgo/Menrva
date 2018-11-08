@@ -9,3 +9,79 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include ./macros/_menuNotes
+
+          .section__wrapper-right
+
+            .section__title.section__title--browse
+              .section__title-wrap
+                .section__title-left
+                  .section__title-icon
+                    i.icon-font.icon-folder
+                  span!= "Courses"
+                  .section__title-icon.section__title-icon--arrow
+                    i.icon-font.icon-arrow
+                  span!= "Course 1"
+
+                .section__title-right
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-switcher-add
+
+                  .c-dropdown.ml-4
+                    .dropdown
+                      a.dropdown__btn(href="#" id="notesFlashcardTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        span
+                        span
+                        span
+                      .dropdown-menu.dropdown-menu-right(aria-labelledby="notesFlashcardTitle")
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-edit
+                          span!= "Edit"
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-export-2
+                          span!= "Export"
+                        a.dropdown-item(href="#")
+                          div
+                            i.icon-font.icon-remove
+                          span!= "Remove"
+
+              .section__title-desc
+                p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+
+            .bill
+              .bill__wrapper
+                .bill__row.bill__row-0.bill__row--info
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-profile
+                    span!= "Owner name"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-notes
+                    span!= "2"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-select
+                    span!= "12K"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-like
+                    span!= "567"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-save
+                    span!= "67"
+                  a(href="#" title="" class="")
+                    i.icon-font.icon-recent
+                    span!= "1 year ago"
+
+            .search__empty
+              p!= 'This course has no notes yet'
+              p!= "Organize your notes into courses"
+
+              a.c-btn.c-btn--bigH.c-btn--darkGreen(href="#" title="" class="")
+                i.icon-font.icon-switcher-add
+                span!= "Add a note"
+

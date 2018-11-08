@@ -1340,6 +1340,10 @@
       &:nth-child(1) {
         margin-bottom: 30px;
 
+        &:hover {
+          color: $c-white;
+        }
+
         i {
           margin-right: 15px;
           font-size: 17px;

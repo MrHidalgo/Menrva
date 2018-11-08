@@ -447,7 +447,7 @@ PageList:
   ready: 1
 - file: courses3.html
   titleName: Has no notes yet
-  ready: 1
+  ready: 55
 - file: courses4.html
   titleName: Add a note 1
   ready: 1
