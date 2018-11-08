@@ -435,3 +435,40 @@ PageList:
 - file: classes29.html
   titleName: Join or create 4
   ready: 55
+
+- file:
+  titleName: =====COURSES=====
+  ready: 0
+- file: courses1.html
+  titleName: Main
+  ready: 1
+- file: courses2.html
+  titleName: Create new
+  ready: 1
+- file: courses3.html
+  titleName: Has no notes yet
+  ready: 1
+- file: courses4.html
+  titleName: Add a note 1
+  ready: 1
+- file: courses5.html
+  titleName: Add a note 2
+  ready: 1
+- file: courses6.html
+  titleName: Add a note 3
+  ready: 1
+- file: courses7.html
+  titleName: Add a note 4
+  ready: 1
+- file: courses8.html
+  titleName: Course 1
+  ready: 1
+- file: courses9.html
+  titleName: Edit course
+  ready: 1
+- file: courses10.html
+  titleName: Remove course
+  ready: 1
+- file: courses11.html
+  titleName: Sort by
+  ready: 1
