@@ -2394,6 +2394,21 @@
 .c-dropdown {
   position: relative;
 
+  > a {
+    i {
+      @include transition(color);
+    }
+  }
+
+  &.show {
+    > a {
+      i {
+        color: $c-019552;
+        @include transition(color);
+      }
+    }
+  }
+
   .dropdown {
     &.show {
       z-index: 1;

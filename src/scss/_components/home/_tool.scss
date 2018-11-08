@@ -234,6 +234,14 @@
       position: relative;
 
       &--keyboard {
+        &.show {
+          > a {
+            i {
+              color: $c-019552;
+              @include transition(color);
+            }
+          }
+        }
         .dropdown-item {
           justify-content: space-between;
         }
@@ -325,6 +333,7 @@
 
       i {
         color: $c-0e1111;
+        @include transition(color);
       }
     }
 
@@ -367,10 +376,36 @@
 
     &-swap {
       width: 50px;
+
+      a {
+        &.is-active {
+          i {
+            color: $c-019552;
+            @include transition(color);
+          }
+        }
+
+        i {
+          @include transition(color);
+        }
+      }
     }
 
     &-shuffle {
       width: 70px;
+
+      a {
+        &.is-active {
+          i {
+            color: $c-019552;
+            @include transition(color);
+          }
+        }
+
+        i {
+          @include transition(color);
+        }
+      }
     }
 
     &-line {
