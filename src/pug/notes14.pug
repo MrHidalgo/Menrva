@@ -112,8 +112,8 @@ block content
                       p!= "+ Import from Word, Excel, Google Docs, etc."
 
                     .bill__public-right.d-flex.justify-content-end
-                      form.form(action="" method="")
 
+                      form.form(action="" method="")
                         .form__field.form__field--swipe
                           input(type="checkbox" id="publicSwipe" name="")
                           label(for="publicSwipe")
@@ -135,16 +135,20 @@ block content
                       span!= "1"
 
                     .bill__block-middle
-                      .form__field.form__field--input
+                      .form__field.form__field--input.form__field--icon
                         label.form__label(for="notesCreate0")!= "Term"
                         .form__input-wrap
+                          a(href="#" class="" title="")
+                            i.icon-font.icon-picture
                           input.form__input(type="text" id="notesCreate0" name="notesCreate0" placeholder="Lorem Ipsum is simply dummy text")
                         .form__notify.form__notify--hide
 
                     .bill__block-right
-                      .form__field.form__field--input
+                      .form__field.form__field--input.form__field--icon
                         label.form__label(for="notesCreate1")!= "Definition"
                         .form__input-wrap
+                          a(href="#" class="" title="")
+                            i.icon-font.icon-picture
                           input.form__input(type="text" id="notesCreate1" name="notesCreate1" placeholder="Lorem Ipsum is simply dummy text")
                         .form__notify.form__notify--hide
 
@@ -170,22 +174,45 @@ block content
                           input.form__input(type="text" id="notesCreate3" name="notesCreate3" placeholder="Lorem Ipsum is simply dummy text")
                         .form__notify.form__notify--hide
 
-                  .section__block.bill__block.bill__block--three.bill__block--opacity.bill__block--create.bill__block--input
+                  .section__block.bill__block.bill__block--three.bill__block--create.bill__block--input
                     .bill__block-left
                       span!= "2"
 
                     .bill__block-middle
-                      .form__field.form__field--input
-                        label.form__label(for="notesCreate4")!= "Term"
+                      .form__field.form__field--input.form__field--icon.form__field--image
                         .form__input-wrap
+                          a(href="#" class="" title="")
+                            i.icon-font.icon-remove
+                          img(src="./img/img-bg-designed.jpg" srcset="./img/img-bg-designed@2x.jpg 2x" alt="" title="")
                           input.form__input(type="text" id="notesCreate4" name="notesCreate4" placeholder="Lorem Ipsum is simply dummy text")
                         .form__notify.form__notify--hide
 
                     .bill__block-right
                       .form__field.form__field--input
-                        label.form__label(for="notesCreate5")!= "Definition"
                         .form__input-wrap
-                          input.form__input(type="text" id="notesCreate5" name="notesCreate5" placeholder="Lorem Ipsum is simply dummy text")
+                          input.form__input(type="text" id="notesCreate5" name="notesCreate5" placeholder="Definition")
+                        .form__notify.form__notify--hide
+
+                  .section__block.bill__block.bill__block--three.bill__block--opacity.bill__block--create.bill__block--input
+                    .bill__block-left
+                      span!= "3"
+
+                    .bill__block-middle
+                      .form__field.form__field--input.form__field--icon
+                        label.form__label(for="notesCreate6")!= "Term"
+                        .form__input-wrap
+                          a(href="#" class="" title="")
+                            i.icon-font.icon-picture
+                          input.form__input(type="text" id="notesCreate6" name="notesCreate6" placeholder="Lorem Ipsum is simply dummy text")
+                        .form__notify.form__notify--hide
+
+                    .bill__block-right
+                      .form__field.form__field--input.form__field--icon
+                        label.form__label(for="notesCreate7")!= "Definition"
+                        .form__input-wrap
+                          a(href="#" class="" title="")
+                            i.icon-font.icon-picture
+                          input.form__input(type="text" id="notesCreate7" name="notesCreate7" placeholder="Lorem Ipsum is simply dummy text")
                         .form__notify.form__notify--hide
 
 

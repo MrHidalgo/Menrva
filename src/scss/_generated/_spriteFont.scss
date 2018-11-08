@@ -156,86 +156,89 @@
 	@if $filename == notify {
 		$char: "\E02B";
 	}
-	@if $filename == play {
+	@if $filename == picture {
 		$char: "\E02C";
 	}
-	@if $filename == plus {
+	@if $filename == play {
 		$char: "\E02D";
 	}
-	@if $filename == prev-next {
+	@if $filename == plus {
 		$char: "\E02E";
 	}
-	@if $filename == profile {
+	@if $filename == prev-next {
 		$char: "\E02F";
 	}
-	@if $filename == recent {
+	@if $filename == profile {
 		$char: "\E030";
 	}
-	@if $filename == refer {
+	@if $filename == recent {
 		$char: "\E031";
 	}
-	@if $filename == remove {
+	@if $filename == refer {
 		$char: "\E032";
 	}
-	@if $filename == safety {
+	@if $filename == remove {
 		$char: "\E033";
 	}
-	@if $filename == save {
+	@if $filename == safety {
 		$char: "\E034";
 	}
-	@if $filename == schedule {
+	@if $filename == save {
 		$char: "\E035";
 	}
-	@if $filename == search {
+	@if $filename == schedule {
 		$char: "\E036";
 	}
-	@if $filename == select {
+	@if $filename == search {
 		$char: "\E037";
 	}
-	@if $filename == send-feedback {
+	@if $filename == select {
 		$char: "\E038";
 	}
-	@if $filename == setting {
+	@if $filename == send-feedback {
 		$char: "\E039";
 	}
-	@if $filename == shuffle {
+	@if $filename == setting {
 		$char: "\E03A";
 	}
-	@if $filename == speaker {
+	@if $filename == shuffle {
 		$char: "\E03B";
 	}
-	@if $filename == star-fill {
+	@if $filename == speaker {
 		$char: "\E03C";
 	}
-	@if $filename == star-full {
+	@if $filename == star-fill {
 		$char: "\E03D";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E03E";
 	}
-	@if $filename == statistics {
+	@if $filename == star {
 		$char: "\E03F";
 	}
-	@if $filename == swap {
+	@if $filename == statistics {
 		$char: "\E040";
 	}
-	@if $filename == switcher-add {
+	@if $filename == swap {
 		$char: "\E041";
 	}
-	@if $filename == switcher {
+	@if $filename == switcher-add {
 		$char: "\E042";
 	}
-	@if $filename == text {
+	@if $filename == switcher {
 		$char: "\E043";
 	}
-	@if $filename == theme {
+	@if $filename == text {
 		$char: "\E044";
 	}
-	@if $filename == user-delete {
+	@if $filename == theme {
 		$char: "\E045";
 	}
-	@if $filename == width-small {
+	@if $filename == user-delete {
 		$char: "\E046";
+	}
+	@if $filename == width-small {
+		$char: "\E047";
 	}
 
 	@return $char;
@@ -422,6 +425,10 @@
 }
 .icon-notify {
 	@include icon(notify);
+
+}
+.icon-picture {
+	@include icon(picture);
 
 }
 .icon-play {

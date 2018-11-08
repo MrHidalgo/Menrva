@@ -1,7 +1,7 @@
 // FULLSCREEN :: START
 
 .fullscreen {
-  z-index: 100;
+  z-index: 1002;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,6 @@
 
     &-top {
       overflow-y: auto;
-      //min-height: calc(500px - 72px);
       height: calc(100vh - 72px);
     }
 

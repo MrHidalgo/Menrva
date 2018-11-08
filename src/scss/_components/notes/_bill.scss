@@ -375,7 +375,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        width: 344px;
+        width: 324px;
 
         &:after {
           content: '';
@@ -399,7 +399,7 @@
         }
       }
       .bill__block-middle {
-        width: 337px;
+        width: 317px;
         padding-left: 20px;
         padding-right: 20px;
       }
@@ -407,7 +407,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        max-width: calc(100% - (344px + 337px));
+        max-width: calc(100% - (324px + 317px));
       }
     }
 
