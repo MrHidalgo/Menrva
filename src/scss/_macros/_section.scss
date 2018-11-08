@@ -244,10 +244,24 @@
     &--classes {
       .section__subtitle-right {
         a {
-
           .icon-arrow {
             margin-left: 8px;
             font-size: 8px;
+          }
+        }
+        
+        .c-dropdown {
+          a {
+            justify-content: flex-start;
+          }
+
+          .dropdown-item {
+            text-align: left;
+          }
+
+          span {
+            font-size: 12px;
+            font-weight: normal;
           }
         }
       }
