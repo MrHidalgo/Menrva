@@ -20,9 +20,9 @@ html(lang="en")
       .barba-container
     block content
 
-
-    block footer
-      include ../components/_footer
+    if(contentClassName !== 'p-assistant')
+      block footer
+        include ../components/_footer
 
 
   block script
