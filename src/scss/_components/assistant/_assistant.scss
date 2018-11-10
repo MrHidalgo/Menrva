@@ -136,6 +136,7 @@
       display: none;
       overflow-y: auto;
       height: 100%;
+      background-color: $c-white;
     }
 
     &-middle {
@@ -147,6 +148,7 @@
 
     &-right {
       display: none;
+      background-color: $c-white;
     }
 
     &-btn {
