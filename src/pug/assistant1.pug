@@ -3,9 +3,14 @@ title: Menrva - Note assistant 1
 
 contentClassName: p-assistant
 dataPageName: assistant1
-login: false
+login: true
 ---
 extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#assistant.assistant
+      .assistant__wrapper
+        a.assistant__circle(href="#" class="" title="" assistant-js)
+          i.icon-font.icon-bubble

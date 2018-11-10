@@ -480,7 +480,7 @@ PageList:
 
 - file: assistant1.html
   titleName: Note assistant 1
-  ready: 1
+  ready: 55
 - file: assistant2.html
   titleName: Note assistant 2
   ready: 1

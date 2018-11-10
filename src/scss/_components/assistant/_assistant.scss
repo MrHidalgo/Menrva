@@ -1,5 +1,33 @@
 // ASSISTANT :: START
 
-.assistant {}
+.assistant {
+  &__circle {
+    z-index: 1005;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 60px;
+    bottom: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #00BD70;
+    box-shadow: 0 16px 45px 0 rgba(#022B18, 0.13);
+
+    &.is-open {
+      i {
+        @include icon(error);
+        font-size: 18px;
+      }
+    }
+
+    i {
+      color: $c-white;
+      font-size: 22px;
+    }
+  }
+}
 
 // ASSISTANT :: END

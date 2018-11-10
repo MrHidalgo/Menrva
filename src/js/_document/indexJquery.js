@@ -146,6 +146,16 @@ $(document).ready((ev) => {
 
 
   /**
+   *
+   */
+  const initAssistant = () => {
+    $('[assistant-js]').on('click', (ev) => {
+      $(ev.currentTarget).toggleClass('is-open');
+    });
+  };
+
+
+  /**
    * @description Init all method
    */
   const initJquery = () => {
@@ -163,6 +173,7 @@ $(document).ready((ev) => {
     initTableBtn();
     initTableSort();
     initNotesSuggestUsers();
+    initAssistant();
   };
   initJquery();
 });
