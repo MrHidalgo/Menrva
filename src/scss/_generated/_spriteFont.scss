@@ -243,11 +243,14 @@
 	@if $filename == theme {
 		$char: "\E048";
 	}
-	@if $filename == user-delete {
+	@if $filename == unfullscreen {
 		$char: "\E049";
 	}
-	@if $filename == width-small {
+	@if $filename == user-delete {
 		$char: "\E04A";
+	}
+	@if $filename == width-small {
+		$char: "\E04B";
 	}
 
 	@return $char;
@@ -550,6 +553,10 @@
 }
 .icon-theme {
 	@include icon(theme);
+
+}
+.icon-unfullscreen {
+	@include icon(unfullscreen);
 
 }
 .icon-user-delete {

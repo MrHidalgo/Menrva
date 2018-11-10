@@ -9,3 +9,128 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#assistant.assistant.assistant--fullscreen
+      .assistant__wrapper
+        a.assistant__circle(href="#" class="" title="" assistant-js)
+          i.icon-font.icon-bubble
+
+        .assistant__block
+          .assistant__block-head
+            div
+              p!= "Note assistant"
+            div
+              a.assistant__block-btn.assistant__block-btn--full(href="" class="" title="")
+                i.icon-font.icon-fullscreen
+              a.assistant__block-btn.assistant__block-btn--close(href="" class="" title="")
+                i.icon-font.icon-error
+
+          .assistant__block-body
+            .assistant__block-left
+              each val, idx in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+                .assistant__chat-user.assistant__chat-user--bot
+                  div
+                    .assistant__chat-img
+                      img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                  div
+                    .assistant__chat-user--title
+                      span!= "Bot name"
+                      span!= "Today"
+                    p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+
+            .assistant__block-middle
+              .assistant__chat
+                .assistant__chat-body
+                  div
+                    .assistant__chat-user
+                      div
+                        .assistant__chat-img
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                      div
+                        .assistant__chat-message
+                          div
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+                    .assistant__chat-user
+                      div
+                        .assistant__chat-img
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                      div
+                        a.c-btn.c-btn--darkGreen(href="#" class="" title="")!= "Action 1"
+
+                    .assistant__chat-user
+                      div
+                        .assistant__chat-img
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                      div
+                        .assistant__chat-message
+                          div
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+                    .assistant__chat-user
+                      div
+                        .assistant__chat-img
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                      div
+                        .assistant__chat-message
+                          div
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+                    .assistant__chat-user
+                      div
+                        .assistant__chat-img
+                          img(src="./img/img-user-0.png" srcset="./img/img-user-0@2x.png 2x" alt="" title="")
+                      div
+                        a.c-btn.c-btn--darkGreen(href="#" class="" title="")!= "Action 1"
+
+                  div
+                    .assistant__chat-info
+                      div
+                        a.assistant__block-btn.assistant__block-btn--arrow(href="" class="" title="")
+                          i.icon-font.icon-arrow-view
+                      div
+                        .assistant__chat-message
+                          div
+                            p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                          div.assistant__chat-like
+                            a.assistant__block-btn.assistant__block-btn--like(href="" class="" title="")
+                              i.icon-font.icon-like
+                            span!= "11k"
+                            a.assistant__block-btn.assistant__block-btn--like.is-active(href="" class="" title="")
+                              i.icon-font.icon-like
+
+                      div
+                        a.assistant__block-btn.assistant__block-btn--arrow(href="" class="" title="")
+                          i.icon-font.icon-arrow-view
+
+                form.assistant__chat-control
+                  div
+                    a.assistant__block-btn.assistant__block-btn--keyboard(href="" class="" title="")
+                      i.icon-font.icon-keyboard
+                  div
+                    .form__field.form__field--input
+                      .form__input-wrap
+                        input.form__input(type="text" name="" placeholder="Type message")
+                      .form__notify.form__notify--hide
+                  div
+                    button.c-btn.c-btn--lightGray(type="button")!= "Send"
+
+
+            .assistant__block-right
+              .assistant__block-search
+                .search
+                  .search__wrapper
+                    input.search__input(type="text" name="searchValue" placeholder="Search")
+                    button.search__btn(type="submit")
+                      i.icon-font.icon-search
+              .assistant__block-scroll
+                each val, idx in [1,2,3,4,5,6,7,8,9,10]
+                    .assistant__block-find
+                      div
+                        p!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                      div.assistant__chat-like
+                        a.assistant__block-btn.assistant__block-btn--like(href="" class="" title="")
+                          i.icon-font.icon-like
+                        span!= "11k"
+                        a.assistant__block-btn.assistant__block-btn--like.is-active(href="" class="" title="")
+                          i.icon-font.icon-like
