@@ -495,7 +495,7 @@ PageList:
   ready: 1
 - file: assistant6.html
   titleName: Setting
-  ready: 1
+  ready: 55
 - file: assistant7.html
   titleName: Remove this bot
   ready: 55

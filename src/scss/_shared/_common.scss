@@ -915,6 +915,17 @@
           }
         }
       }
+
+      .c-modal--classAdminEdit & {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        button {
+          max-width: 160px;
+          margin: 0;
+        }
+      }
     }
 
     &--link {
