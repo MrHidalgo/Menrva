@@ -42,6 +42,25 @@
     }
   }
 
+  &--admin {
+    .assistant__block-scroll {
+      height: calc(100% - (84px + 101px));
+    }
+    .assistant__block-add {
+      display: flex;
+    }
+    .assistant__chat-like {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
   &__circle {
     z-index: 1005;
     cursor: pointer;
@@ -188,6 +207,20 @@
           font-size: 16px;
         }
       }
+      &--edit {
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 13px;
+          color: #9B9B9B;
+          font-size: 18px;
+        }
+        
+        span {
+          text-transform: none !important;
+        }
+      }
     }
 
     &-search {
@@ -218,6 +251,21 @@
         color: #555555;
         line-height: 1.6;
         font-size: 12px;
+      }
+    }
+
+    &-add {
+      display: none;
+      align-items: center;
+      height: 84px;
+      padding: 0 30px;
+
+      a {
+        max-width: 100%;
+
+        &:hover {
+          color: $c-white;
+        }
       }
     }
   }

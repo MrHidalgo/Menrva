@@ -489,10 +489,10 @@ PageList:
   ready: 55
 - file: assistant4.html
   titleName: Guest
-  ready: 1
+  ready: 55
 - file: assistant5.html
   titleName: Admin
-  ready: 1
+  ready: 55
 - file: assistant6.html
   titleName: Setting
   ready: 55
