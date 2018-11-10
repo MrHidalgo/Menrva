@@ -486,7 +486,7 @@ PageList:
   ready: 55
 - file: assistant3.html
   titleName: Note assistant 3
-  ready: 1
+  ready: 55
 - file: assistant4.html
   titleName: Guest
   ready: 1

@@ -158,13 +158,33 @@
       display: flex;
       padding-top: 30px;
 
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        .assistant__chat-img {
+          margin-left: auto;
+        }
+
+        .c-btn {
+          margin-left: auto;
+        }
+      }
+
       > div {
         &:nth-of-type(1) {
           width: 46px;
-          padding-top: 10px;
         }
         &:nth-of-type(2) {
           width: calc(100% - 46px);
+        }
+      }
+
+      .c-btn {
+        height: 44px;
+        font-size: 12px;
+
+        &:hover {
+          color: $c-white;
         }
       }
     }
