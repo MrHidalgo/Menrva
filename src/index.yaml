@@ -498,10 +498,10 @@ PageList:
   ready: 1
 - file: assistant7.html
   titleName: Remove this bot
-  ready: 1
+  ready: 55
 - file: assistant8.html
   titleName: Edit
   ready: 1
 - file: assistant9.html
   titleName: Remove this entry
-  ready: 1
+  ready: 55
